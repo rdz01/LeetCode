@@ -1,6 +1,6 @@
 #include "stdafx.h"
 #include "CppUnitTest.h"
-#include "..\LeetCode\_001_TwoSum.h"
+#include "..\LeetCode\001-TwoSum.h"
 
 using namespace Microsoft::VisualStudio::CppUnitTestFramework;
 
