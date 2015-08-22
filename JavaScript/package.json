@@ -1,13 +1,15 @@
 {
-  "name": "LeetCode",
+  "name": "leetcode",
   "version": "0.1.0",
-  "devDependencies": {
-    "grunt": "~0.4.5",
-    "grunt-contrib-jasmine": "^0.9.1",
-    "grunt-contrib-jshint": "~0.10.0",
-    "jasmine": "^2.3.2",
-    "jshint-stylish": "^2.0.1"
-  },
+  "description": "The JavaScript solutions for Leet Code problems",
   "author": "BigEgg",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-jshint": "^0.11.2",
+    "jasmine": "^2.3.2"
+  },
+  "scripts": {
+    "jasmine": "node ./node_modules/jasmine/bin/jasmine.js"
+  }
 }

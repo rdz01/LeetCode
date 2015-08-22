@@ -1,6 +1,6 @@
 module.exports = function(grunt) {
   var SRC_DIR = 'src/';
-  var TEST_DIR = 'test/';
+  var TEST_DIR = 'spec/';
 
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
@@ -9,24 +9,11 @@ module.exports = function(grunt) {
         'Gruntfile.js',
         SRC_DIR + '**/*.js',
         TEST_DIR + '**/*.js'
-      ],
-      options: {
-        reporter: require('jshint-stylish')
-      }
-    },
-    jasmine: {
-      module: {
-        src: SRC_DIR + '**/*.js',
-        options: {
-          specs: TEST_DIR + '**/*Spec.js',
-          helpers: TEST_DIR + 'helper/*.js'
-        }
-      }
+      ]
     }
   });
 
   grunt.loadNpmTasks('grunt-contrib-jshint');
-  grunt.loadNpmTasks('grunt-contrib-jasmine');
-
-  grunt.registerTask('default', ['jshint', 'jasmine']);
+  
+  grunt.registerTask('default', ['jshint']);
 };
