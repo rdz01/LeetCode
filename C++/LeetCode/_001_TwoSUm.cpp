@@ -23,7 +23,7 @@ vector<int> _001_TwoSum::twoSum(vector<int>& nums, int target)
 		}
 		else
 		{
-			result.push_back(restIndex[target - nums[i]] + 1);
+			result.push_back(restIndex[nums[i]] + 1);
 			result.push_back(i + 1);
 			break;
 		}
