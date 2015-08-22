@@ -15,4 +15,4 @@ The solutions for LeetCode problems. Try to solve them with all languages.
 ### Problems
 | # | Title | Solutions |
 |---| ----- | --------- |
-|1|[Two Sum](https://oj.leetcode.com/problems/two-sum/)| C C++ [C#](./CSharp/LeetCode/001-TwoSum.cs) Java JavaScript Python Ruby |
+|1|[Two Sum](https://oj.leetcode.com/problems/two-sum/)| C [C++](./C++/LeetCode/001_TwoSum.cpp) [C#](./CSharp/LeetCode/001-TwoSum.cs) Java JavaScript Python Ruby |
