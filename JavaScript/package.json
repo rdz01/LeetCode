@@ -11,5 +11,19 @@
   },
   "scripts": {
     "jasmine": "node ./node_modules/jasmine/bin/jasmine.js"
-  }
+  },
+  "main": "Gruntfile.js",
+  "dependencies": {
+    "grunt-contrib-jshint": "^0.11.2",
+    "grunt": "^0.4.5",
+    "jasmine": "^2.3.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BigEgg/LeetCode.git"
+  },
+  "bugs": {
+    "url": "https://github.com/BigEgg/LeetCode/issues"
+  },
+  "homepage": "https://github.com/BigEgg/LeetCode#readme"
 }
