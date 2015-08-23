@@ -1,7 +1,7 @@
 #include "001-TwoSum.h"
 
-int * keys;
-int * values;
+int *keys;
+int *values;
 
 int hash(int key, int size)
 {
@@ -53,10 +53,10 @@ int get(int key, int size)
 	return -1;
 }
 
-int * twoSum(int * nums, int numsSize, int target)
+int *twoSum(int *nums, int numsSize, int target)
 {
 	int i;
-	int * result = (int *)malloc(sizeof(int) * 2);
+	int *result = (int *)malloc(sizeof(int) * 2);
 	result[0] = result[1] = 0;
 	
 	initialize(numsSize);
