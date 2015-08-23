@@ -12,7 +12,7 @@
   "scripts": {
     "jasmine": "node ./node_modules/jasmine/bin/jasmine.js"
   },
-  "main": "Gruntfile.js"
+  "main": "Gruntfile.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/BigEgg/LeetCode.git"
