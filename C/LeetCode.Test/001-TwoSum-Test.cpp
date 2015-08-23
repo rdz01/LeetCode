@@ -1,6 +1,8 @@
 #include "stdafx.h"
 #include "CppUnitTest.h"
+extern "C" {
 #include "..\LeetCode\001-TwoSum.h"
+}
 
 using namespace Microsoft::VisualStudio::CppUnitTestFramework;
 
@@ -21,8 +23,7 @@ namespace LeetCodeTest
 			int nums[4] = { 2, 7, 11, 15 };
 			int target = 9;
 
-			_001_TwoSum solution;
-			int * result = solution.twoSum(nums, 4, target);
+			int * result = twoSum(nums, 4, target);
 
 			Assert::AreEqual(1, result[0]);
 			Assert::AreEqual(2, result[1]);
@@ -35,8 +36,7 @@ namespace LeetCodeTest
 			int nums[3] = { 5, 75, 25 };
 			int target = 100;
 
-			_001_TwoSum solution;
-			int * result = solution.twoSum(nums, 3, target);
+			int * result = twoSum(nums, 3, target);
 
 			Assert::AreEqual(2, result[0]);
 			Assert::AreEqual(3, result[1]);
@@ -49,8 +49,7 @@ namespace LeetCodeTest
 			int nums[4] = { 5, 5, 15, 30 };
 			int target = 20;
 
-			_001_TwoSum solution;
-			int * result = solution.twoSum(nums, 4, target);
+			int * result = twoSum(nums, 4, target);
 
 			Assert::AreEqual(2, result[0]);
 			Assert::AreEqual(3, result[1]);
@@ -63,8 +62,7 @@ namespace LeetCodeTest
 			int nums[4] = { 5, 5, 5, 5 };
 			int target = 10;
 
-			_001_TwoSum solution;
-			int * result = solution.twoSum(nums, 4, target);
+			int * result = twoSum(nums, 4, target);
 
 			Assert::AreEqual(1, result[0]);
 			Assert::AreEqual(2, result[1]);
@@ -77,8 +75,7 @@ namespace LeetCodeTest
 			int nums[4] = { 2, 7, 11, 15 };
 			int target = 5;
 
-			_001_TwoSum solution;
-			int * result = solution.twoSum(nums, 4, target);
+			int * result = twoSum(nums, 4, target);
 
 			Assert::AreEqual(0, result[0]);
 			Assert::AreEqual(0, result[1]);
@@ -90,8 +87,7 @@ namespace LeetCodeTest
 		{
 			int target = 19082;
 
-			_001_TwoSum solution;
-			int * result = solution.twoSum(largeArray, 20000, target);
+			int * result = twoSum(largeArray, 20000, target);
 
 			Assert::AreEqual(4771, result[0]);
 			Assert::AreEqual(4772, result[1]);
@@ -103,8 +99,7 @@ namespace LeetCodeTest
 		{
 			int target = 19081;
 
-			_001_TwoSum solution;
-			int * result = solution.twoSum(largeArray, 20000, target);
+			int * result = twoSum(largeArray, 20000, target);
 
 			Assert::AreEqual(0, result[0]);
 			Assert::AreEqual(0, result[1]);
