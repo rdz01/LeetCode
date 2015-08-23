@@ -19,8 +19,8 @@ var solution = function() {
 
     var put = function(key, value, size) {
         var i = 0;
-        for (i = hash(key, size); keys[i] != -1; i = (i + 1) % size) {
-            if (keys[i] == key) {
+        for (i = hash(key, size); keys[i] !== -1; i = (i + 1) % size) {
+            if (keys[i] === key) {
                 values[i] = value;
             }
         }
@@ -29,8 +29,8 @@ var solution = function() {
     };
 
     var get = function(key, size) {
-        for (var i = hash(key, size); keys[i] != -1; i = (i + 1) % size) {
-            if (keys[i] == key) {
+        for (var i = hash(key, size); keys[i] !== -1; i = (i + 1) % size) {
+            if (keys[i] === key) {
                 return values[i];
             }
         }
@@ -46,7 +46,7 @@ var solution = function() {
         initialize(nums.length);
 
         for (var i = 0; i < nums.length; i++) {
-            if (get(nums[i], nums.length) == -1) {
+            if (get(nums[i], nums.length) === -1) {
                 put(target - nums[i], i, nums.length);
             } else {
                 var result = [];
