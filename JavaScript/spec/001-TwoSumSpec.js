@@ -1,4 +1,4 @@
-var solution = require('../src/001_TwoSum');
+var solution = require('../src/001-TwoSum');
 
 describe('Two Sum Tests', function() {
     'use strict';
