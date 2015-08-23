@@ -20,5 +20,6 @@
   "bugs": {
     "url": "https://github.com/BigEgg/LeetCode/issues"
   },
-  "homepage": "https://github.com/BigEgg/LeetCode#readme"
+  "homepage": "https://github.com/BigEgg/LeetCode#readme",
+  "readme": "Leet Code JavaScript Solutions"
 }
