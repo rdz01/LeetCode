@@ -1,18 +1,11 @@
-#pragma once
-#include "common.h"
+#ifndef _001_TwoSum
+#define _001_TwoSum
+
 #include <stdlib.h>
 
-using namespace std;
+/**
+* Note: The returned array must be malloced, assume caller calls free().
+*/
+int* twoSum(int* nums, int numsSize, int target);
 
-class LEETCODE_API _001_TwoSum
-{
-public:
-	_001_TwoSum();
-	~_001_TwoSum();
-
-	/**
-	* Note: The returned array must be malloced, assume caller calls free().
-	*/
-	int* twoSum(int* nums, int numsSize, int target);
-};
-
+#endif

@@ -168,7 +168,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\LeetCode\LeetCode.vcxproj">
-      <Project>{a4839010-00f8-4c85-a92c-258cf80a34b1}</Project>
+      <Project>{f86e5564-41f5-44a0-8e76-421511b44ac7}</Project>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

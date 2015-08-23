@@ -1,14 +1,4 @@
-#include "stdafx.h"
 #include "001-TwoSum.h"
-
-_001_TwoSum::_001_TwoSum()
-{
-}
-
-
-_001_TwoSum::~_001_TwoSum()
-{
-}
 
 int * keys;
 int * values;
@@ -63,7 +53,7 @@ int get(int key, int size)
 	return -1;
 }
 
-int * _001_TwoSum::twoSum(int * nums, int numsSize, int target)
+int * twoSum(int * nums, int numsSize, int target)
 {
 	int i;
 	int * result = (int *)malloc(sizeof(int) * 2);
