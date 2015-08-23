@@ -20,9 +20,11 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="001-TwoSum.c" />
+    <ClCompile Include="002-AddTwoNumbers.c" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="001-TwoSum.h" />
+    <ClInclude Include="002-AddTwoNumbers.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{F86E5564-41F5-44A0-8E76-421511B44AC7}</ProjectGuid>
