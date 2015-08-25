@@ -1,28 +1,14 @@
 package bigegg.leetcode;
 
 public final class _002_AddTwoNumbers {
-    int getValue(ListNode node) {
-        if (node == null) {
-            return 0;
-        }
-        return node.val;
-    }
-
-    ListNode getNextNode(ListNode node) {
-        if (node == null) {
-            return null;
-        }
-        return node.next;
-    }
-
     public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
         ListNode first = new ListNode(-1);
         first.next = new ListNode(0);
         ListNode current = first;
 
         while (l1 != null || l2 != null) {
-            int value1 = getValue(l1);
-            int value2 = getValue(l2);
+            int value1 = l1 == null ? 0 : l1.val;
+            int value2 = l2 == null ? 0 : l2.val;
 
             current = current.next;
             int sum = current.val + value1 + value2;
@@ -34,8 +20,8 @@ public final class _002_AddTwoNumbers {
                 current.next = new ListNode(0);
             }
 
-            l1 = getNextNode(l1);
-            l2 = getNextNode(l2);
+            l1 = l1 == null ? null : l1.next;
+            l2 = l2 == null ? null : l2.next;
         }
 
         if (current.next.val == 0) {
