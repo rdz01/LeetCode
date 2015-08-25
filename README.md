@@ -16,4 +16,4 @@ The solutions for LeetCode problems. Try to solve them with all languages.
 | # | Title | Solutions |
 |---| ----- | --------- |
 |1|[Two Sum](./Problems/001-TwoSum.problem)| [C](./C/LeetCode/001-TwoSum.c)(4ms) [C++](./C++/LeetCode/001-TwoSum.cpp)(16ms) [C#](./CSharp/LeetCode/001-TwoSum.cs)(496ms) [Java](./Java/src/main/java/bigegg/leetcode/_001_TwoSum.java)(324ms) [JavaScript](./JavaScript/src/001-TwoSum.js)(124ms) Python Ruby |
-|2|[Add Two Numbers](./Problems/002-AddTwoNumbers.problem)| [C](./C/LeetCode/002-AddTwoNumbers.c)(20ms) [C++](./C++/LeetCode/002-AddTwoNumbers.cpp)(36ms) [C#](./CSharp/LeetCode/002-AddTwoNumbers.cs)(212ms) Java JavaScript Python Ruby |
+|2|[Add Two Numbers](./Problems/002-AddTwoNumbers.problem)| [C](./C/LeetCode/002-AddTwoNumbers.c)(20ms) [C++](./C++/LeetCode/002-AddTwoNumbers.cpp)(36ms) [C#](./CSharp/LeetCode/002-AddTwoNumbers.cs)(212ms) [Java](./Java/src/main/java/bigegg/leetcode/_001_AddTwoNumbers.java)(428ms) JavaScript Python Ruby |
