@@ -21,12 +21,18 @@
     <ClCompile Include="002-AddTwoNumbers.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="003-LongestSubstringWithoutRepeatingCharacters.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="001-TwoSum.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="002-AddTwoNumbers.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="003-LongestSubstringWithoutRepeatingCharacters.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

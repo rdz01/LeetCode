@@ -32,5 +32,8 @@
     <ClCompile Include="002-AddTwoNumbers-Test.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="003-LongestSubstringWithoutRepeatingCharacters-Test.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
