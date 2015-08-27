@@ -42,6 +42,7 @@
   <ItemGroup>
     <Compile Include="001-TwoSum.cs" />
     <Compile Include="002-AddTwoNumbers.cs" />
+    <Compile Include="003-LongestSubstringWithoutRepeatingCharacters.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
