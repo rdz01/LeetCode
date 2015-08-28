@@ -6,7 +6,7 @@ Implement atoi to convert a string to an integer.
 
 **Notes:** It is intended for this problem to be specified vaguely (ie, no given input specs). You are responsible to gather all the input requirements up front. 
 
-## Spoilers:
+## Spoilers
 **Requirements for atoi:**
 
 The function first discards as many whitespace characters as necessary until the first non-whitespace character is found. Then, starting from this character, takes an optional initial plus or minus sign followed by as many numerical digits as possible, and interprets them as a numerical value.
