@@ -1,0 +1,52 @@
+Given a string S, find the longest palindromic substring in S. You may assume that the maximum length of S is 1000, and there exists one unique longest palindromic substring.
+
+C++
+class Solution {
+public:
+    string longestPalindrome(string s) {
+
+    }
+};
+
+Java
+public class Solution {
+    public String longestPalindrome(String s) {
+
+    }
+}
+
+Python
+class Solution(object):
+    def longestPalindrome(self, s):
+        """
+        :type s: str
+        :rtype: str
+        """
+
+C
+char* longestPalindrome(char* s) {
+
+}
+
+C#
+public class Solution {
+    public string LongestPalindrome(string s) {
+
+    }
+}
+
+JavaScript
+/**
+ * @param {string} s
+ * @return {string}
+ */
+var longestPalindrome = function(s) {
+
+};
+
+Ruby
+# @param {String} s
+# @return {String}
+def longest_palindrome(s)
+
+end
