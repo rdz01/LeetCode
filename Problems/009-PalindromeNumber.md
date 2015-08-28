@@ -10,42 +10,55 @@ You could also try reversing an integer. However, if you have solved the problem
 
 There is a more generic way of solving this problem.
 
-C++
+## Solutions Sketch
+
+### C++
+```C++
 class Solution {
 public:
     bool isPalindrome(int x) {
 
     }
 };
+```
 
-Java
+### Java
+```Java
 public class Solution {
     public boolean isPalindrome(int x) {
 
     }
 }
+```
 
-Python
+# Python
+```Python
 class Solution(object):
     def isPalindrome(self, x):
         """
         :type x: int
         :rtype: bool
         """
+```
 
-C
+### C
+```C
 bool isPalindrome(int x) {
 
 }
+```
 
-C#
+### C#
+```C#
 public class Solution {
     public bool IsPalindrome(int x) {
 
     }
 }
+```
 
-JavaScript
+### JavaScript
+```JavaScript
 /**
  * @param {number} x
  * @return {boolean}
@@ -53,10 +66,13 @@ JavaScript
 var isPalindrome = function(x) {
 
 };
+```
 
-Ruby
+### Ruby
+```Ruby
 # @param {Integer} x
 # @return {Boolean}
 def is_palindrome(x)
 
 end
+```

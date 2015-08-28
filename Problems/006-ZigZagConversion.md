@@ -1,30 +1,42 @@
-The string "PAYPALISHIRING" is written in a zigzag pattern on a given number of rows like this: (you may want to display this pattern in a fixed font for better legibility) 
+# ZigZag Conversion
+
+The string `"PAYPALISHIRING"` is written in a zigzag pattern on a given number of rows like this: (you may want to display this pattern in a fixed font for better legibility)
+```
 P   A   H   N
 A P L S I I G
 Y   I   R
+```
+And then read line by line: `"PAHNAPLSIIGYIR"`
 
-And then read line by line: "PAHNAPLSIIGYIR"
-
-Write the code that will take a string and make this conversion given a number of rows: 
+Write the code that will take a string and make this conversion given a number of rows:
+```
 string convert(string text, int nRows);
-convert("PAYPALISHIRING", 3) should return "PAHNAPLSIIGYIR". 
+```
+`convert("PAYPALISHIRING", 3)` should return `"PAHNAPLSIIGYIR"`.
 
-C++
+## Solutions Sketch
+
+### C++
+```C++
 class Solution {
 public:
     string convert(string s, int numRows) {
 
     }
 };
+```
 
-Java
+### Java
+```Java
 public class Solution {
     public String convert(String s, int numRows) {
 
     }
 }
+```
 
-Python
+# Python
+```Python
 class Solution(object):
     def convert(self, s, numRows):
         """
@@ -32,20 +44,26 @@ class Solution(object):
         :type numRows: int
         :rtype: str
         """
+```
 
-C
+### C
+```C
 char* convert(char* s, int numRows) {
 
 }
+```
 
-C#
+### C#
+```C#
 public class Solution {
     public string Convert(string s, int numRows) {
 
     }
 }
+```
 
-JavaScript
+### JavaScript
+```JavaScript
 /**
  * @param {string} s
  * @param {number} numRows
@@ -54,11 +72,14 @@ JavaScript
 var convert = function(s, numRows) {
 
 };
+```
 
-Ruby
+### Ruby
+```Ruby
 # @param {String} s
 # @param {Integer} num_rows
 # @return {String}
 def convert(s, num_rows)
 
 end
+```

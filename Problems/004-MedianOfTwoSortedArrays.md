@@ -1,21 +1,30 @@
-There are two sorted arrays nums1 and nums2 of size m and n respectively. Find the median of the two sorted arrays. The overall run time complexity should be O(log (m+n)).
+# Median of Two Sorted Arrays
 
-C++
+There are two sorted arrays **nums1** and **nums2** of size M and N respectively. Find the median of the two sorted arrays. The overall run time complexity should be `O(log(M+N))`.
+
+## Solutions Sketch
+
+### C++
+```C++
 class Solution {
 public:
     double findMedianSortedArrays(vector<int>& nums1, vector<int>& nums2) {
 
     }
 };
+```
 
-Java
+### Java
+```Java
 public class Solution {
     public double findMedianSortedArrays(int[] nums1, int[] nums2) {
 
     }
 }
+```
 
-Python
+# Python
+```Python
 class Solution(object):
     def findMedianSortedArrays(self, nums1, nums2):
         """
@@ -23,20 +32,26 @@ class Solution(object):
         :type nums2: List[int]
         :rtype: float
         """
+```
 
-C
+### C
+```C
 double findMedianSortedArrays(int* nums1, int nums1Size, int* nums2, int nums2Size) {
 
 }
+```
 
-C#
+### C#
+```C#
 public class Solution {
     public double FindMedianSortedArrays(int[] nums1, int[] nums2) {
 
     }
 }
+```
 
-JavaScripts
+### JavaScript
+```JavaScript
 /**
  * @param {number[]} nums1
  * @param {number[]} nums2
@@ -45,11 +60,14 @@ JavaScripts
 var findMedianSortedArrays = function(nums1, nums2) {
 
 };
+```
 
-Ruby
+### Ruby
+```Ruby
 # @param {Integer[]} nums1
 # @param {Integer[]} nums2
 # @return {Float}
 def find_median_sorted_arrays(nums1, nums2)
 
 end
+```

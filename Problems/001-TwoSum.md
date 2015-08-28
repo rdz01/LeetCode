@@ -10,7 +10,7 @@ You may assume that each input would have exactly one solution.
 
 **Output:** index1=1, index2=2 
 
-## Code
+## Solutions Sketch
 
 ### C++
 ```C++

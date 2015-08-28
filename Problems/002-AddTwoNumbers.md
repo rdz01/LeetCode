@@ -1,9 +1,15 @@
+# Add Two Numbers
+
 You are given two linked lists representing two non-negative numbers. The digits are stored in reverse order and each of their nodes contain a single digit. Add the two numbers and return it as a linked list.
 
-Input: (2 -> 4 -> 3) + (5 -> 6 -> 4)
-Output: 7 -> 0 -> 8
+**Input:** (2 -> 4 -> 3) + (5 -> 6 -> 4)
 
-C++
+**Output:** 7 -> 0 -> 8
+
+## Solutions Sketch
+
+### C++
+```C++
 /**
  * Definition for singly-linked list.
  * struct ListNode {
@@ -18,8 +24,10 @@ public:
 
     }
 };
+```
 
-Java
+### Java
+```Java
 /**
  * Definition for singly-linked list.
  * public class ListNode {
@@ -33,8 +41,10 @@ public class Solution {
 
     }
 }
+```
 
-Python
+### Python
+```Python
 # Definition for singly-linked list.
 # class ListNode(object):
 #     def __init__(self, x):
@@ -48,8 +58,10 @@ class Solution(object):
         :type l2: ListNode
         :rtype: ListNode
         """
+```
 
-C
+### C
+```C
 /**
  * Definition for singly-linked list.
  * struct ListNode {
@@ -60,8 +72,10 @@ C
 struct ListNode* addTwoNumbers(struct ListNode* l1, struct ListNode* l2) {
 
 }
+```
 
-C#
+### C#
+```C#
 /**
  * Definition for singly-linked list.
  * public class ListNode {
@@ -75,8 +89,10 @@ public class Solution {
 
     }
 }
+```
 
-JavaScript
+### JavaScript
+```JavaScript
 /**
  * Definition for singly-linked list.
  * function ListNode(val) {
@@ -92,8 +108,10 @@ JavaScript
 var addTwoNumbers = function(l1, l2) {
 
 };
+```
 
-Ruby
+### Ruby
+```Ruby
 # Definition for singly-linked list.
 # class ListNode
 #     attr_accessor :val, :next
@@ -109,3 +127,4 @@ Ruby
 def add_two_numbers(l1, l2)
 
 end
+```
