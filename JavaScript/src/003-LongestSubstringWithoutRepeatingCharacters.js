@@ -6,7 +6,7 @@ var solution = function() {
      * @return {number}
      */
     var lengthOfLongestSubstring = function(s) {
-        if (!s || s.lenght === 0) {
+        if (s.length === 0) {
             return 0;
         }
 
