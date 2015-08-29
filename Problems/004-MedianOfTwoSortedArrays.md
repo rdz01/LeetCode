@@ -1,6 +1,6 @@
 # Median of Two Sorted Arrays
 
-There are two sorted arrays **nums1** and **nums2** of size M and N respectively. Find the median of the two sorted arrays. The overall run time complexity should be `O(log(M+N))`.
+There are two sorted arrays **nums1** and **nums2** of size N and M respectively. Find the median of the two sorted arrays. The overall run time complexity should be `O(Log(N+M))`.
 
 ## Solutions Sketch
 
