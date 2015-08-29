@@ -11,7 +11,7 @@ var solution = function() {
         }
 
         var i = 0;
-        var map = new Array(256);
+        var map = [];
         for (i = 0; i < 256; i++) {
             map[i] = -1;
         }
