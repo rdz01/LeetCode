@@ -41,7 +41,7 @@ double findMedianSortedArrays(int* nums1, int nums1Size, int* nums2, int nums2Si
 }
 ```
 
-### C#
+### C# 
 ```C#
 public class Solution {
     public double FindMedianSortedArrays(int[] nums1, int[] nums2) {

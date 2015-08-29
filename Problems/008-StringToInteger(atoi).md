@@ -55,7 +55,7 @@ int myAtoi(char* str) {
 }
 ```
 
-### C#
+### C# 
 ```C#
 public class Solution {
     public int MyAtoi(string str) {

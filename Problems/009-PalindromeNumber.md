@@ -51,7 +51,7 @@ bool isPalindrome(int x) {
 }
 ```
 
-### C#
+### C# 
 ```C#
 public class Solution {
     public bool IsPalindrome(int x) {

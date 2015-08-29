@@ -40,7 +40,7 @@ char* longestPalindrome(char* s) {
 }
 ```
 
-### C#
+### C# 
 ```C#
 public class Solution {
     public string LongestPalindrome(string s) {

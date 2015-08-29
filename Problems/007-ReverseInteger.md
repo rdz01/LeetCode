@@ -55,7 +55,7 @@ int reverse(int x) {
 }
 ```
 
-### C#
+### C# 
 ```C#
 public class Solution {
     public int Reverse(int x) {

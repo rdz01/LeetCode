@@ -40,7 +40,7 @@ int lengthOfLongestSubstring(char* s) {
 }
 ```
 
-### C#
+### C# 
 ```C#
 public class Solution {
     public int LengthOfLongestSubstring(string s) {

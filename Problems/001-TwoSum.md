@@ -52,7 +52,7 @@ int* twoSum(int* nums, int numsSize, int target) {
 }
 ```
 
-### C#
+### C# 
 ```C#
 public class Solution {
     public int[] TwoSum(int[] nums, int target) {
