@@ -28,6 +28,17 @@ namespace LeetCode.Test
         }
 
         [TestMethod]
+        public void GeneralTest_AllTheSame()
+        {
+            var input = "aaaaaaaaaa";
+
+            var solution = new _005_LongestPalindromicSubstring();
+            var result = solution.LongestPalindrome(input);
+
+            Assert.AreEqual("aaaaaaaaaa", result);
+        }
+
+        [TestMethod]
         public void EmptyStringTest()
         {
             var input = "";
@@ -50,7 +61,7 @@ namespace LeetCode.Test
         }
 
         [TestMethod]
-        public void MultiplePalindrome()
+        public void MultiplePalindrome_LongestAtStart()
         {
             var input = "aabccdccbaaeeggee";
 
@@ -58,6 +69,17 @@ namespace LeetCode.Test
             var result = solution.LongestPalindrome(input);
 
             Assert.AreEqual("aabccdccbaa", result);
+        }
+
+        [TestMethod]
+        public void MultiplePalindrome_LongestAtEnd()
+        {
+            var input = "eegffgeeaabcdcbaa";
+
+            var solution = new _005_LongestPalindromicSubstring();
+            var result = solution.LongestPalindrome(input);
+
+            Assert.AreEqual("aabcdcbaa", result);
         }
     }
 }

@@ -8,7 +8,7 @@
 
             var longestPalindrome = "";
             var longestPalindromeLength = 0;
-            for (int i = 0; i < s.Length; i++)
+            for (int i = 0; i < s.Length - longestPalindromeLength / 2; i++)
             {
                 var palindrome = GetPalindromeString(s, i, i);
                 if (palindrome.Length > longestPalindromeLength)
