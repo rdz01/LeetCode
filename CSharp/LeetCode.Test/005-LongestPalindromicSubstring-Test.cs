@@ -6,7 +6,7 @@ namespace LeetCode.Test
     public class _005_LongestPalindromicSubstring_Test
     {
         [TestMethod]
-        public void GeneralTest_even()
+        public void GeneralTest_odd()
         {
             var input = "abcdefgfedcba";
 
@@ -17,7 +17,7 @@ namespace LeetCode.Test
         }
 
         [TestMethod]
-        public void GeneralTest_odd()
+        public void GeneralTest_even()
         {
             var input = "abcdefggfedcba";
 
