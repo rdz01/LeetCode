@@ -36,6 +36,9 @@
     <ClInclude Include="003-LongestSubstringWithoutRepeatingCharacters.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="005-LongestPalindromicSubstring.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -51,6 +54,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="003-LongestSubstringWithoutRepeatingCharacters.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="005-LongestPalindromicSubstring.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
