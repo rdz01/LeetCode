@@ -6,7 +6,7 @@ namespace LeetCode.Test
     public class _005_LongestPalindromicSubstring_Test
     {
         [TestMethod]
-        public void GeneralTest_odd()
+        public void LongestPalindromeTest_Odd()
         {
             var input = "abcdefgfedcba";
 
@@ -17,7 +17,7 @@ namespace LeetCode.Test
         }
 
         [TestMethod]
-        public void GeneralTest_even()
+        public void LongestPalindromeTest_Even()
         {
             var input = "abcdefggfedcba";
 
@@ -28,7 +28,18 @@ namespace LeetCode.Test
         }
 
         [TestMethod]
-        public void GeneralTest_AllTheSame()
+        public void LongestPalindromeTest_AllTheSame_Odd()
+        {
+            var input = "ccc";
+
+            var solution = new _005_LongestPalindromicSubstring();
+            var result = solution.LongestPalindrome(input);
+
+            Assert.AreEqual("ccc", result);
+        }
+
+        [TestMethod]
+        public void LongestPalindromeTest_AllTheSame_Even()
         {
             var input = "aaaaaaaaaa";
 
@@ -39,7 +50,7 @@ namespace LeetCode.Test
         }
 
         [TestMethod]
-        public void EmptyStringTest()
+        public void LongestPalindromeTest_EmptyString()
         {
             var input = "";
 
@@ -50,7 +61,7 @@ namespace LeetCode.Test
         }
 
         [TestMethod]
-        public void OneCharacterStringTest()
+        public void LongestPalindromeTest_OneCharacterString()
         {
             var input = "a";
 
@@ -61,7 +72,7 @@ namespace LeetCode.Test
         }
 
         [TestMethod]
-        public void MultiplePalindrome_LongestAtStart()
+        public void LongestPalindromeTest_MultiplePalindrome_LongestAtStart()
         {
             var input = "aabccdccbaaeeggee";
 
@@ -72,7 +83,7 @@ namespace LeetCode.Test
         }
 
         [TestMethod]
-        public void MultiplePalindrome_LongestAtEnd()
+        public void LongestPalindromeTest_MultiplePalindrome_LongestAtEnd()
         {
             var input = "eegffgeeaabcdcbaa";
 
@@ -80,6 +91,28 @@ namespace LeetCode.Test
             var result = solution.LongestPalindrome(input);
 
             Assert.AreEqual("aabcdcbaa", result);
+        }
+
+        [TestMethod]
+        public void LongestPalindromeTest_MultipleMixPalindrome()
+        {
+            var input = "abcdcbbcd";
+
+            var solution = new _005_LongestPalindromicSubstring();
+            var result = solution.LongestPalindrome(input);
+
+            Assert.AreEqual("dcbbcd", result);
+        }
+
+        [TestMethod]
+        public void LongestPalindromeTest_MultipleMixPalindrome_2()
+        {
+            var input = "abcddcbebcd";
+
+            var solution = new _005_LongestPalindromicSubstring();
+            var result = solution.LongestPalindrome(input);
+
+            Assert.AreEqual("dcbebcd", result);
         }
     }
 }

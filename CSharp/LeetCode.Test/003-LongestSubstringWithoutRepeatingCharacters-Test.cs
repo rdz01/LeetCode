@@ -6,7 +6,7 @@ namespace LeetCode.Test
     public class _003_LongestSubstringWithoutRepeatingCharacters_Test
     {
         [TestMethod]
-        public void GeneralTest()
+        public void LengthOfLongestSubstringTest()
         {
             var input = "abcabcbb";
 
@@ -17,7 +17,7 @@ namespace LeetCode.Test
         }
 
         [TestMethod]
-        public void RepeatCharsTest()
+        public void LengthOfLongestSubstringTest_RepeatChars()
         {
             var input = "bbbbb";
 
@@ -28,7 +28,7 @@ namespace LeetCode.Test
         }
 
         [TestMethod]
-        public void EmptyInputTest()
+        public void LengthOfLongestSubstringTest_EmptyInput()
         {
             var solution = new _003_LongestSubstringWithoutRepeatingCharacters();
             var result = solution.LengthOfLongestSubstring("");
@@ -37,7 +37,7 @@ namespace LeetCode.Test
         }
 
         [TestMethod]
-        public void LongStringTest()
+        public void LengthOfLongestSubstringTest_LongString()
         {
             var input = "abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz";
 
@@ -48,7 +48,7 @@ namespace LeetCode.Test
         }
 
         [TestMethod]
-        public void LongStringTest_HaveShortRepeat()
+        public void LengthOfLongestSubstringTest_LongString_HaveShortRepeat()
         {
             var input = "abcdefghijklmnopqrstuvwxyzabcdefghijk  lmnopqrstuvwxyz";
 
