@@ -30,7 +30,17 @@ namespace LeetCodeTest
 			Assert::AreEqual((string) "abcdefggfedcba", result);
 		}
 
-		TEST_METHOD(LongestPalindromeTest_AllTheSame)
+		TEST_METHOD(LongestPalindromeTest_AllTheSame_Odd)
+		{
+			string input = "ccc";
+
+			_005_LongestPalindromicSubstring solution;
+			string result = solution.longestPalindrome(input);
+
+			Assert::AreEqual((string) "ccc", result);
+		}
+
+		TEST_METHOD(LongestPalindromeTest_AllTheSame_Even)
 		{
 			string input = "aaaaaaaaaa";
 
@@ -78,6 +88,24 @@ namespace LeetCodeTest
 			string result = solution.longestPalindrome(input);
 
 			Assert::AreEqual((string) "aabcdcbaa", result);
+		}
+
+		TEST_METHOD(LongestPalindromeTest_MultipleMixPalindrome) {
+			string input = "abcdcbbcd";
+
+			_005_LongestPalindromicSubstring solution;
+			string result = solution.longestPalindrome(input);
+
+			Assert::AreEqual((string) "dcbbcd", result);
+		}
+
+		TEST_METHOD(LongestPalindromeTest_MultipleMixPalindrome_2) {
+			string input = "abcddcbebcd";
+
+			_005_LongestPalindromicSubstring solution;
+			string result = solution.longestPalindrome(input);
+
+			Assert::AreEqual((string) "dcbebcd", result);
 		}
 	};
 }
