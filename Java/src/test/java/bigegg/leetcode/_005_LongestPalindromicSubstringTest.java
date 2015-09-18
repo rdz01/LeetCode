@@ -6,7 +6,7 @@ import static org.junit.Assert.assertEquals;
 
 public class _005_LongestPalindromicSubstringTest {
     @Test
-    public void GeneralTest_Odd() {
+    public void testLongestPalindrome_Odd() {
         String input = "abcdefgfedcba";
 
         _005_LongestPalindromicSubstring solution = new _005_LongestPalindromicSubstring();
@@ -16,7 +16,7 @@ public class _005_LongestPalindromicSubstringTest {
     }
 
     @Test
-    public void GeneralTest_Even() {
+    public void testLongestPalindrome_Even() {
         String input = "abcdefggfedcba";
 
         _005_LongestPalindromicSubstring solution = new _005_LongestPalindromicSubstring();
@@ -26,7 +26,7 @@ public class _005_LongestPalindromicSubstringTest {
     }
 
     @Test
-    public void GeneralTest_AllTheSame_Odd() {
+    public void testLongestPalindrome_AllTheSame_Odd() {
         String input = "ccc";
 
         _005_LongestPalindromicSubstring solution = new _005_LongestPalindromicSubstring();
@@ -36,7 +36,7 @@ public class _005_LongestPalindromicSubstringTest {
     }
 
     @Test
-    public void GeneralTest_AllTheSame_Even() {
+    public void testLongestPalindrome_AllTheSame_Even() {
         String input = "aaaaaaaaaa";
 
         _005_LongestPalindromicSubstring solution = new _005_LongestPalindromicSubstring();
@@ -46,7 +46,7 @@ public class _005_LongestPalindromicSubstringTest {
     }
 
     @Test
-    public void EmptyStringTest() {
+    public void testLongestPalindrome_EmptyString() {
         String input = "";
 
         _005_LongestPalindromicSubstring solution = new _005_LongestPalindromicSubstring();
@@ -56,7 +56,7 @@ public class _005_LongestPalindromicSubstringTest {
     }
 
     @Test
-    public void OneCharacterStringTest() {
+    public void testLongestPalindrome_OneCharacter() {
         String input = "a";
 
         _005_LongestPalindromicSubstring solution = new _005_LongestPalindromicSubstring();
@@ -66,7 +66,7 @@ public class _005_LongestPalindromicSubstringTest {
     }
 
     @Test
-    public void MultiplePalindrome_LongestAtStart() {
+    public void testLongestPalindrome_MultiplePalindrome_LongestAtStart() {
         String input = "aabccdccbaaeeggee";
 
         _005_LongestPalindromicSubstring solution = new _005_LongestPalindromicSubstring();
@@ -76,7 +76,7 @@ public class _005_LongestPalindromicSubstringTest {
     }
 
     @Test
-    public void MultiplePalindrome_LongestAtEnd() {
+    public void testLongestPalindrome_MultiplePalindrome_LongestAtEnd() {
         String input = "eegffgeeaabcdcbaa";
 
         _005_LongestPalindromicSubstring solution = new _005_LongestPalindromicSubstring();
