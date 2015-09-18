@@ -64,7 +64,7 @@ namespace LeetCode.Test
         }
 
         [TestMethod]
-        public void AddTwoNumbersTest_L1Longger()
+        public void AddTwoNumbersTest_L1Longer()
         {
             var link1 = GenerateList(new int[] { 2, 4, 3, 1 });
             var link2 = GenerateList(new int[] { 5, 6, 4 });
@@ -76,7 +76,7 @@ namespace LeetCode.Test
         }
 
         [TestMethod]
-        public void AddTwoNumbersTest_L1Longger_2()
+        public void AddTwoNumbersTest_L1Longer_2()
         {
             var link1 = GenerateList(new int[] { 1, 8 });
             var link2 = GenerateList(new int[] { 0 });
@@ -100,7 +100,7 @@ namespace LeetCode.Test
         }
 
         [TestMethod]
-        public void AddTwoNumbersTest_L2Longger()
+        public void AddTwoNumbersTest_L2Longer()
         {
             var link1 = GenerateList(new int[] { 2, 4, 3 });
             var link2 = GenerateList(new int[] { 5, 6, 4, 3 });
@@ -112,7 +112,7 @@ namespace LeetCode.Test
         }
 
         [TestMethod]
-        public void AddTwoNumbersTest_L2Longger_2()
+        public void AddTwoNumbersTest_L2Longer_2()
         {
             var link1 = GenerateList(new int[] { 0 });
             var link2 = GenerateList(new int[] { 1, 8 });
