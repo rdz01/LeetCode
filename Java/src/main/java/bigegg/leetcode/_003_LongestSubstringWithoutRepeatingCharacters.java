@@ -1,6 +1,6 @@
 package bigegg.leetcode;
 
-public class _003_LongestSubstringWithoutRepeatingCharacters {
+public final class _003_LongestSubstringWithoutRepeatingCharacters {
     public int lengthOfLongestSubstring(String s) {
         if (s == null || s.length() == 0) {
             return 0;

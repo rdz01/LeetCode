@@ -76,7 +76,7 @@ namespace LeetCodeTest
 			AssertList(result, resultNums, 4);
 		}
 
-		TEST_METHOD(AddTwoNumbersTest_L1Longger)
+		TEST_METHOD(AddTwoNumbersTest_L1Longer)
 		{
 			int nums1[4] = { 2, 4, 3, 1 };
 			ListNode *link1 = GenerateList(nums1, 4);
@@ -90,7 +90,7 @@ namespace LeetCodeTest
 			AssertList(result, resultNums, 4);
 		}
 
-		TEST_METHOD(AddTwoNumbersTest_L1Longger_2)
+		TEST_METHOD(AddTwoNumbersTest_L1Longer_2)
 		{
 			int nums1[2] = { 1, 8 };
 			ListNode *link1 = GenerateList(nums1, 2);
@@ -117,7 +117,7 @@ namespace LeetCodeTest
 			AssertList(result, resultNums, 2);
 		}
 
-		TEST_METHOD(AddTwoNumbersTest_L2Longger)
+		TEST_METHOD(AddTwoNumbersTest_L2Longer)
 		{
 			int nums1[3] = { 2, 4, 3 };
 			ListNode *link1 = GenerateList(nums1, 3);
@@ -131,7 +131,7 @@ namespace LeetCodeTest
 			AssertList(result, resultNums, 4);
 		}
 
-		TEST_METHOD(AddTwoNumbersTest_L2Longger_2)
+		TEST_METHOD(AddTwoNumbersTest_L2Longer_2)
 		{
 			int nums1[1] = { 0 };
 			ListNode *link1 = GenerateList(nums1, 1);

@@ -3,7 +3,7 @@ package bigegg.leetcode;
 import java.util.HashMap;
 import java.util.Map;
 
-public class _001_TwoSum {
+public final class _001_TwoSum {
     public int[] twoSum(int[] nums, int target) {
         Map<Integer, Integer> restMap = new HashMap<Integer, Integer>();
         int[] result = {0, 0};

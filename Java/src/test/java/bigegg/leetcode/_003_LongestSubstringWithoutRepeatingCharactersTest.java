@@ -1,14 +1,12 @@
 package bigegg.leetcode;
 
-import junit.framework.Assert;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
 
 public class _003_LongestSubstringWithoutRepeatingCharactersTest {
     @Test
-    public void GeneralTest() throws  Exception
-    {
+    public void testLengthOfLongestSubstring() throws Exception {
         String input = "abcabcbb";
 
         _003_LongestSubstringWithoutRepeatingCharacters solution = new _003_LongestSubstringWithoutRepeatingCharacters();
@@ -18,8 +16,7 @@ public class _003_LongestSubstringWithoutRepeatingCharactersTest {
     }
 
     @Test
-    public void RepeatCharsTest()throws  Exception
-    {
+    public void testLengthOfLongestSubstring_RepeatChars() throws Exception {
         String input = "bbbbb";
 
         _003_LongestSubstringWithoutRepeatingCharacters solution = new _003_LongestSubstringWithoutRepeatingCharacters();
@@ -29,8 +26,7 @@ public class _003_LongestSubstringWithoutRepeatingCharactersTest {
     }
 
     @Test
-    public void EmptyInputTest()throws  Exception
-    {
+    public void testLengthOfLongestSubstring_EmptyInput() throws Exception {
         _003_LongestSubstringWithoutRepeatingCharacters solution = new _003_LongestSubstringWithoutRepeatingCharacters();
         int result = solution.lengthOfLongestSubstring("");
 
@@ -38,8 +34,7 @@ public class _003_LongestSubstringWithoutRepeatingCharactersTest {
     }
 
     @Test
-    public void LongStringTest()throws  Exception
-    {
+    public void testLengthOfLongestSubstring_LongString() throws Exception {
         String input = "abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz";
 
         _003_LongestSubstringWithoutRepeatingCharacters solution = new _003_LongestSubstringWithoutRepeatingCharacters();
@@ -49,8 +44,7 @@ public class _003_LongestSubstringWithoutRepeatingCharactersTest {
     }
 
     @Test
-    public void LongStringTest_HaveShortRepeat()throws  Exception
-    {
+    public void testLengthOfLongestSubstring_LongString_HaveShortRepeat() throws Exception {
         String input = "abcdefghijklmnopqrstuvwxyzabcdefghijk  lmnopqrstuvwxyz";
 
         _003_LongestSubstringWithoutRepeatingCharacters solution = new _003_LongestSubstringWithoutRepeatingCharacters();

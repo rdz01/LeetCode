@@ -17,7 +17,14 @@ describe('Longest Substring Without Repeating Characters Tests', function() {
         expect(result).toEqual(input);
     });
 
-    it('should return the string when it contains same characters', function() {
+    it('should return the string when it contains same odd characters', function() {
+        var input = 'ccc';
+        var result = solution.longestPalindrome(input);
+
+        expect(result).toEqual(input);
+    });
+
+    it('should return the string when it contains same even characters', function() {
         var input = 'aaaaaaaaaa';
         var result = solution.longestPalindrome(input);
 
@@ -51,6 +58,20 @@ describe('Longest Substring Without Repeating Characters Tests', function() {
             var result = solution.longestPalindrome(input);
 
             expect(result).toEqual('aabccdccbaa');
+        });
+
+        it('mixed palindromeic', function() {
+            var input = 'abcdcbbcd';
+            var result = solution.longestPalindrome(input);
+
+            expect(result).toEqual('dcbbcd');
+        });
+
+        it('mixed palindromeic 2', function() {
+            var input = 'abcddcbebcd';
+            var result = solution.longestPalindrome(input);
+
+            expect(result).toEqual('dcbebcd');
         });
     });
 });
