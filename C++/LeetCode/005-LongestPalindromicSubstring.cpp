@@ -15,7 +15,7 @@ string _005_LongestPalindromicSubstring::longestPalindrome(string s)
 {
 	if (s.size() <= 1) { return s; }
 
-	int n = s.size();
+	int n = (int) s.size();
 	int n2 = n * 2 + 1;
 
 	char *s2 = new char[n2];
@@ -35,7 +35,7 @@ string _005_LongestPalindromicSubstring::longestPalindrome(string s)
 	{
 		if (range_max > i)
 		{
-			p[i] = min(p[center << 1 - i], range_max - i);
+			p[i] = min(p[(center << 1) - i], range_max - i);
 		}
 		else
 		{
