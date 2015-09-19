@@ -24,6 +24,9 @@
     <ClCompile Include="003-LongestSubstringWithoutRepeatingCharacters.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="005-LongestPalindromicSubstring.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="001-TwoSum.h">
@@ -33,6 +36,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="003-LongestSubstringWithoutRepeatingCharacters.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="005-LongestPalindromicSubstring.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
