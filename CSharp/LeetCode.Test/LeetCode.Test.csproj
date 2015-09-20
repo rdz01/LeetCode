@@ -57,6 +57,7 @@
     <Compile Include="002-AddTwoNumbers-Test.cs" />
     <Compile Include="003-LongestSubstringWithoutRepeatingCharacters-Test.cs" />
     <Compile Include="005-LongestPalindromicSubstring-Test.cs" />
+    <Compile Include="004-MedianOfTwoSortedArrays-Test.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\LeetCode\LeetCode.csproj">

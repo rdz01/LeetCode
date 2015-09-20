@@ -43,6 +43,7 @@
     <Compile Include="001-TwoSum.cs" />
     <Compile Include="002-AddTwoNumbers.cs" />
     <Compile Include="003-LongestSubstringWithoutRepeatingCharacters.cs" />
+    <Compile Include="004-MedianOfTwoSortedArrays.cs" />
     <Compile Include="005-LongestPalindromicSubstring.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
