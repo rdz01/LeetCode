@@ -26,7 +26,19 @@ namespace LeetCode.Test
             var solution = new _004_MedianOfTwoSortedArrays();
             var result = solution.FindMedianSortedArrays(nums1, nums2);
 
-            Assert.AreEqual(4, result);
+            Assert.AreEqual(4.5, result);
+        }
+
+        [TestMethod]
+        public void FindMedianSortedArraysTest_General_Even_2()
+        {
+            int[] nums1 = { 2 };
+            int[] nums2 = { 1, 3, 4 };
+
+            var solution = new _004_MedianOfTwoSortedArrays();
+            var result = solution.FindMedianSortedArrays(nums1, nums2);
+
+            Assert.AreEqual(2.5, result);
         }
 
         [TestMethod]
@@ -81,12 +93,49 @@ namespace LeetCode.Test
         public void FindMedianSortedArraysTest_MixedArray()
         {
             int[] nums1 = { 1, 2, 3, 4 };
-            int[] nums2 = { 3, 4, 5, 5, 6 };
+            int[] nums2 = { 3, 4, 5, 6 };
 
             var solution = new _004_MedianOfTwoSortedArrays();
             var result = solution.FindMedianSortedArrays(nums1, nums2);
 
-            Assert.AreEqual(3, result);
+            Assert.AreEqual(3.5, result);
+        }
+
+        [TestMethod]
+        public void FindMedianSortedArraysTest_NotMixedArray()
+        {
+            int[] nums1 = { 1 };
+            int[] nums2 = { 2, 3, 4 };
+
+            var solution = new _004_MedianOfTwoSortedArrays();
+            var result = solution.FindMedianSortedArrays(nums1, nums2);
+
+            Assert.AreEqual(2.5, result);
+        }
+
+        [TestMethod]
+        public void FindMedianSortedArraysTest_NotMixedArray_2()
+        {
+            int[] nums1 = { 1 };
+            int[] nums2 = { 2, 3, 4, 5, 6 };
+
+            var solution = new _004_MedianOfTwoSortedArrays();
+            var result = solution.FindMedianSortedArrays(nums1, nums2);
+
+            Assert.AreEqual(3.5, result);
+        }
+
+
+        [TestMethod]
+        public void FindMedianSortedArraysTest_DuplicateItems()
+        {
+            int[] nums1 = { 1, 1, 3, 3 };
+            int[] nums2 = { 1, 1, 3, 3 };
+
+            var solution = new _004_MedianOfTwoSortedArrays();
+            var result = solution.FindMedianSortedArrays(nums1, nums2);
+
+            Assert.AreEqual(2, result);
         }
     }
 }
