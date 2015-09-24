@@ -1,6 +1,7 @@
 #pragma once
 #include <string>
 #include "common.h"
+
 using namespace std;
 
 class LEETCODE_API _003_LongestSubstringWithoutRepeatingCharacters
