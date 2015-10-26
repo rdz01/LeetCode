@@ -46,6 +46,7 @@
     <Compile Include="004-MedianOfTwoSortedArrays.cs" />
     <Compile Include="005-LongestPalindromicSubstring.cs" />
     <Compile Include="006-ZigZagConversion.cs" />
+    <Compile Include="007-ReverseInteger.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
