@@ -23,4 +23,4 @@ The solutions for LeetCode problems. Try to solve them with all languages.
 |6|[ZigZag Conversion](./Problems/006-ZigZagConversion.md)| C C++ [C#](./CSharp/LeetCode/006-ZigZagConversion.cs)(148ms) Java JavaScript Python Ruby | O(N) | O(N) | |
 |7|[Reverse Integer](./Problems/007-ReverseInteger.md)| C C++ [C#](./CSharp/LeetCode/007-ReverseInteger.cs)(64ms) Java JavaScript Python Ruby | O(1) | O(1) | |
 |8|[String to Integer (atoi)](./Problems/008-StringToInteger(atoi).md)| C C++ [C#](./CSharp/LeetCode/008-StringToInteger(atoi).cs)(144ms) Java JavaScript Python Ruby | | | |
-|9|[Palindrome Number](./Problems/009-PalindromeNumber.md)| C C++ [C#](./CSharp/LeetCode/009-PalindromeNumber.cs)(200ms) Java JavaScript Python Ruby | | | |
+|9|[Palindrome Number](./Problems/009-PalindromeNumber.md)| C C++ [C#](./CSharp/LeetCode/009-PalindromeNumber.cs)(168ms) Java JavaScript Python Ruby | | | |

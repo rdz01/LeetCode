@@ -5,22 +5,19 @@
         public bool IsPalindrome(int x)
         {
             if (x < 0) { return false; }
+            if (x < 10) { return true; }
 
-            var num = 1;
-            while (x / num >= 10) { num *= 10; }
-
-            while (x > 0)
+            var temp = x;
+            var y = 0;
+            var digit = 0;
+            while (temp != 0)
             {
-                var firstNumber = x / num;
-                var lastNumber = x % 10;
-
-                if (firstNumber != lastNumber) { return false; }
-
-                x = x % num / 10;
-                num /= 100;
+                digit = temp % 10;
+                y = y * 10 + digit;
+                temp /= 10;
             }
 
-            return true;
+            return x == y;
         }
     }
 }
