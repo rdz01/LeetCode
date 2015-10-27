@@ -48,6 +48,7 @@
     <Compile Include="006-ZigZagConversion.cs" />
     <Compile Include="007-ReverseInteger.cs" />
     <Compile Include="008-StringToInteger%28atoi%29.cs" />
+    <Compile Include="009-PalindromeNumber.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
