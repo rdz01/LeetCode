@@ -6,14 +6,14 @@
         {
             if (string.IsNullOrWhiteSpace(str)) { return 0; }
 
-            var sign = 1;
+            var navigate = false;
             var index = 0;
 
             while (index < str.Length && str[index] == ' ') { index++; }
 
             if (str[index] == '-')
             {
-                sign = -1;
+                navigate = true;
                 index++;
             }
             else if (str[index] == '+')
@@ -27,19 +27,19 @@
             var result = 0;
             for (; index < str.Length; index++)
             {
-                var ch = str[index];
-                if (ch < '0' || ch > '9') { break; }
+                var digit = str[index] - '0';
+                if (digit < 0 || digit > 9) { break; }
 
                 if (result > positiveOverflowHead ||
-                    (result == positiveOverflowHead && ch - '0' > positiveOverflowTail))
+                    (result == positiveOverflowHead && digit > positiveOverflowTail))
                 {
-                    return sign == 1 ? int.MaxValue : int.MinValue;
+                    return navigate ? int.MinValue : int.MaxValue;
                 }
 
-                result = result * 10 + (ch - '0');
+                result = result * 10 + digit;
             }
 
-            return result * sign;
+            return navigate ? -result : result;
         }
     }
 }
