@@ -6,7 +6,7 @@ namespace LeetCode.Test
     public class _006_ZigZagConversion_Test
     {
         [TestMethod]
-        public void GeneralTests()
+        public void ConvertTest_General()
         {
             var input = "PAYPALISHIRING";
 
@@ -23,7 +23,7 @@ namespace LeetCode.Test
         }
 
         [TestMethod]
-        public void RowNumberTest_EqualOne()
+        public void ConvertTest_RowNumberEqualOne()
         {
             var input = "PAYPALISHIRING";
 
@@ -34,7 +34,7 @@ namespace LeetCode.Test
         }
 
         [TestMethod]
-        public void RowNumberTest_EqualZero()
+        public void ConvertTest_RowNumberEqualZero()
         {
             var input = "PAYPALISHIRING";
 
@@ -45,7 +45,7 @@ namespace LeetCode.Test
         }
 
         [TestMethod]
-        public void EmptyStringTest()
+        public void ConvertTest_EmptyString()
         {
             var input = string.Empty;
 

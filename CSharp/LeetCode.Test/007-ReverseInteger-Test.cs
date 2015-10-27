@@ -6,7 +6,7 @@ namespace LeetCode.Test
     public class _007_ReverseInteger_Test
     {
         [TestMethod]
-        public void GeneralTest_Positive()
+        public void ReverseTest_Positive()
         {
             var solution = new _007_ReverseInteger();
             var result = solution.Reverse(1);
@@ -20,7 +20,7 @@ namespace LeetCode.Test
         }
 
         [TestMethod]
-        public void GeneralTest_Negative()
+        public void ReverseTest_Negative()
         {
             var solution = new _007_ReverseInteger();
             var result = solution.Reverse(-1);
@@ -34,7 +34,7 @@ namespace LeetCode.Test
         }
 
         [TestMethod]
-        public void GeneralTest_EqualZero()
+        public void ReverseTest_EqualZero()
         {
             var solution = new _007_ReverseInteger();
             var result = solution.Reverse(0);
@@ -42,7 +42,7 @@ namespace LeetCode.Test
         }
 
         [TestMethod]
-        public void OverflowTest_Positive()
+        public void ReverseTest_PositiveOverflow()
         {
             var solution = new _007_ReverseInteger();
             var result = solution.Reverse(1534236469);
@@ -50,7 +50,7 @@ namespace LeetCode.Test
         }
 
         [TestMethod]
-        public void OverflowTest_Negative()
+        public void ReverseTest_NegativeOverflow()
         {
             var solution = new _007_ReverseInteger();
             var result = solution.Reverse(-1534236469);
