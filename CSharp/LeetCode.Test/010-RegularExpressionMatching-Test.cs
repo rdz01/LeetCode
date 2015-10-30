@@ -38,6 +38,12 @@ namespace LeetCode.Test
 
             result = solution.IsMatch("aaa", "a*");
             Assert.IsTrue(result);
+
+            result = solution.IsMatch("aaaa", "b*");
+            Assert.IsFalse(result);
+
+            result = solution.IsMatch("abcd", "d*");
+            Assert.IsFalse(result);
         }
 
         [TestMethod]
@@ -86,6 +92,9 @@ namespace LeetCode.Test
 
             result = solution.IsMatch("bbbba", ".*a*a");
             Assert.IsTrue(result);
+
+            result = solution.IsMatch("ab", ".*c");
+            Assert.IsFalse(result);
         }
 
         [TestMethod]
