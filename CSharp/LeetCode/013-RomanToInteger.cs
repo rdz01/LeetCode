@@ -1,23 +1,36 @@
-﻿namespace LeetCode
+﻿using System.Collections.Generic;
+
+namespace LeetCode
 {
     public class _013_RomanToInteger
     {
+        static IDictionary<int, int> mapping;
+
+        static _013_RomanToInteger()
+        {
+            mapping = new Dictionary<int, int>();
+            mapping.Add('M', 1000);
+            mapping.Add('D', 500);
+            mapping.Add('C', 100);
+            mapping.Add('L', 50);
+            mapping.Add('X', 10);
+            mapping.Add('V', 5);
+            mapping.Add('I', 1);
+        }
+
         public int RomanToInt(string s)
         {
-            string[] symbol = { "MMM", "MM", "M", "CM", "DCCC", "DCC", "DC", "D", "CD", "CCC", "CC", "C", "XC", "LXXX", "LXX", "LX", "L", "XL", "XXX", "XX", "X", "IX", "VIII", "VII", "VI", "V", "IV", "III", "II", "I" };
-            int[] value = { 3000, 2000, 1000, 900, 800, 700, 600, 500, 400, 300, 200, 100, 90, 80, 70, 60, 50, 40, 30, 20, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1 };
-
-            var index = 0;
-            var strIndex = 0;
             var result = 0;
-            while (strIndex < s.Length)
+            for (int i = 0; i < s.Length; i++)
             {
-                if (s.IndexOf(symbol[index], strIndex) == strIndex)
+                if (i > 0 && mapping[s[i]] > mapping[s[i - 1]])
                 {
-                    strIndex += symbol[index].Length;
-                    result += value[index];
+                    result += mapping[s[i]] - mapping[s[i - 1]] * 2;
                 }
-                index++;
+                else
+                {
+                    result += mapping[s[i]];
+                }
             }
 
             return result;
