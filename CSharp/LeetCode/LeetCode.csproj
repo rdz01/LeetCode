@@ -51,6 +51,7 @@
     <Compile Include="009-PalindromeNumber.cs" />
     <Compile Include="010-RegularExpressionMatching.cs" />
     <Compile Include="011-ContainerWithMostWater.cs" />
+    <Compile Include="012-IntegerToRoman.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
