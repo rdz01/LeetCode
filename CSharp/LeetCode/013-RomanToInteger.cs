@@ -1,21 +1,20 @@
-﻿using System.Collections.Generic;
-
-namespace LeetCode
+﻿namespace LeetCode
 {
     public class _013_RomanToInteger
     {
-        static IDictionary<int, int> mapping;
-
-        static _013_RomanToInteger()
+        int Mapping(char ch)
         {
-            mapping = new Dictionary<int, int>();
-            mapping.Add('M', 1000);
-            mapping.Add('D', 500);
-            mapping.Add('C', 100);
-            mapping.Add('L', 50);
-            mapping.Add('X', 10);
-            mapping.Add('V', 5);
-            mapping.Add('I', 1);
+            switch (ch)
+            {
+                case 'I': return 1;
+                case 'V': return 5;
+                case 'X': return 10;
+                case 'L': return 50;
+                case 'C': return 100;
+                case 'D': return 500;
+                case 'M': return 1000;
+                default: return 0;
+            }
         }
 
         public int RomanToInt(string s)
@@ -23,13 +22,13 @@ namespace LeetCode
             var result = 0;
             for (int i = 0; i < s.Length; i++)
             {
-                if (i > 0 && mapping[s[i]] > mapping[s[i - 1]])
+                if (i > 0 && Mapping(s[i]) > Mapping(s[i - 1]))
                 {
-                    result += mapping[s[i]] - mapping[s[i - 1]] * 2;
+                    result += Mapping(s[i]) - Mapping(s[i - 1]) * 2;
                 }
                 else
                 {
-                    result += mapping[s[i]];
+                    result += Mapping(s[i]);
                 }
             }
 
