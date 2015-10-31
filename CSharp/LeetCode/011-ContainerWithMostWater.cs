@@ -8,6 +8,7 @@
             var end = height.Length - 1;
             var result = 0;
             var area = 0;
+            var temp = 0;
 
             while (start < end)
             {
@@ -15,11 +16,19 @@
                 result = result < area ? area : result;
                 if (height[start] <= height[end])
                 {
-                    start++;
+                    temp = height[start];
+                    do
+                    {
+                        start++;
+                    } while (start < end && height[start] <= temp);
                 }
                 else
                 {
-                    end--;
+                    temp = height[end];
+                    do
+                    {
+                        end--;
+                    } while (start < end && height[end] <= temp);
                 }
             }
             return result;
