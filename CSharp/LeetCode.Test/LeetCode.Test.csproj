@@ -57,6 +57,7 @@
     <Compile Include="008-StringToInteger-Test.cs" />
     <Compile Include="009-PalindromeNumber-Test.cs" />
     <Compile Include="010-RegularExpressionMatching-Test.cs" />
+    <Compile Include="011_ContainerWithMostWater-Test.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="001-TwoSume-Test.cs" />
     <Compile Include="002-AddTwoNumbers-Test.cs" />
