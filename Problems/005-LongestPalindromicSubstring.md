@@ -23,7 +23,7 @@ public class Solution {
 }
 ```
 
-# Python
+### Python
 ```Python
 class Solution(object):
     def longestPalindrome(self, s):

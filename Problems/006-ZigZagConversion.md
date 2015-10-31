@@ -35,7 +35,7 @@ public class Solution {
 }
 ```
 
-# Python
+### Python
 ```Python
 class Solution(object):
     def convert(self, s, numRows):
