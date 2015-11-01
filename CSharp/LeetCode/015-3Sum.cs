@@ -13,65 +13,54 @@ namespace LeetCode
             Suffle(nums);
             Quick3WaySort(nums, 0, nums.Length - 1);
 
-            int rest = 0;
-            for (var lo = 0; lo < nums.Length && nums[lo] <= 0; lo++)
+            if (nums[0] > 0) { return result; }
+            if (nums[nums.Length - 1] < 0) { return result; }
+
+            int sumValue = 0;
+            int lo = 0, hi = 0;
+            for (var index = 0; index < nums.Length - 2 && nums[index] <= 0; index++)
             {
-                for (int hi = nums.Length - 1; hi > lo && nums[hi] >= 0; hi--)
+                lo = index + 1;
+                hi = nums.Length - 1;
+
+                while (lo < hi)
                 {
-                    rest = 0 - nums[lo] - nums[hi];
-                    if (rest > nums[hi] || rest < nums[lo]) { continue; }
-
-                    var restIndex = BinarySearch(nums, lo + 1, hi - 1, rest);
-                    if (restIndex != -1)
+                    sumValue = nums[index] + nums[lo] + nums[hi];
+                    if (sumValue < 0)
                     {
-                        result.Add(new List<int>() { nums[lo], rest, nums[hi] });
+                        do
+                        {
+                            lo++;
+                        } while (lo < hi && nums[lo - 1] == nums[lo]);
                     }
-
-                    while (hi - 1 > lo && nums[hi - 1] == nums[hi])
+                    else if (sumValue > 0)
                     {
-                        hi--;
+                        do
+                        {
+                            hi--;
+                        } while (lo < hi && nums[hi + 1] == nums[hi]);
+                    }
+                    else
+                    {
+                        result.Add(new List<int>() { nums[index], nums[lo], nums[hi] });
+                        do
+                        {
+                            lo++;
+                        } while (lo < hi && nums[lo - 1] == nums[lo]);
+                        do
+                        {
+                            hi--;
+                        } while (lo < hi && nums[hi + 1] == nums[hi]);
                     }
                 }
 
-                while (lo + 1 < nums.Length && nums[lo + 1] == nums[lo])
+                while (index + 1 < nums.Length - 2 && nums[index + 1] == nums[index])
                 {
-                    lo++;
+                    index++;
                 }
             }
 
             return result;
-        }
-
-        int BinarySearch(int[] nums, int lo, int hi, int target)
-        {
-            int mid;
-            while (lo <= hi)
-            {
-                mid = lo + (hi - lo) / 2;
-
-                if (target > nums[mid])
-                {
-                    while (mid + 1 <= hi && nums[mid + 1] == nums[mid])
-                    {
-                        mid++;
-                    }
-                    lo = mid + 1;
-                }
-                else if (target < nums[mid])
-                {
-                    while (mid - 1 >= lo && nums[mid - 1] == nums[mid])
-                    {
-                        mid--;
-                    }
-                    hi = mid - 1;
-                }
-                else
-                {
-                    return mid;
-                }
-
-            }
-            return -1;
         }
 
         void Suffle(int[] a)
