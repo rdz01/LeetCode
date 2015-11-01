@@ -54,6 +54,7 @@
     <Compile Include="012-IntegerToRoman.cs" />
     <Compile Include="013-RomanToInteger.cs" />
     <Compile Include="014-LongestCommonPrefix.cs" />
+    <Compile Include="015-3Sum.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
