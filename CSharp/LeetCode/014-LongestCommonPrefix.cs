@@ -1,6 +1,4 @@
-﻿using System.Text;
-
-namespace LeetCode
+﻿namespace LeetCode
 {
     public class _014_LongestCommonPrefix
     {
@@ -9,31 +7,28 @@ namespace LeetCode
             if (strs.Length == 0) { return string.Empty; }
             if (strs.Length == 1) { return strs[0]; }
 
-            var result = new StringBuilder();
+            var index = 0;
             bool isSame = true;
-            for (int index = 0; index < strs[0].Length; index++)
+            var firstString = strs[0];
+            for (index = 0; index < firstString.Length; index++)
             {
                 for (int i = 1; i < strs.Length; i++)
                 {
                     if (strs[i].Length <= index ||
-                        strs[i][index] != strs[0][index])
+                        strs[i][index] != firstString[index])
                     {
                         isSame = false;
                         break;
                     }
                 }
 
-                if (isSame)
-                {
-                    result.Append(strs[0][index]);
-                }
-                else
+                if (!isSame)
                 {
                     break;
                 }
             }
 
-            return result.ToString();
+            return firstString.Substring(0, index);
         }
     }
 }
