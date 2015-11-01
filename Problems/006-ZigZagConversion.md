@@ -9,7 +9,7 @@ Y   I   R
 And then read line by line: `"PAHNAPLSIIGYIR"`
 
 Write the code that will take a string and make this conversion given a number of rows:
-```
+```C++
 string convert(string text, int nRows);
 ```
 `convert("PAYPALISHIRING", 3)` should return `"PAHNAPLSIIGYIR"`.
@@ -53,7 +53,7 @@ char* convert(char* s, int numRows) {
 }
 ```
 
-### C# 
+### C#
 ```C#
 public class Solution {
     public string Convert(string s, int numRows) {
