@@ -60,6 +60,7 @@
     <Compile Include="011_ContainerWithMostWater-Test.cs" />
     <Compile Include="012-IntegerToRoman-Test.cs" />
     <Compile Include="013-RomanToInteger-Test.cs" />
+    <Compile Include="014-LongestCommonPrefix_Test.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="001-TwoSume-Test.cs" />
     <Compile Include="002-AddTwoNumbers-Test.cs" />
