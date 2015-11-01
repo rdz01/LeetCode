@@ -23,7 +23,7 @@ namespace LeetCode
                 lo = index + 1;
                 hi = nums.Length - 1;
 
-                while (lo < hi)
+                while (lo < hi && nums[hi] >= 0)
                 {
                     sumValue = nums[index] + nums[lo] + nums[hi];
                     if (sumValue < 0)
@@ -54,7 +54,7 @@ namespace LeetCode
                     }
                 }
 
-                while (index + 1 < nums.Length - 2 && nums[index + 1] == nums[index])
+                while (index < nums.Length - 3 && nums[index + 1] == nums[index])
                 {
                     index++;
                 }
@@ -63,14 +63,18 @@ namespace LeetCode
             return result;
         }
 
-        void Suffle(int[] a)
+        void Suffle(int[] nums)
         {
             var random = new Random();
-            int N = a.Length;
+            int N = nums.Length;
+            int r, temp;
             for (int i = 0; i < N; i++)
             {
-                int r = random.Next(i + 1);
-                Exchange(a, r, i);
+                r = random.Next(i + 1);
+
+                temp = nums[r];
+                nums[r] = nums[i];
+                nums[i] = temp;
             }
         }
 
@@ -81,22 +85,26 @@ namespace LeetCode
             var gt = hi;
             var i = lo;
             var v = nums[i];
+            int temp;
 
             while (i <= gt)
             {
-                if (nums[i] > v) { Exchange(nums, i, gt--); }
-                else if (nums[i] < v) { Exchange(nums, i++, lt++); }
+                if (nums[i] > v)
+                {
+                    temp = nums[i];
+                    nums[i] = nums[gt];
+                    nums[gt--] = temp;
+                }
+                else if (nums[i] < v)
+                {
+                    temp = nums[i];
+                    nums[i] = nums[lt];
+                    nums[lt++] = temp;
+                }
                 else { i++; }
             }
             Quick3WaySort(nums, lo, lt - 1);
             Quick3WaySort(nums, gt + 1, hi);
-        }
-
-        void Exchange(int[] nums, int x, int y)
-        {
-            int temp = nums[x];
-            nums[x] = nums[y];
-            nums[y] = temp;
         }
     }
 }
