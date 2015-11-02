@@ -40,7 +40,7 @@ char* longestCommonPrefix(char** strs, int strsSize) {
 }
 ```
 
-### C#
+### C# 
 ```C#
 public class Solution {
     public string LongestCommonPrefix(string[] strs) {

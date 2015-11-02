@@ -53,7 +53,7 @@ char* convert(char* s, int numRows) {
 }
 ```
 
-### C#
+### C# 
 ```C#
 public class Solution {
     public string Convert(string s, int numRows) {
