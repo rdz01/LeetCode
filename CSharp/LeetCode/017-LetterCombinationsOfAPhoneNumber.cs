@@ -18,39 +18,42 @@ namespace LeetCode
                                                  "wxyz"
                                                };
 
-            var result = new List<string>();
-            if (string.IsNullOrWhiteSpace(digits)) { return result; }
+            if (digits.Length == 0) { return new List<string>(); }
 
-            var digit = 0;
-            for (int i = 0; i < digits.Length; i++)
+            try
             {
-                digit = digits[i] - '0';
-                if (digit < 0 || digit > 9) { return new List<string>(); }
+                var result = new List<string>() { "" };
+                var keyboard = "";
+                var index = 0;
 
-                if (digit == 1) { continue; }
-
-                if (result.Count == 0)
+                foreach (char digit in digits)
                 {
-                    for (int j = 0; j < phoneChars[digit].Length; j++)
+                    keyboard = phoneChars[digit - '0'];
+                    if (keyboard.Length == 0) { continue; }
+
+                    for (int j = result.Count - 1; j >= 0; j--)
                     {
-                        result.Add(new string(phoneChars[digit][j], 1));
+                        for (int i = 1; i < keyboard.Length; i++)
+                        {
+                            result.Insert(j + 1, result[j]);
+                        }
                     }
-                    continue;
+
+                    index = 0;
+                    for (var i = 0; i < result.Count; i++)
+                    {
+                        result[i] += phoneChars[digit - '0'][index++];
+                        if (index == keyboard.Length) { index = 0; }
+                    }
                 }
 
-                var tempResult = new List<string>();
-                for (int j = 0; j < result.Count; j++)
-                {
-                    for (int k = 0; k < phoneChars[digit].Length; k++)
-                    {
-                        tempResult.Add(result[j] + phoneChars[digit][k]);
-                    }
-                }
-
-                result = tempResult;
+                if (result.Count == 1 && result[0] == "") { result.Clear(); }
+                return result;
             }
-
-            return result;
+            catch
+            {
+                return new List<string>();
+            }
         }
     }
 }
