@@ -52,7 +52,7 @@ namespace LeetCode.Test
             Assert.IsTrue(result.Contains("b "));
             Assert.IsTrue(result.Contains("c "));
         }
-        
+
         [TestMethod]
         public void LetterCombinationsTest_OnlyHaveZero()
         {
@@ -121,8 +121,15 @@ namespace LeetCode.Test
         public void LetterCombinationsTest_WithNine()
         {
             var solution = new _017_LetterCombinationsOfAPhoneNumber();
-            var result = solution.LetterCombinations("29");
 
+            var result = solution.LetterCombinations("9");
+            Assert.AreEqual(4, result.Count);
+            Assert.IsTrue(result.Contains("w"));
+            Assert.IsTrue(result.Contains("x"));
+            Assert.IsTrue(result.Contains("y"));
+            Assert.IsTrue(result.Contains("z"));
+
+            result = solution.LetterCombinations("29");
             Assert.AreEqual(12, result.Count);
             Assert.IsTrue(result.Contains("aw"));
             Assert.IsTrue(result.Contains("ax"));
