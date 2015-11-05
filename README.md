@@ -34,4 +34,4 @@ The solutions for LeetCode problems. Try to solve them with all languages.
 |17|[Letter Combinations of a Phone Number](./Problems/017-LetterCombinationsOfAPhoneNumber.md)| C C++ [C#](./CSharp/LeetCode/017-LetterCombinationsOfAPhoneNumber.cs)(448ms) Java JavaScript Python Ruby | O(N~4<sup>N</sup>) | O(1~4<sup>N-1</sup>) | |
 |18|[4Sum](./Problems/018-4Sum.md)| C C++ C# Java JavaScript Python Ruby | | | |
 |19|[Remove Nth Node From End of List](./Problems/019-RemoveNthNodeFromEndOfList.md)| C C++ C# Java JavaScript Python Ruby | | | |
-
+|20|[Valid Parentheses](./Problems/020-ValidParentheses.md)| C C++ C# Java JavaScript Python Ruby | | | |
