@@ -64,6 +64,7 @@
     <Compile Include="016-3SumClosest-Test.cs" />
     <Compile Include="015-3Sum-Test.cs" />
     <Compile Include="017-LetterCombinationsOfAPhoneNumber-Test.cs" />
+    <Compile Include="018-FourSum-Test.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="001-TwoSume-Test.cs" />
     <Compile Include="002-AddTwoNumbers-Test.cs" />

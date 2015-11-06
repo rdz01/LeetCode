@@ -57,6 +57,7 @@
     <Compile Include="016-3SumClosest.cs" />
     <Compile Include="015-3Sum.cs" />
     <Compile Include="017-LetterCombinationsOfAPhoneNumber.cs" />
+    <Compile Include="018-4Sum.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
