@@ -7,79 +7,74 @@ namespace LeetCode
     {
         public IList<IList<int>> FourSum(int[] nums, int target)
         {
-            var result = new List<IList<int>>();
-            if (nums.Length < 4) { return result; }
+            var results = new List<IList<int>>();
+            if (nums.Length < 4) { return results; }
 
             Suffle(nums);
             Quick3WaySort(nums, 0, nums.Length - 1);
 
-            for (int index = 0; index < nums.Length - 3; index++)
+            if (nums[0] == nums[nums.Length - 1])
             {
-                var rests = ThreeSum(nums, index + 1, target - nums[index]);
-                foreach (var rest in rests)
+                if (target == nums[0] * 4)
                 {
-                    rest.Insert(0, nums[index]);
+                    results.Add(new List<int>() { nums[0], nums[0], nums[0], nums[0] });
                 }
-                result.AddRange(rests);
+                return results;
+            }
 
-                while (index < nums.Length - 4 && nums[index + 1] == nums[index])
+            var cache = new Dictionary<int, IList<KeyValuePair<int, int>>>();
+            var temp = 0;
+            for (int i = 0; i < nums.Length - 1; i++)
+            {
+                for (int j = i + 1; j < nums.Length; j++)
                 {
-                    index++;
+                    temp = nums[i] + nums[j];
+                    if (!cache.ContainsKey(temp))
+                    {
+                        cache[temp] = new List<KeyValuePair<int, int>>();
+                    }
+                    cache[temp].Add(new KeyValuePair<int, int>(i, j));
                 }
             }
 
-            return result;
-        }
-
-        IList<IList<int>> ThreeSum(int[] nums, int startIndex, int target)
-        {
-            int sumValue = 0;
-            int lo = 0, hi = 0;
-            var result = new List<IList<int>>();
-
-            for (var index = startIndex; index < nums.Length - 2; index++)
+            IList<KeyValuePair<int, int>> list1, list2;
+            KeyValuePair<int, int> item1, item2;
+            IList<int> result;
+            foreach (var pair in cache)
             {
-                lo = index + 1;
-                hi = nums.Length - 1;
+                temp = target - pair.Key;
+                if (!cache.ContainsKey(temp)) { continue; }
 
-                while (lo < hi)
+                list1 = pair.Value;
+                list2 = cache[temp];
+                for (var index1 = 0; index1 < list1.Count; index1++)
                 {
-                    sumValue = nums[index] + nums[lo] + nums[hi];
-                    if (sumValue < target)
-                    {
-                        do
-                        {
-                            lo++;
-                        } while (lo < hi && nums[lo - 1] == nums[lo]);
-                    }
-                    else if (sumValue > target)
-                    {
-                        do
-                        {
-                            hi--;
-                        } while (lo < hi && nums[hi + 1] == nums[hi]);
-                    }
-                    else
-                    {
-                        result.Add(new List<int>() { nums[index], nums[lo], nums[hi] });
-                        do
-                        {
-                            lo++;
-                        } while (lo < hi && nums[lo - 1] == nums[lo]);
-                        do
-                        {
-                            hi--;
-                        } while (lo < hi && nums[hi + 1] == nums[hi]);
-                    }
-                }
+                    item1 = list1[index1];
 
-                while (index < nums.Length - 3 && nums[index + 1] == nums[index])
-                {
-                    index++;
+                    for (var index2 = 0; index2 < list2.Count; index2++)
+                    {
+                        item2 = list2[index2];
+
+                        if ((item1.Key != item2.Key && item1.Key != item2.Value && item1.Value != item2.Key && item1.Value != item2.Value) &&
+                            (item1.Value < item2.Key))
+                        {
+                            result = new List<int>() { nums[item1.Key], nums[item1.Value], nums[item2.Key], nums[item2.Value] };
+                            results.Add(result);
+                            while (index2 + 1 < list2.Count && nums[list2[index2 + 1].Key] == nums[list2[index2].Key])
+                            {
+                                index2++;
+                            }
+                        }
+                    }
+
+                    while (index1 + 1 < list1.Count && nums[list1[index1 + 1].Value] == nums[list1[index1].Value])
+                    {
+                        index1++;
+                    }
                 }
             }
 
-            return result;
+            return results;
         }
 
         void Suffle(int[] nums)

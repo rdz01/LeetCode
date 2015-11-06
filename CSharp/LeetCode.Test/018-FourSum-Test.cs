@@ -21,6 +21,18 @@ namespace LeetCode.Test
         }
 
         [TestMethod]
+        public void FourSumTest_2()
+        {
+            int[] input = { 1, 4, -3, 0, 0, 0, 5, 0 };
+
+            var solution = new _018_4Sum();
+            var result = solution.FourSum(input, 0);
+
+            Assert.AreEqual(1, result.Count);
+            AssertList(new List<int> { 0, 0, 0, 0 }, result[0]);
+        }
+
+        [TestMethod]
         public void FourSumTest_Empty()
         {
             int[] input = { };
@@ -50,7 +62,7 @@ namespace LeetCode.Test
         }
 
         [TestMethod]
-        public void FourSumTest_AllZero()
+        public void FourSumTest_AllTheSame()
         {
             int[] input = { 0, 0, 0, 0, 0, 0 };
 
@@ -61,6 +73,24 @@ namespace LeetCode.Test
 
             result = solution.FourSum(input, 1);
             Assert.AreEqual(0, result.Count);
+        }
+
+        [TestMethod]
+        public void FourSumTest_SomeDuplicate()
+        {
+            int[] input = { 1, 0, 0, 1, 0, 0, -1, -1, 0, 0 };
+
+            var solution = new _018_4Sum();
+            var result = solution.FourSum(input, 0);
+            Assert.AreEqual(3, result.Count);
+            AssertList(new List<int> { -1, -1, 1, 1 }, result[0]);
+            AssertList(new List<int> { -1, 0, 0, 1 }, result[1]);
+            AssertList(new List<int> { 0, 0, 0, 0 }, result[2]);
+
+            result = solution.FourSum(input, 1);
+            Assert.AreEqual(2, result.Count);
+            AssertList(new List<int> { -1, 0, 1, 1 }, result[0]);
+            AssertList(new List<int> { 0, 0, 0, 1 }, result[1]);
         }
 
 
