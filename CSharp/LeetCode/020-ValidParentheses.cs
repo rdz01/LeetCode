@@ -7,7 +7,6 @@ namespace LeetCode
         public bool IsValid(string s)
         {
             var list = new List<char>();
-            var index = -1;
             char ch, lastCh;
 
             for (int i = 0; i < s.Length; i++)
@@ -16,17 +15,16 @@ namespace LeetCode
                 if (ch == '(' || ch == '[' || ch == '{')
                 {
                     list.Add(ch);
-                    index++;
                 }
                 else if (ch == ')' || ch == ']' || ch == '}')
                 {
-                    if (index < 0) { return false; }
-                    lastCh = list[index];
+                    if (list.Count <= 0) { return false; }
+                    lastCh = list[list.Count - 1];
                     if ((ch == ')' && lastCh == '(') ||
                         (ch == ']' && lastCh == '[') ||
                         (ch == '}' && lastCh == '{'))
                     {
-                        list.RemoveAt(index--);
+                        list.RemoveAt(list.Count - 1);
                     }
                     else
                     {
