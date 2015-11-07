@@ -14,35 +14,32 @@ namespace LeetCode
             Quick3WaySort(nums, 0, nums.Length - 1);
 
             var cache = new Dictionary<int, IList<int>>();
-            var temp = 0;
-            for (int i = 0; i < nums.Length - 1; i++)
+            int temp, index1, index2;
+            for (index1 = 0; index1 < nums.Length - 1; index1++)
             {
-                for (int j = i + 1; j < nums.Length; j++)
+                for (index2 = index1 + 1; index2 < nums.Length; index2++)
                 {
-                    temp = nums[i] + nums[j];
+                    temp = nums[index1] + nums[index2];
                     if (!cache.ContainsKey(temp))
                     {
                         cache[temp] = new List<int>();
                     }
-                    cache[temp].Add(i);
-                    cache[temp].Add(j);
+                    cache[temp].Add(index1);
+                    cache[temp].Add(index2);
                 }
             }
 
             IList<int> list1, list2;
             foreach (var pair in cache)
             {
-                temp = target - pair.Key;
-                if (!cache.ContainsKey(temp)) { continue; }
-
+                if (!cache.TryGetValue(target - pair.Key, out list2)) { continue; }
                 list1 = pair.Value;
-                list2 = cache[temp];
-                for (var index1 = 0; index1 < list1.Count; index1 += 2)
+
+                for (index1 = 0; index1 < list1.Count; index1 += 2)
                 {
-                    for (var index2 = 0; index2 < list2.Count; index2 += 2)
+                    for (index2 = 0; index2 < list2.Count; index2 += 2)
                     {
-                        if ((list1[index1] != list2[index2] && list1[index1] != list2[index2 + 1]) &&
-                            (list1[index1 + 1] < list2[index2]))
+                        if ((list1[index1 + 1] < list2[index2]) && (list1[index1] != list2[index2] && list1[index1] != list2[index2 + 1]))
                         {
                             results.Add(new List<int>() { nums[list1[index1]], nums[list1[index1 + 1]], nums[list2[index2]], nums[list2[index2 + 1]] });
                             while (index2 + 2 < list2.Count && nums[list2[index2 + 2]] == nums[list2[index2]])
