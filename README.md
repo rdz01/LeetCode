@@ -32,6 +32,6 @@ The solutions for LeetCode problems. Try to solve them with all languages.
 |15|[3Sum](./Problems/015-3Sum.md)| C C++ [C#](./CSharp/LeetCode/015-3Sum.cs)(480ms) Java JavaScript Python Ruby | O(N<sup>2</sup>) | O(M) | |
 |16|[3Sum Closest](./Problems/016-3SumClosest.md)| C C++ [C#](./CSharp/LeetCode/016-3SumClosest.cs)(164ms) Java JavaScript Python Ruby | O(N<sup>2</sup>) | O(1) | |
 |17|[Letter Combinations of a Phone Number](./Problems/017-LetterCombinationsOfAPhoneNumber.md)| C C++ [C#](./CSharp/LeetCode/017-LetterCombinationsOfAPhoneNumber.cs)(448ms) Java JavaScript Python Ruby | O(N~4<sup>N</sup>) | O(1~4<sup>N-1</sup>) | |
-|18|[4Sum](./Problems/018-4Sum.md)| C C++ [C#](./CSharp/LeetCode/018-4Sum.cs)(532ms) Java JavaScript Python Ruby | O(N<sup>2</sup>) | O(M) | |
-|19|[Remove Nth Node From End of List](./Problems/019-RemoveNthNodeFromEndOfList.md)| C C++ C# Java JavaScript Python Ruby | | | |
+|18|[4Sum](./Problems/018-4Sum.md)| C C++ [C#](./CSharp/LeetCode/018-4Sum.cs)(532ms) Java JavaScript Python Ruby | O(N<sup>2</sup>) | O(N<sup>2</sup>) | |
+|19|[Remove Nth Node From End of List](./Problems/019-RemoveNthNodeFromEndOfList.md)| C C++ [C#](./CSharp/LeetCode/019-RemoveNthNodeFromEndOfList.cs)(152ms) Java JavaScript Python Ruby | O(N) | O(1) | |
 |20|[Valid Parentheses](./Problems/020-ValidParentheses.md)| C C++ C# Java JavaScript Python Ruby | | | |
