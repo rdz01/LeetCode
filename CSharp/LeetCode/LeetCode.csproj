@@ -61,6 +61,7 @@
     <Compile Include="019-RemoveNthNodeFromEndOfList.cs" />
     <Compile Include="020-ValidParentheses.cs" />
     <Compile Include="021-MergeTwoSortedLists.cs" />
+    <Compile Include="022-GenerateParentheses.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
