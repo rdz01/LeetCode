@@ -60,6 +60,7 @@
     <Compile Include="018-4Sum.cs" />
     <Compile Include="019-RemoveNthNodeFromEndOfList.cs" />
     <Compile Include="020-ValidParentheses.cs" />
+    <Compile Include="021-MergeTwoSortedLists.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
