@@ -36,5 +36,5 @@ The solutions for LeetCode problems. Try to solve them with all languages.
 |19|[Remove Nth Node From End of List](./Problems/019-RemoveNthNodeFromEndOfList.md)| C C++ [C#](./CSharp/LeetCode/019-RemoveNthNodeFromEndOfList.cs)(152ms) Java JavaScript Python Ruby | O(N) | O(1) | |
 |20|[Valid Parentheses](./Problems/020-ValidParentheses.md)| C C++ [C#](./CSharp/LeetCode/020-ValidParentheses.cs)(116ms) Java JavaScript Python Ruby | O(N) | O(N) | |
 |21|[Merge Two Sorted Lists](./Problems/021-MergeTwoSortedLists.md)| C C++ [C#](./CSharp/LeetCode/021-MergeTwoSortedLists.cs)(156ms) Java JavaScript Python Ruby | O(N1+N2) | O(1) | |
-|22|[Generate Parentheses](./Problems/022-GenerateParentheses.md)| C C++ [C#](./CSharp/LeetCode/022-GenerateParentheses.cs)(416ms) Java JavaScript Python Ruby | O(N) | O(?) | |
+|22|[Generate Parentheses](./Problems/022-GenerateParentheses.md)| C C++ [C#](./CSharp/LeetCode/022-GenerateParentheses.cs)(400ms) Java JavaScript Python Ruby | O(N) | O(?) | |
 |23|[Merge k Sorted Lists](./Problems/023-MergeKSortedLists.md)| C C++ C# Java JavaScript Python Ruby | | | |
