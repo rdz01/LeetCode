@@ -38,4 +38,4 @@ The solutions for LeetCode problems. Try to solve them with all languages.
 |21|[Merge Two Sorted Lists](./Problems/021-MergeTwoSortedLists.md)| C C++ [C#](./CSharp/LeetCode/021-MergeTwoSortedLists.cs)(156ms) Java JavaScript Python Ruby | O(N1+N2) | O(1) | |
 |22|[Generate Parentheses](./Problems/022-GenerateParentheses.md)| C C++ [C#](./CSharp/LeetCode/022-GenerateParentheses.cs)(400ms) Java JavaScript Python Ruby | O(N) | O(?) | |
 |23|[Merge k Sorted Lists](./Problems/023-MergeKSortedLists.md)| C C++ [C#](./CSharp/LeetCode/023-MergeKSortedLists.cs)(316ms) Java JavaScript Python Ruby | O(N1+N2+...+Nm) | O(1) | |
-|24|[Swap Nodes in Pairs](./Problems/024-SwapNodesInPairs.md)| C C++ C# Java JavaScript Python Ruby | | | |
+|24|[Swap Nodes in Pairs](./Problems/024-SwapNodesInPairs.md)| C C++ [C#](./CSharp/LeetCode/024-SwapNodesInPairs.cs)(156ms) Java JavaScript Python Ruby | O(N) | O(1) | |

@@ -63,6 +63,7 @@
     <Compile Include="021-MergeTwoSortedLists.cs" />
     <Compile Include="022-GenerateParentheses.cs" />
     <Compile Include="023-MergeKSortedLists.cs" />
+    <Compile Include="024-SwapNodesInPairs.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
