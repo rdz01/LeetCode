@@ -8,10 +8,8 @@
             dummyHead.next = head;
             ListNode p = dummyHead, q;
 
-            while (true)
+            while (p.next != null && p.next.next != null)
             {
-                if (p.next == null || p.next.next == null) break;
-
                 q = p.next;
                 p.next = q.next;
                 q.next = p.next.next;
