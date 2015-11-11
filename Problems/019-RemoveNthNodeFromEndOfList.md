@@ -10,8 +10,8 @@ For example,
 
 **Note:**
 
-Given *n* will always be valid.
-Try to do this in one pass.
+- Given *n* will always be valid.
+- Try to do this in one pass.
 
 ## Solution Sketch
 
