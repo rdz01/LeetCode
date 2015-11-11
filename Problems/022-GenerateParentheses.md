@@ -6,7 +6,7 @@ For example, given *n* = 3, a solution set is:
 
 `"((()))", "(()())", "(())()", "()(())", "()()()"`
 
-##Solution Sketch
+## Solution Sketch
 
 ### C++
 ```C++
