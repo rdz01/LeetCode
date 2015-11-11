@@ -9,7 +9,6 @@
             var dummyHead = new ListNode(-1);
             dummyHead.next = head;
             ListNode p = dummyHead, q, r;
-            var notEnough = false;
             int i = 0;
 
             while (p.next != null)
@@ -17,10 +16,9 @@
                 q = p.next;
                 for (i = 0; i < k; i++)
                 {
-                    if (q == null) { notEnough = true; break; }
+                    if (q == null) { return dummyHead.next; }
                     q = q.next;
                 }
-                if (notEnough) { break; }
 
                 q = p.next;
                 for (i = 1; i < k; i++)
