@@ -65,6 +65,7 @@
     <Compile Include="023-MergeKSortedLists.cs" />
     <Compile Include="024-SwapNodesInPairs.cs" />
     <Compile Include="025-ReverseNodesInKGroup.cs" />
+    <Compile Include="026-RemoveDuplicatesFromSortedArray.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
