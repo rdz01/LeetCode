@@ -40,4 +40,4 @@ The solutions for LeetCode problems. Try to solve them with all languages.
 |23|[Merge k Sorted Lists](./Problems/023-MergeKSortedLists.md)| C C++ [C#](./CSharp/LeetCode/023-MergeKSortedLists.cs)(316ms) Java JavaScript Python Ruby | O(N1+N2+...+Nm) | O(1) | |
 |24|[Swap Nodes in Pairs](./Problems/024-SwapNodesInPairs.md)| C C++ [C#](./CSharp/LeetCode/024-SwapNodesInPairs.cs)(148ms) Java JavaScript Python Ruby | O(N) | O(1) | |
 |25|[Reverse Nodes in k-Group](./Problems/025-ReverseNodesInKGroup.md)| C C++ [C#](./CSharp/LeetCode/025-ReverseNodesInKGroup.cs)(160ms) Java JavaScript Python Ruby | O(N) | O(1) | |
-|26|[Remove Duplicates from Sorted Array](./Problems/026-RemoveDuplicatesFromSortedArray.md)| C C++ [C#](./CSharp/LeetCode/026-RemoveDuplicatesFromSortedArray.cs)(564ms) Java JavaScript Python Ruby | O(N) | O(1) | |
+|26|[Remove Duplicates from Sorted Array](./Problems/026-RemoveDuplicatesFromSortedArray.md)| C C++ [C#](./CSharp/LeetCode/026-RemoveDuplicatesFromSortedArray.cs)(492ms) Java JavaScript Python Ruby | O(N) | O(1) | |
