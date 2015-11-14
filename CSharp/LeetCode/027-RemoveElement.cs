@@ -4,18 +4,13 @@
     {
         public int RemoveElement(int[] nums, int val)
         {
-            var index = 0;
             var lastIndex = nums.Length - 1;
 
-            while (index <= lastIndex)
+            for (int i = 0; i <= lastIndex; i++)
             {
-                if (nums[index] == val)
+                if (nums[i] == val)
                 {
-                    nums[index] = nums[lastIndex--];
-                }
-                else
-                {
-                    index++;
+                    nums[i--] = nums[lastIndex--];
                 }
             }
 
