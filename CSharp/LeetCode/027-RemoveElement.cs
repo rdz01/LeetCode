@@ -6,16 +6,12 @@
         {
             var index = 0;
             var lastIndex = nums.Length - 1;
-            var temp = 0;
 
             while (index <= lastIndex)
             {
                 if (nums[index] == val)
                 {
-                    temp = nums[lastIndex];
-                    nums[lastIndex] = val;
-                    nums[index] = temp;
-                    lastIndex--;
+                    nums[index] = nums[lastIndex--];
                 }
                 else
                 {
