@@ -44,4 +44,4 @@ The solutions for LeetCode problems. Try to solve them with all languages.
 |27|[Remove Element](./Problems/027-RemoveElement.md)| C C++ [C#](./CSharp/LeetCode/027-RemoveElement.cs)(476ms) Java JavaScript Python Ruby | O(N) | O(1) | |
 |28|[Implement strStr()](./Problems/028-ImplementStrStr.md)| C C++ [C#](./CSharp/LeetCode/028-ImplementStrStr.cs)(124ms) Java JavaScript Python Ruby | O(N+M) | O(1) | Use Knuth–Morris–Pratt Algorithm |
 |29|[Divide Two Integers](./Problems/029-DivideTwoIntegers.md)| C C++ [C#](./CSharp/LeetCode/029-DivideTwoIntegers.cs)(60ms) Java JavaScript Python Ruby | O(N) | O(1) | |
-|30|[Substring with Concatenation of All Words](./Problems/030-SubstringWithConcatenationOfAllWords.md)| C C++ [C#](./CSharp/LeetCode/030-SubstringWithConcatenationOfAllWords.cs)(828ms) Java JavaScript Python Ruby | | | |
+|30|[Substring with Concatenation of All Words](./Problems/030-SubstringWithConcatenationOfAllWords.md)| C C++ [C#](./CSharp/LeetCode/030-SubstringWithConcatenationOfAllWords.cs)(828ms) Java JavaScript Python Ruby | O(N*M) | O(M) | |
