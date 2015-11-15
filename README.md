@@ -46,3 +46,4 @@ The solutions for LeetCode problems. Try to solve them with all languages.
 |29|[Divide Two Integers](./Problems/029-DivideTwoIntegers.md)| C C++ [C#](./CSharp/LeetCode/029-DivideTwoIntegers.cs)(60ms) Java JavaScript Python Ruby | O(N) | O(1) | |
 |30|[Substring with Concatenation of All Words](./Problems/030-SubstringWithConcatenationOfAllWords.md)| C C++ [C#](./CSharp/LeetCode/030-SubstringWithConcatenationOfAllWords.cs)(828ms) Java JavaScript Python Ruby | O(N*M) | O(M) | |
 |31|[Next Permutation](./Problems/031-NextPermutation.md)| C C++ C# Java JavaScript Python Ruby | | | |
+|32|[Longest Valid Parentheses](./Problems/032-LongestValidParentheses.md)| C C++ C# Java JavaScript Python Ruby | | | |
