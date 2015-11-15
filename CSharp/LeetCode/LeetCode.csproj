@@ -68,6 +68,7 @@
     <Compile Include="026-RemoveDuplicatesFromSortedArray.cs" />
     <Compile Include="027-RemoveElement.cs" />
     <Compile Include="028-ImplementStrStr.cs" />
+    <Compile Include="029-DivideTwoIntegers.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
