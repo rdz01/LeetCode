@@ -9,7 +9,7 @@ namespace LeetCode.Test
         public void StrStrTest()
         {
             var solution = new _028_ImplementStrStr();
-            var result = solution.StrStr("abcdefg", "b");
+            var result = solution.StrStr("abcdefg", "bcd");
 
             Assert.AreEqual(1, result);
         }
@@ -30,6 +30,24 @@ namespace LeetCode.Test
             var result = solution.StrStr("abcdefg", "gh");
 
             Assert.AreEqual(-1, result);
+        }
+
+        [TestMethod]
+        public void StrStrTest_SingleCharacterNeedle()
+        {
+            var solution = new _028_ImplementStrStr();
+            var result = solution.StrStr("abcdefg", "b");
+
+            Assert.AreEqual(1, result);
+        }
+
+        [TestMethod]
+        public void StrStrTest_JumpCheck()
+        {
+            var solution = new _028_ImplementStrStr();
+            var result = solution.StrStr("mississippi", "issip");
+
+            Assert.AreEqual(4, result);
         }
     }
 }
