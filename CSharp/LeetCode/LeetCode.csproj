@@ -70,6 +70,7 @@
     <Compile Include="028-ImplementStrStr.cs" />
     <Compile Include="029-DivideTwoIntegers.cs" />
     <Compile Include="030-SubstringWithConcatenationOfAllWords.cs" />
+    <Compile Include="031-NextPermutation.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
