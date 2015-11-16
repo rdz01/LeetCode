@@ -45,6 +45,6 @@ The solutions for LeetCode problems. Try to solve them with all languages.
 |28|[Implement strStr()](./Problems/028-ImplementStrStr.md)| C C++ [C#](./CSharp/LeetCode/028-ImplementStrStr.cs)(124ms) Java JavaScript Python Ruby | O(N+M) | O(1) | Use Knuth–Morris–Pratt Algorithm |
 |29|[Divide Two Integers](./Problems/029-DivideTwoIntegers.md)| C C++ [C#](./CSharp/LeetCode/029-DivideTwoIntegers.cs)(60ms) Java JavaScript Python Ruby | O(N) | O(1) | |
 |30|[Substring with Concatenation of All Words](./Problems/030-SubstringWithConcatenationOfAllWords.md)| C C++ [C#](./CSharp/LeetCode/030-SubstringWithConcatenationOfAllWords.cs)(828ms) Java JavaScript Python Ruby | O(N*M) | O(M) | |
-|31|[Next Permutation](./Problems/031-NextPermutation.md)| C C++ [C#](./CSharp/LeetCode/031-NextPermutation.cs)(496ms) Java JavaScript Python Ruby | O(N) | O(1) | |
+|31|[Next Permutation](./Problems/031-NextPermutation.md)| C C++ [C#](./CSharp/LeetCode/031-NextPermutation.cs)(480ms) Java JavaScript Python Ruby | O(N) | O(1) | |
 |32|[Longest Valid Parentheses](./Problems/032-LongestValidParentheses.md)| C C++ C# Java JavaScript Python Ruby | | | |
 |33|[Search in Rotated Sorted Array](./Problems/033-SearchInRotatedSortedArray.md)| C C++ C# Java JavaScript Python Ruby | | | |
