@@ -14,7 +14,6 @@
                     {
                         j--;
                     }
-                    if (j == -1) { continue; }
 
                     temp = nums[j];
                     nums[j] = nums[i - 1];
