@@ -17,5 +17,10 @@
     "protractor": "^2.5.1"
   },
   "author": "BigEgg",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "angular": "^1.4.7",
+    "angular-material": "^0.11.4",
+    "angular-route": "^1.4.7"
+  }
 }
