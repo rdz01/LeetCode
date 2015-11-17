@@ -4,9 +4,9 @@
     {
         public int LongestValidParentheses(string s)
         {
-            int maxLen = 0, lastError = -1, depth = 0;
+            int i, maxLen = 0, lastError = -1, depth = 0;
 
-            for (int i = 0; i < s.Length; i++)
+            for (i = 0; i < s.Length; i++)
             {
                 if (s[i] == '(') { depth++; }
                 else
@@ -26,7 +26,7 @@
 
             lastError = s.Length;
             depth = 0;
-            for (int i = s.Length - 1; i >= 0; i--)
+            for (i = s.Length - 1; i >= 0; i--)
             {
                 if (s[i] == ')') { depth++; }
                 else
