@@ -78,6 +78,7 @@
     <Compile Include="030-SubstringWithConcatenationOfAllWords-Test.cs" />
     <Compile Include="031-NextPermutation-Test.cs" />
     <Compile Include="032-LongestValidParentheses-Test.cs" />
+    <Compile Include="033-SearchInRotatedSortedArray-Test.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="001-TwoSume-Test.cs" />
     <Compile Include="002-AddTwoNumbers-Test.cs" />
