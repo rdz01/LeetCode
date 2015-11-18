@@ -5,21 +5,24 @@
         public int Search(int[] nums, int target)
         {
             int lo = 0, hi = nums.Length - 1;
-            int mid;
+            int mid, loValue, hiValue, midValue;
 
             while (lo <= hi)
             {
-                if (nums[lo] <= nums[hi] && (target < nums[lo] || target > nums[hi]))
+                loValue = nums[lo];
+                hiValue = nums[hi];
+                if (loValue <= hiValue && (target < loValue || target > hiValue))
                 {
                     return -1;
                 }
 
                 mid = lo + (hi - lo) / 2;
-                if (target == nums[mid]) { return mid; }
+                midValue = nums[mid];
+                if (target == midValue) { return mid; }
 
-                if (nums[lo] <= nums[mid])
+                if (loValue <= midValue)
                 {
-                    if (nums[lo] <= target && target < nums[mid])
+                    if (loValue <= target && target < midValue)
                     {
                         hi = mid - 1;
                     }
@@ -30,7 +33,7 @@
                 }
                 else
                 {
-                    if (target <= nums[hi] && nums[mid] < target)
+                    if (target <= hiValue && midValue < target)
                     {
                         lo = mid + 1;
                     }

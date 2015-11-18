@@ -47,4 +47,4 @@ The solutions for LeetCode problems. Try to solve them with all languages.
 |30|[Substring with Concatenation of All Words](./Problems/030-SubstringWithConcatenationOfAllWords.md)| C C++ [C#](./CSharp/LeetCode/030-SubstringWithConcatenationOfAllWords.cs)(828ms) Java JavaScript Python Ruby | O(N*M) | O(M) | |
 |31|[Next Permutation](./Problems/031-NextPermutation.md)| C C++ [C#](./CSharp/LeetCode/031-NextPermutation.cs)(480ms) Java JavaScript Python Ruby | O(N) | O(1) | |
 |32|[Longest Valid Parentheses](./Problems/032-LongestValidParentheses.md)| C C++ [C#](./CSharp/LeetCode/032-LongestValidParentheses.cs)(124ms) Java JavaScript Python Ruby | O(N) | O(1) | |
-|33|[Search in Rotated Sorted Array](./Problems/033-SearchInRotatedSortedArray.md)| C C++ [C#](./CSharp/LeetCode/033-SearchInRotatedSortedArray.cs)(160ms) Java JavaScript Python Ruby | O(N) | O(1) | |
+|33|[Search in Rotated Sorted Array](./Problems/033-SearchInRotatedSortedArray.md)| C C++ [C#](./CSharp/LeetCode/033-SearchInRotatedSortedArray.cs)(156ms) Java JavaScript Python Ruby | O(N) | O(1) | |
