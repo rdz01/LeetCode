@@ -73,6 +73,7 @@
     <Compile Include="031-NextPermutation.cs" />
     <Compile Include="032-LongestValidParentheses.cs" />
     <Compile Include="033-SearchInRotatedSortedArray.cs" />
+    <Compile Include="034-SearchForARange.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
