@@ -75,6 +75,7 @@
     <Compile Include="033-SearchInRotatedSortedArray.cs" />
     <Compile Include="034-SearchForARange.cs" />
     <Compile Include="035-SearchInsertPosition.cs" />
+    <Compile Include="036-ValidSudoku.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
