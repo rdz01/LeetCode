@@ -48,5 +48,5 @@ The solutions for LeetCode problems. Try to solve them with all languages.
 |31|[Next Permutation](./Problems/031-NextPermutation.md)| C C++ [C#](./CSharp/LeetCode/031-NextPermutation.cs)(480ms) Java JavaScript Python Ruby | O(N) | O(1) | |
 |32|[Longest Valid Parentheses](./Problems/032-LongestValidParentheses.md)| C C++ [C#](./CSharp/LeetCode/032-LongestValidParentheses.cs)(124ms) Java JavaScript Python Ruby | O(N) | O(1) | |
 |33|[Search in Rotated Sorted Array](./Problems/033-SearchInRotatedSortedArray.md)| C C++ [C#](./CSharp/LeetCode/033-SearchInRotatedSortedArray.cs)(156ms) Java JavaScript Python Ruby | O(N) | O(1) | |
-|34|[Search for a Range](./Problems/034-SearchForARange.md)| C C++ [C#](./CSharp/LeetCode/034-SearchForARange.cs)(488ms) Java JavaScript Python Ruby | O(N) | O(1) | |
+|34|[Search for a Range](./Problems/034-SearchForARange.md)| C C++ [C#](./CSharp/LeetCode/034-SearchForARange.cs)(488ms) Java JavaScript Python Ruby | O(LogN) | O(1) | |
 |35|[Search Insert Position](./Problems/035-SearchInsertPosition.md)| C C++ [C#](./CSharp/LeetCode/035-SearchInsertPosition.cs)(152ms) Java JavaScript Python Ruby | O(LogN) | O(1) | |
