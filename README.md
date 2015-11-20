@@ -51,3 +51,4 @@ The solutions for LeetCode problems. Try to solve them with all languages.
 |34|[Search for a Range](./Problems/034-SearchForARange.md)| C C++ [C#](./CSharp/LeetCode/034-SearchForARange.cs)(488ms) Java JavaScript Python Ruby | O(LogN) | O(1) | |
 |35|[Search Insert Position](./Problems/035-SearchInsertPosition.md)| C C++ [C#](./CSharp/LeetCode/035-SearchInsertPosition.cs)(152ms) Java JavaScript Python Ruby | O(LogN) | O(1) | |
 |36|[Valid Sudoku](./Problems/036-ValidSudoku.md)| C C++ [C#](./CSharp/LeetCode/036-ValidSudoku.cs)(160ms) Java JavaScript Python Ruby | O(<sup>2</sup>) | O(1) | |
+|37|[Sudoku Solver](./Problems/037-SudokuSolver.md)| C C++ C# Java JavaScript Python Ruby | | | |
