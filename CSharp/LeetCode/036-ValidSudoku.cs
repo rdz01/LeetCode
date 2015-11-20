@@ -4,46 +4,21 @@
     {
         public bool IsValidSudoku(char[,] board)
         {
-            int i, j, value;
-            bool[] used = new bool[9];
+            int row, column, squareId, value;
+            var colUsed = new bool[9, 9];
+            var rowUsed = new bool[9, 9];
+            var squareUsed = new bool[9, 9];
 
-            for (i = 0; i < 9; i++)
+            for (row = 0; row < 9; row++)
             {
-                for (j = 0; j < 9; j++) { used[j] = false; }
-                for (j = 0; j < 9; j++)
+                for (column = 0; column < 9; column++)
                 {
-                    value = board[i, j] - '0' - 1;
+                    value = board[row, column] - '0' - 1;
                     if (value > 8 || value < 0) { continue; }
-                    if (used[value]) { return false; }
-                    used[value] = true;
-                }
+                    squareId = (row / 3) * 3 + column / 3;
+                    if (colUsed[column, value] || rowUsed[row, value] || squareUsed[squareId, value]) { return false; }
 
-                for (j = 0; j < 9; j++) { used[j] = false; }
-                for (j = 0; j < 9; j++)
-                {
-                    value = board[j, i] - '0' - 1;
-                    if (value > 8 || value < 0) { continue; }
-                    if (used[value]) { return false; }
-                    used[value] = true;
-                }
-            }
-
-            for (int r = 0; r < 3; r++)
-            {
-                for (int c = 0; c < 3; c++)
-                {
-                    for (i = 0; i < 9; i++) { used[i] = false; }
-
-                    for (i = r * 3; i < (r + 1) * 3; i++)
-                    {
-                        for (j = c * 3; j < (c + 1) * 3; j++)
-                        {
-                            value = board[i, j] - '0' - 1;
-                            if (value > 8 || value < 0) { continue; }
-                            if (used[value]) { return false; }
-                            used[value] = true;
-                        }
-                    }
+                    colUsed[column, value] = rowUsed[row, value] = squareUsed[squareId, value] = true;
                 }
             }
 
