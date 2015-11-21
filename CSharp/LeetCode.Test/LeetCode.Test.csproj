@@ -84,6 +84,7 @@
     <Compile Include="036-ValidSudoku-Test.cs" />
     <Compile Include="037-SudokuSolver-Test.cs" />
     <Compile Include="038-CountAndSay-Test.cs" />
+    <Compile Include="039-CombinationSum-Test.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="001-TwoSume-Test.cs" />
     <Compile Include="002-AddTwoNumbers-Test.cs" />
