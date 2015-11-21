@@ -77,6 +77,7 @@
     <Compile Include="035-SearchInsertPosition.cs" />
     <Compile Include="036-ValidSudoku.cs" />
     <Compile Include="037-SudokuSolver.cs" />
+    <Compile Include="038-CountAndSay.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
