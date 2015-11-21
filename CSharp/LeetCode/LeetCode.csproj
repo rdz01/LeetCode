@@ -78,6 +78,7 @@
     <Compile Include="036-ValidSudoku.cs" />
     <Compile Include="037-SudokuSolver.cs" />
     <Compile Include="038-CountAndSay.cs" />
+    <Compile Include="040-CombinationSum2.cs" />
     <Compile Include="039-CombinationSum.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
