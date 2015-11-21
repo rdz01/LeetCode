@@ -8,28 +8,24 @@ namespace LeetCode
         {
             var result = "1";
             char currentCh;
-            int i, j, count;
+            int i, j, startNum;
             var builder = new StringBuilder();
 
             for (i = 1; i < n; i++)
             {
                 currentCh = result[0];
-                count = 1;
+                startNum = 0;
                 for (j = 1; j < result.Length; j++)
                 {
                     if (currentCh != result[j])
                     {
-                        builder.Append(count);
+                        builder.Append(j - startNum);
                         builder.Append(currentCh);
                         currentCh = result[j];
-                        count = 1;
-                    }
-                    else
-                    {
-                        count++;
+                        startNum = j;
                     }
                 }
-                builder.Append(count);
+                builder.Append(j - startNum);
                 builder.Append(currentCh);
 
                 result = builder.ToString();
