@@ -27,6 +27,15 @@ module.exports = function (grunt) {
                 expand: true,
                 flatten: true
             },
+            vendorspec: {
+                cwd: NODE_MODULES_DIR,
+                src: [
+                    'angular-mocks/angular-mocks.js'
+                ],
+                dest: SRC_DIR + 'scripts/vendor/spec/',
+                expand: true,
+                flatten: true
+            },
             vendorcss: {
                 cwd: NODE_MODULES_DIR,
                 src: [
@@ -66,8 +75,7 @@ module.exports = function (grunt) {
             options: {
                 reporter: require('jshint-stylish'),
                 globals: {
-                    angular: true,
-                    "_": true
+                    angular: true
                 }
             }
         },
@@ -77,7 +85,7 @@ module.exports = function (grunt) {
                     cleancss: true
                 },
                 files: {
-                    'src/styles/main.css': "src/styles/less/**/*.less"
+                    'src/styles/main.css': 'src/styles/less/**/*.less'
                 }
             }
         },
@@ -87,12 +95,13 @@ module.exports = function (grunt) {
                 options: {
                     specs: 'src/scripts/spec/**/*Spec.js',
                     vendor: [
-                        'vendor/scripts/angular.min.js',
-                        'vendor/scripts/ui-utils.min.js',
-                        'vendor/scripts/angular-route.min.js',
-                        'vendor/scripts/angular-translate.min.js',
-                        'vendor/scripts/angular-translate-loader-static-files.min.js',
-                        'vendor/scripts/spec/angular-mocks.js'
+                        'src/scripts/vendor/angular.min.js',
+                        'src/scripts/vendor/angular-animates.min.js',
+                        'src/scripts/vendor/angular-aria.min.js',
+                        'src/scripts/vendor/angular-material.min.js',
+                        'src/scripts/vendor/angular-translate.min.js',
+                        'src/scripts/vendor/angular-translate-loader-static-files.min.js',
+                        'src/scripts/vendor/spec/angular-mocks.js'
                     ],
                     helpers: 'src/scripts/spec/helper/*.js'
                 }
@@ -100,7 +109,7 @@ module.exports = function (grunt) {
         },
         protractor: {
             options: {
-                configFile: "protractor.conf.js",
+                configFile: 'protractor.conf.js',
                 keepAlive: false,
                 noColor: false
             },
@@ -113,12 +122,13 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-contrib-concat');
     grunt.loadNpmTasks('grunt-contrib-clean');
     grunt.loadNpmTasks('grunt-contrib-copy');
-    // grunt.loadNpmTasks('grunt-contrib-jasmine');
+    grunt.loadNpmTasks('grunt-contrib-jasmine');
     // grunt.loadNpmTasks('grunt-protractor-runner');
 
     // grunt.registerTask('default', ['jshint', 'jasmine', 'clean', 'less', 'concat', 'copy']);
     grunt.registerTask('pre-build', ['clean:prebuild', 'copy:vendorjs', 'copy:vendorcss']);
-    grunt.registerTask('build', ['pre-build', 'jshint', 'concat:buildjs']);
-    // grunt.registerTask('unit-test', ['jshint', 'jasmine']);
+    grunt.registerTask('pre-test', ['copy:vendorspec']);
+    grunt.registerTask('unit-test', ['pre-build', 'jshint', 'pre-test', 'jasmine']);
+    grunt.registerTask('build', ['pre-build', 'jshint', 'pre-test', 'jasmine', 'concat:buildjs']);
     // grunt.registerTask('e2e-test', ['jshint', 'jasmine', 'clean', 'less', 'concat', 'protractor']);
 };
