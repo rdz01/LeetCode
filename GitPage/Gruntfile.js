@@ -47,7 +47,7 @@ module.exports = function (grunt) {
             options: {
                 separator: ';'
             },
-            modules: {
+            buildjs: {
                 src: [
                     SRC_DIR + 'scripts/com/app.js',
                     SRC_DIR + 'scripts/com/config.js',
@@ -108,9 +108,9 @@ module.exports = function (grunt) {
         }
     });
 
-    // grunt.loadNpmTasks('grunt-contrib-jshint');
+    grunt.loadNpmTasks('grunt-contrib-jshint');
     // grunt.loadNpmTasks('grunt-contrib-less');
-    // grunt.loadNpmTasks('grunt-contrib-concat');
+    grunt.loadNpmTasks('grunt-contrib-concat');
     grunt.loadNpmTasks('grunt-contrib-clean');
     grunt.loadNpmTasks('grunt-contrib-copy');
     // grunt.loadNpmTasks('grunt-contrib-jasmine');
@@ -118,7 +118,7 @@ module.exports = function (grunt) {
 
     // grunt.registerTask('default', ['jshint', 'jasmine', 'clean', 'less', 'concat', 'copy']);
     grunt.registerTask('pre-build', ['clean:prebuild', 'copy:vendorjs', 'copy:vendorcss']);
-    // grunt.registerTask('build', ['jshint', 'jasmine', 'less', 'concat', 'protractor', ]);
+    grunt.registerTask('build', ['pre-build', 'jshint', 'concat:buildjs']);
     // grunt.registerTask('unit-test', ['jshint', 'jasmine']);
     // grunt.registerTask('e2e-test', ['jshint', 'jasmine', 'clean', 'less', 'concat', 'protractor']);
 };
