@@ -1,6 +1,7 @@
 module.exports = function (grunt) {
-    var BUILD_DIR = 'dist/';
+    var NODE_MODULES_DIR = 'node_modules/';
     var SRC_DIR = 'src/';
+    var PUBLISH_DIR = 'dist/';
 
     // Project configuration.
     grunt.initConfig({
@@ -8,14 +9,23 @@ module.exports = function (grunt) {
 
         clean: {
             build: {
-                src: [BUILD_DIR, SRC_DIR + 'scripts/main.js']
+                src: [SRC_DIR, '!' + SRC_DIR + 'scripts/com/**/*.js', SRC_DIR + 'scripts/main.js']
             }
         },
         copy: {
-            build: {
+            vendor: {
+                cwd: NODE_MODULES_DIR,
+                src: [
+                    'angular/*.min.js',
+                    'angular-route/angular-route.min.js'
+                ],
+                dest: SRC_DIR + 'scripts/vendor/',
+                expand: true
+            },
+            publish: {
                 cwd: SRC_DIR,
                 src: ['**', '!scripts/com/**/*.js', '!scripts/spec/**/*.js', '!scripts/e2e/**/*.js', '!styles/less/**'],
-                dest: BUILD_DIR,
+                dest: PUBLISH_DIR,
                 expand: true
             }
         },
@@ -94,7 +104,7 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-protractor-runner');
 
     grunt.registerTask('default', ['jshint', 'jasmine', 'clean', 'less', 'concat', 'copy']);
-    grunt.registerTask('compile', ['jshint', 'jasmine', 'clean', 'less', 'concat', 'protractor', 'copy']);
+    grunt.registerTask('compile', ['jshint', 'jasmine', 'clean:build', 'less', 'concat', 'protractor', 'copy:vendor']);
     grunt.registerTask('unit-test', ['jshint', 'jasmine']);
     grunt.registerTask('e2e-test', ['jshint', 'jasmine', 'clean', 'less', 'concat', 'protractor']);
 };
