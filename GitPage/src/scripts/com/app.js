@@ -1,1 +1,1 @@
-var leetCodeApp = angular.module('leetCodeApp', ['pascalprecht.translate', 'ngMaterial']);
+var leetCodeApp = angular.module('leetCodeApp', ['ngMaterial', 'pascalprecht.translate']);

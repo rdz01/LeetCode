@@ -100,7 +100,7 @@ module.exports = function (grunt) {
                         'src/scripts/vendor/angular-aria.min.js',
                         'src/scripts/vendor/angular-material.min.js',
                         'src/scripts/vendor/angular-translate.min.js',
-                        'src/scripts/vendor/angular-translate-loader-static-files.min.js',
+                        'src/scripts/vendor/angular-translate-loader-partial.min.js',
                         'src/scripts/vendor/spec/angular-mocks.js'
                     ],
                     helpers: 'src/scripts/spec/helper/*.js'
