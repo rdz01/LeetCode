@@ -18,14 +18,14 @@
   },
   "author": "BigEgg",
   "license": "MIT",
-  "repository" :
-  {
-    "type" : "git",
-    "url" : "https://github.com/BigEgg/LeetCode.git"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/BigEgg/LeetCode.git"
   },
   "dependencies": {
     "angular": "^1.4.7",
-    "angular-material": "^0.11.4",
-    "angular-route": "^1.4.7"
+    "angular-animate": "^1.4.7",
+    "angular-aria": "^1.4.7",
+    "angular-material": "^0.11.4"
   }
 }
