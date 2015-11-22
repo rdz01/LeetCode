@@ -19,7 +19,9 @@ module.exports = function (grunt) {
                     'angular/angular.min.js',
                     'angular-animate/angular-animate.min.js',
                     'angular-aria/angular-aria.min.js',
-                    'angular-material/angular-material.min.js'
+                    'angular-material/angular-material.min.js',
+                    'angular-translate/dist/angular-translate.min.js',
+                    'angular-translate/dist/angular-translate-loader-partial/angular-translate-loader-partial.min.js'
                 ],
                 dest: SRC_DIR + 'scripts/vendor/',
                 expand: true,
