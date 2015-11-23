@@ -55,3 +55,4 @@ The solutions for LeetCode problems. Try to solve them with all languages.
 |38|[Count and Say](./Problems/038-CountAndSay.md)| C C++ [C#](./CSharp/LeetCode/036-ValidSudoku.cs)(52ms) Java JavaScript Python Ruby | O(N<sup>2</sup>) | O(N) | |
 |39|[Combination Sum](./Problems/039-CombinationSum.md)| C C++ [C#](./CSharp/LeetCode/039-CombinationSum.cs)(504ms) Java JavaScript Python Ruby | O(N!) | O(N) | |
 |40|[Combination Sum II](./Problems/040-CombinationSum2.md)| C C++ [C#](./CSharp/LeetCode/039-CombinationSum.cs)(484ms) Java JavaScript Python Ruby | O(N!) | O(N) | |
+|41|[First Missing Positive](./Problems/041-FirstMissingPositive.md)| C C++ C# Java JavaScript Python Ruby | | | |
