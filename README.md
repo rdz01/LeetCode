@@ -57,3 +57,4 @@ The solutions for LeetCode problems. Try to solve them with all languages.
 |40|[Combination Sum II](./Problems/040-CombinationSum2.md)| C C++ [C#](./CSharp/LeetCode/039-CombinationSum.cs)(484ms) Java JavaScript Python Ruby | O(N!) | O(N) | |
 |41|[First Missing Positive](./Problems/041-FirstMissingPositive.md)| C C++ [C#](./CSharp/LeetCode/041-FirstMissingPositive.cs)(152ms) Java JavaScript Python Ruby | O(N) | O(1) | |
 |42|[Trapping Rain Water](./Problems/042-TrappingRainWater.md)| C C++ [C#](./CSharp/LeetCode/042-TrappingRainWater.cs)(156ms) Java JavaScript Python Ruby | O(N) | O(1) | |
+|43|[Multiply Strings](./Problems/043-MultiplyStrings.md)| C C++ C# Java JavaScript Python Ruby | | | |
