@@ -88,6 +88,7 @@
     <Compile Include="039-CombinationSum-Test.cs" />
     <Compile Include="041-FirstMissingPositive-Test.cs" />
     <Compile Include="042-TrappingRainWater-Test.cs" />
+    <Compile Include="043-MultiplyStrings-Test.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="001-TwoSume-Test.cs" />
     <Compile Include="002-AddTwoNumbers-Test.cs" />
