@@ -58,3 +58,4 @@ The solutions for LeetCode problems. Try to solve them with all languages.
 |41|[First Missing Positive](./Problems/041-FirstMissingPositive.md)| C C++ [C#](./CSharp/LeetCode/041-FirstMissingPositive.cs)(152ms) Java JavaScript Python Ruby | O(N) | O(1) | |
 |42|[Trapping Rain Water](./Problems/042-TrappingRainWater.md)| C C++ [C#](./CSharp/LeetCode/042-TrappingRainWater.cs)(156ms) Java JavaScript Python Ruby | O(N) | O(1) | |
 |43|[Multiply Strings](./Problems/043-MultiplyStrings.md)| C C++ [C#](./CSharp/LeetCode/043-MultiplyStrings.cs)(140ms) Java JavaScript Python Ruby | O(N*M) | O(N+M) | |
+|44|[Wildcard Matching](./Problems/044-WildcardMatching.md)| C C++ C# Java JavaScript Python Ruby | | | Similar with [Problem No. 10](./Problems/010-RegularExpressionMatching.md) |
