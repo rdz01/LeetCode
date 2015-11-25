@@ -83,6 +83,7 @@
     <Compile Include="041-FirstMissingPositive.cs" />
     <Compile Include="042-TrappingRainWater.cs" />
     <Compile Include="043-MultiplyStrings.cs" />
+    <Compile Include="044-WildcardMatching.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
