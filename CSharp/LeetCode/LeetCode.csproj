@@ -84,6 +84,7 @@
     <Compile Include="042-TrappingRainWater.cs" />
     <Compile Include="043-MultiplyStrings.cs" />
     <Compile Include="044-WildcardMatching.cs" />
+    <Compile Include="045-JumpGame2.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
