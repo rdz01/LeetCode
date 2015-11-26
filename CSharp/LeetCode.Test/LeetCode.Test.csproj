@@ -91,6 +91,7 @@
     <Compile Include="042-TrappingRainWater-Test.cs" />
     <Compile Include="043-MultiplyStrings-Test.cs" />
     <Compile Include="045-JumpGame2-Test.cs" />
+    <Compile Include="046-Permutations-Test.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="001-TwoSume-Test.cs" />
     <Compile Include="002-AddTwoNumbers-Test.cs" />
