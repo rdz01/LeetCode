@@ -61,3 +61,4 @@ The solutions for LeetCode problems. Try to solve them with all languages.
 |44|[Wildcard Matching](./Problems/044-WildcardMatching.md)| C C++ [C#](./CSharp/LeetCode/044-WildcardMatching.cs)(160ms) Java JavaScript Python Ruby | O(N*M) | O(1) | Similar with [Problem No. 10](./Problems/010-RegularExpressionMatching.md) |
 |45|[Jump Game II](./Problems/045-JumpGame2.md)| C C++ C# Java JavaScript Python Ruby | | | |
 |46|[Permutations](./Problems/046-Permutations.md)| C C++ C# Java JavaScript Python Ruby | | | |
+|47|[Permutations II](./Problems/047-Permutations2.md)| C C++ C# Java JavaScript Python Ruby | | | |
