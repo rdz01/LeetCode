@@ -17,12 +17,12 @@ namespace LeetCode.Test
             Assert.AreEqual(6, result.Count);
             AssertList(new List<IList<int>>()
             {
-                new List<int> { 1, 2, 3},
-                new List<int> { 2, 1, 3},
-                new List<int> { 3, 2, 1},
-                new List<int> { 1, 3, 2},
-                new List<int> { 2, 3, 1},
-                new List<int> { 3, 1, 2}
+                new List<int> { 1, 2, 3 },
+                new List<int> { 2, 1, 3 },
+                new List<int> { 3, 2, 1 },
+                new List<int> { 1, 3, 2 },
+                new List<int> { 2, 3, 1 },
+                new List<int> { 3, 1, 2 }
             }, result);
         }
 
