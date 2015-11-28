@@ -62,3 +62,4 @@ The solutions for LeetCode problems. Try to solve them with all languages.
 |45|[Jump Game II](./Problems/045-JumpGame2.md)| C C++ [C#](./CSharp/LeetCode/045-JumpGame2.cs)(164ms) Java JavaScript Python Ruby | O(N) | O(1) | Use Greedy Algorithm |
 |46|[Permutations](./Problems/046-Permutations.md)| C C++ [C#](./CSharp/LeetCode/046-Permutations.cs)(492ms) Java JavaScript Python Ruby | O(N!) | (N) | Get inspired by [Heap's Algorithm](https://en.wikipedia.org/wiki/Heap%27s_algorithm) |
 |47|[Permutations II](./Problems/047-Permutations2.md)| C C++ [C#](./CSharp/LeetCode/047-Permutations2.cs)(492ms) Java JavaScript Python Ruby | O(N!) | (N) | Get inspired by [Heap's Algorithm](https://en.wikipedia.org/wiki/Heap%27s_algorithm) |
+|48|[Rotate Image](./Problems/048-RotateImage.md)| C C++ C# Java JavaScript Python Ruby | | | |
