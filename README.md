@@ -65,3 +65,4 @@ The solutions for LeetCode problems. Try to solve them with all languages.
 |48|[Rotate Image](./Problems/048-RotateImage.md)| C C++ C# Java JavaScript Python Ruby | | | |
 |49|[Group Anagrams](./Problems/049-GroupAnagrams.md)| C C++ C# Java JavaScript Python Ruby | | | |
 |50|[Pow(x, n)](./Problems/050-Pow.md)| C C++ C# Java JavaScript Python Ruby | | | |
+|51|[N-Queens](./Problems/051-NQueens.md)| C C++ C# Java JavaScript Python Ruby | | | |
