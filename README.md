@@ -64,3 +64,4 @@ The solutions for LeetCode problems. Try to solve them with all languages.
 |47|[Permutations II](./Problems/047-Permutations2.md)| C C++ [C#](./CSharp/LeetCode/047-Permutations2.cs)(492ms) Java JavaScript Python Ruby | O(N!) | (N) | Get inspired by [Heap's Algorithm](https://en.wikipedia.org/wiki/Heap%27s_algorithm) |
 |48|[Rotate Image](./Problems/048-RotateImage.md)| C C++ C# Java JavaScript Python Ruby | | | |
 |49|[Group Anagrams](./Problems/049-GroupAnagrams.md)| C C++ C# Java JavaScript Python Ruby | | | |
+|50|[Pow(x, n)](./Problems/050-Pow.md)| C C++ C# Java JavaScript Python Ruby | | | |
