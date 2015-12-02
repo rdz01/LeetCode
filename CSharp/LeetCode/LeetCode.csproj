@@ -87,6 +87,7 @@
     <Compile Include="045-JumpGame2.cs" />
     <Compile Include="047-Permutations2.cs" />
     <Compile Include="046-Permutations.cs" />
+    <Compile Include="048-RotateImage.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
