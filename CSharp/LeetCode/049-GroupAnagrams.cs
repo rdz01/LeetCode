@@ -8,8 +8,7 @@ namespace LeetCode
     {
         public IList<IList<string>> GroupAnagrams(string[] strs)
         {
-            var result = new List<IList<string>>();
-            var mapping = new Dictionary<string, int>();
+            var mapping = new Dictionary<string, IList<string>>();
 
             var key = string.Empty;
             char[] ch;
@@ -20,17 +19,16 @@ namespace LeetCode
                 key = new string(ch);
                 if (!mapping.ContainsKey(key))
                 {
-                    result.Add(new List<string>());
-                    mapping[key] = result.Count - 1;
+                    mapping.Add(key, new List<string>());
                 }
-                result[mapping[key]].Add(str);
+                mapping[key].Add(str);
             }
 
-            for (int i = 0; i < result.Count; i++)
+            var result = new List<IList<string>>();
+            foreach (var pair in mapping)
             {
-                result[i] = result[i].OrderBy(s => s).ToList();
+                result.Add(pair.Value.OrderBy(s => s).ToList());
             }
-
             return result;
         }
     }
