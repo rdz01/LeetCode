@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 
 namespace LeetCode
@@ -10,16 +11,19 @@ namespace LeetCode
             var result = new List<IList<string>>();
             var mapping = new Dictionary<string, int>();
 
-            var ch = string.Empty;
+            var key = string.Empty;
+            char[] ch;
             foreach (var str in strs)
             {
-                ch = new string(str.OrderBy(c => c).ToArray());
-                if (!mapping.ContainsKey(ch))
+                ch = str.ToCharArray();
+                Array.Sort(ch);
+                key = new string(ch);
+                if (!mapping.ContainsKey(key))
                 {
                     result.Add(new List<string>());
-                    mapping[ch] = result.Count - 1;
+                    mapping[key] = result.Count - 1;
                 }
-                result[mapping[ch]].Add(str);
+                result[mapping[key]].Add(str);
             }
 
             for (int i = 0; i < result.Count; i++)

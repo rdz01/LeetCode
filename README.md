@@ -63,7 +63,7 @@ The solutions for LeetCode problems. Try to solve them with all languages.
 |46|[Permutations](./Problems/046-Permutations.md)| C C++ [C#](./CSharp/LeetCode/046-Permutations.cs)(492ms) Java JavaScript Python Ruby | O(N!) | (N) | Get inspired by [Heap's Algorithm](https://en.wikipedia.org/wiki/Heap%27s_algorithm) |
 |47|[Permutations II](./Problems/047-Permutations2.md)| C C++ [C#](./CSharp/LeetCode/047-Permutations2.cs)(492ms) Java JavaScript Python Ruby | O(N!) | (N) | Get inspired by [Heap's Algorithm](https://en.wikipedia.org/wiki/Heap%27s_algorithm) |
 |48|[Rotate Image](./Problems/048-RotateImage.md)| C C++ [C#](./CSharp/LeetCode/048-RotateImage.cs)(148ms) Java JavaScript Python Ruby | O(N<sup>2</sup>) | O(1) | |
-|49|[Group Anagrams](./Problems/049-GroupAnagrams.md)| C C++ [C#](./CSharp/LeetCode/049-GroupAnagrams.cs)(624ms) Java JavaScript Python Ruby | O(N) | O(N) | |
+|49|[Group Anagrams](./Problems/049-GroupAnagrams.md)| C C++ [C#](./CSharp/LeetCode/049-GroupAnagrams.cs)(604ms) Java JavaScript Python Ruby | O(N) | O(N) | |
 |50|[Pow(x, n)](./Problems/050-Pow.md)| C C++ C# Java JavaScript Python Ruby | | | |
 |51|[N-Queens](./Problems/051-NQueens.md)| C C++ C# Java JavaScript Python Ruby | | | |
 |52|[N-Queens II](./Problems/052-NQueens2.md)| C C++ C# Java JavaScript Python Ruby | | | |
