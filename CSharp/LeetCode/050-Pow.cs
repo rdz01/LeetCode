@@ -6,17 +6,16 @@
         {
             if (x == 0) { return 0; }
 
-            var sign = false;
             if (n < 0)
             {
                 n = -n;
-                sign = true;
+                x = 1 / x;
             }
 
             double result = 1;
             while (n > 0)
             {
-                if ((n & 1) == 1)
+                if ((n & 0x1) == 1)
                 {
                     result *= x;
                 }
@@ -24,7 +23,7 @@
                 x = x * x;
             }
 
-            return sign ? 1 / result : result;
+            return result;
         }
     }
 }
