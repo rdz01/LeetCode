@@ -90,6 +90,7 @@
     <Compile Include="048-RotateImage.cs" />
     <Compile Include="049-GroupAnagrams.cs" />
     <Compile Include="050-Pow.cs" />
+    <Compile Include="051-NQueens.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

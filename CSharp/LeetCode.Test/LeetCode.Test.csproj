@@ -96,6 +96,7 @@
     <Compile Include="048-RotateImage-Test.cs" />
     <Compile Include="049-GroupAnagrams-Test.cs" />
     <Compile Include="050-Pow-Test.cs" />
+    <Compile Include="051-NQueens-Test.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="001-TwoSume-Test.cs" />
     <Compile Include="002-AddTwoNumbers-Test.cs" />
