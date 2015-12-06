@@ -66,5 +66,5 @@ The solutions for LeetCode problems. Try to solve them with all languages.
 |49|[Group Anagrams](./Problems/049-GroupAnagrams.md)| C C++ [C#](./CSharp/LeetCode/049-GroupAnagrams.cs)(580ms) Java JavaScript Python Ruby | O(N) | O(N) | |
 |50|[Pow(x, n)](./Problems/050-Pow.md)| C C++ [C#](./CSharp/LeetCode/050-Pow.cs)(64ms) Java JavaScript Python Ruby | O(LogN) | O(1) | |
 |51|[N-Queens](./Problems/051-NQueens.md)| C C++ [C#](./CSharp/LeetCode/051-NQueens.cs)(396ms) Java JavaScript Python Ruby | O(N!) | O(N) | |
-|52|[N-Queens II](./Problems/052-NQueens2.md)| C C++ [C#](./CSharp/LeetCode/051-NQueens.cs)(52ms) Java JavaScript Python Ruby | O(N!) | O(N) | |
+|52|[N-Queens II](./Problems/052-NQueens2.md)| C C++ [C#](./CSharp/LeetCode/052-NQueens2.cs)(52ms) Java JavaScript Python Ruby | O(N!) | O(N) | |
 |53|[Maximum Subarray](./Problems/053-MaximumSubarray.md)| C C++ C# Java JavaScript Python Ruby | | | |
