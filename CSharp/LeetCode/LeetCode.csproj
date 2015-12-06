@@ -96,6 +96,7 @@
     <Compile Include="054-SpiralMatrix.cs" />
     <Compile Include="055-JumpGame.cs" />
     <Compile Include="056-MergeIntervals.cs" />
+    <Compile Include="057-InsertInterval.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
