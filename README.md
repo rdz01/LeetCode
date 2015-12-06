@@ -70,3 +70,4 @@ The solutions for LeetCode problems. Try to solve them with all languages.
 |53|[Maximum Subarray](./Problems/053-MaximumSubarray.md)| C C++ [C#](./CSharp/LeetCode/053-MaximumSubarray.cs)(148ms) Java JavaScript Python Ruby | O(N) | O(1) | |
 |54|[Spiral Matrix](./Problems/054-SpiralMatrix.md)| C C++ C# Java JavaScript Python Ruby | | | |
 |55|[Jump Game](./Problems/055-JumpGame.md)| C C++ C# Java JavaScript Python Ruby | | | |
+|56|[Merge Intervals](./Problems/056-MergeIntervals.md)| C C++ C# Java JavaScript Python Ruby | | | |
