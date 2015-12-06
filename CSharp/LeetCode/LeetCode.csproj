@@ -93,6 +93,7 @@
     <Compile Include="052-NQueens2.cs" />
     <Compile Include="051-NQueens.cs" />
     <Compile Include="053-MaximumSubarray.cs" />
+    <Compile Include="054-SpiralMatrix.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

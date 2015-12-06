@@ -99,6 +99,7 @@
     <Compile Include="052-NQueens2-Test.cs" />
     <Compile Include="051-NQueens-Test.cs" />
     <Compile Include="053-MaximumSubarray-Test.cs" />
+    <Compile Include="054-SpiralMatrix-Test.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="001-TwoSume-Test.cs" />
     <Compile Include="002-AddTwoNumbers-Test.cs" />
