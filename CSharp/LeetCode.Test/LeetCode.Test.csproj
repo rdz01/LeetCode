@@ -103,6 +103,7 @@
     <Compile Include="055-JumpGame-Test.cs" />
     <Compile Include="056-MergeIntervals-Test.cs" />
     <Compile Include="057-InsertInterval-Test.cs" />
+    <Compile Include="058-LengthOfLastWord-Test.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="001-TwoSume-Test.cs" />
     <Compile Include="002-AddTwoNumbers-Test.cs" />
