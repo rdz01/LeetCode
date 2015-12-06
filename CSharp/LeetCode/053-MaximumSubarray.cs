@@ -4,18 +4,16 @@
     {
         public int MaxSubArray(int[] nums)
         {
-            int temp, result = int.MinValue;
+            int result = int.MinValue;
+            int[] sum = new int[nums.Length + 1];
 
+            sum[0] = 0;
             for (int i = 0; i < nums.Length; i++)
             {
-                temp = 0;
-                for (int j = i; j < nums.Length; j++)
+                sum[i + 1] = sum[i] + nums[i] > nums[i] ? sum[i] + nums[i] : nums[i];
+                if (result < sum[i + 1])
                 {
-                    temp += nums[j];
-                    if (result < temp)
-                    {
-                        result = temp;
-                    }
+                    result = sum[i + 1];
                 }
             }
 
