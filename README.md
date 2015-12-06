@@ -72,3 +72,4 @@ The solutions for LeetCode problems. Try to solve them with all languages.
 |55|[Jump Game](./Problems/055-JumpGame.md)| C C++ [C#](./CSharp/LeetCode/055-JumpGame.cs)(164ms) Java JavaScript Python Ruby | O(N) | O(1) | Use Greedy Algorithm |
 |56|[Merge Intervals](./Problems/056-MergeIntervals.md)| C C++ [C#](./CSharp/LeetCode/056-MergeIntervals.cs)(548ms) Java JavaScript Python Ruby | O(NLogN) | O(1) | |
 |57|[Insert Interval](./Problems/057-InsertInterval.md)| C C++ [C#](./CSharp/LeetCode/057-InsertInterval.cs)(544ms) Java JavaScript Python Ruby | O(N) | O(N) | |
+|58|[Length of Last Word](./Problems/058-LengthOfLastWord.md)| C C++ C# Java JavaScript Python Ruby | | | |
