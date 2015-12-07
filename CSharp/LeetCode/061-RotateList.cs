@@ -6,37 +6,26 @@
         {
             if (k <= 0 || head == null) { return head; }
 
-            var tempHead = new ListNode(-1);
-            tempHead.next = head;
+            var ptr = new ListNode(-1);
+            ptr.next = head;
 
-            ListNode i = tempHead, j = tempHead;
             int lenght = 0;
-            while (k-- > 0)
+            while (ptr.next != null)
             {
-                if (i.next != null)
-                {
-                    i = i.next;
-                    lenght++;
-                }
-                else
-                {
-                    i = head;
-                    k = k % lenght;
-                }
+                ptr = ptr.next;
+                lenght++;
+            }
+            ptr.next = head;
+
+            var rest = lenght - k % lenght;
+            for (int i = 0; i < rest; i++)
+            {
+                ptr = ptr.next;
             }
 
-            if (i.next == null) { return head; }
-
-            while (i.next != null)
-            {
-                i = i.next;
-                j = j.next;
-            }
-
-            i.next = head;
-            tempHead.next = j.next;
-            j.next = null;
-            return tempHead.next;
+            head = ptr.next;
+            ptr.next = null;
+            return head;
         }
 
 

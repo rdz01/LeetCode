@@ -75,7 +75,7 @@ The solutions for LeetCode problems. Try to solve them with all languages.
 |58|[Length of Last Word](./Problems/058-LengthOfLastWord.md)| C C++ [C#](./CSharp/LeetCode/058-LengthOfLastWord.cs)(120ms) Java JavaScript Python Ruby | O(N) | O(1) | |
 |59|[Spiral Matrix II](./Problems/059-SpiralMatrix2.md)| C C++ [C#](./CSharp/LeetCode/059-SpiralMatrix2.cs)(48ms) Java JavaScript Python Ruby | O(N<sup>2</sup>) | O(N<sup>2</sup>) | |
 |60|[Permutation Sequence](./Problems/060-PermutationSequence.md)| C C++ [C#](./CSharp/LeetCode/060-PermutationSequence.cs)(48ms) Java JavaScript Python Ruby | O(N) | (N) | Use Cantor Expansion (Introduction to Algorithms, MIT) |
-|61|[Rotate List](./Problems/061-RotateList.md)| C C++ [C#](./CSharp/LeetCode/061-RotateList.cs)(156ms) Java JavaScript Python Ruby | O(N) | O(1) | |
+|61|[Rotate List](./Problems/061-RotateList.md)| C C++ [C#](./CSharp/LeetCode/061-RotateList.cs)(152ms) Java JavaScript Python Ruby | O(N) | O(1) | |
 |62|[Unique Paths](./Problems/062-UniquePaths.md)| C C++ C# Java JavaScript Python Ruby | | | |
 |63|[Unique Paths II](./Problems/063-UniquePaths2.md)| C C++ C# Java JavaScript Python Ruby | | | |
 |64|[Minimum Path Sum](./Problems/064-MinimumPathSum.md)| C C++ C# Java JavaScript Python Ruby | | | |
