@@ -100,6 +100,7 @@
     <Compile Include="058-LengthOfLastWord.cs" />
     <Compile Include="059-SpiralMatrix2.cs" />
     <Compile Include="060-PermutationSequence.cs" />
+    <Compile Include="061-RotateList.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
