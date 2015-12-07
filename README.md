@@ -76,3 +76,4 @@ The solutions for LeetCode problems. Try to solve them with all languages.
 |59|[Spiral Matrix II](./Problems/059-SpiralMatrix2.md)| C C++ [C#](./CSharp/LeetCode/059-SpiralMatrix2.cs)(48ms) Java JavaScript Python Ruby | O(N<sup>2</sup>) | O(N<sup>2</sup>) | |
 |60|[Permutation Sequence](./Problems/060-PermutationSequence.md)| C C++ [C#](./CSharp/LeetCode/060-PermutationSequence.cs)(48ms) Java JavaScript Python Ruby | O(N) | (N) | Use Cantor Expansion (Introduction to Algorithms, MIT) |
 |61|[Rotate List](./Problems/061-RotateList.md)| C C++ C# Java JavaScript Python Ruby | | | |
+|62|[Unique Paths](./Problems/062-UniquePaths.md)| C C++ C# Java JavaScript Python Ruby | | | |
