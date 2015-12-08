@@ -112,5 +112,38 @@ namespace LeetCode.Test
 
             Assert.AreEqual(0, result);
         }
+
+        [TestMethod]
+        public void UniquePathsWithObstaclesTest_RowLarger()
+        {
+            var input = new int[4, 3]
+            {
+                { 0, 0, 0 },
+                { 0, 1, 0 },
+                { 0, 0, 0 },
+                { 0, 0, 0 },
+            };
+
+            var solution = new _063_UniquePaths2();
+            var result = solution.UniquePathsWithObstacles(input);
+
+            Assert.AreEqual(4, result);
+        }
+
+        [TestMethod]
+        public void UniquePathsWithObstaclesTest_ColumnLarger()
+        {
+            var input = new int[3, 4]
+            {
+                { 0, 0, 0, 0 },
+                { 0, 1, 0, 0 },
+                { 0, 0, 0, 0 }
+            };
+
+            var solution = new _063_UniquePaths2();
+            var result = solution.UniquePathsWithObstacles(input);
+
+            Assert.AreEqual(4, result);
+        }
     }
 }
