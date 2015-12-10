@@ -80,3 +80,4 @@ The solutions for LeetCode problems. Try to solve them with all languages.
 |63|[Unique Paths II](./Problems/063-UniquePaths2.md)| C C++ [C#](./CSharp/LeetCode/063-UniquePaths2.cs)(160ms) Java JavaScript Python Ruby | O(M*N) | O(Min(M, N) | |
 |64|[Minimum Path Sum](./Problems/064-MinimumPathSum.md)| C C++ [C#](./CSharp/LeetCode/064-MinimumPathSum.cs)(172ms) Java JavaScript Python Ruby | O(M*N) | O(Min(M, N) | |
 |65|[Valid Number](./Problems/065-ValidNumber.md)| C C++ C# Java JavaScript Python Ruby | | | |
+|66|[Plus One](./Problems/066-PlusOne.md)| C C++ C# Java JavaScript Python Ruby | | | |
