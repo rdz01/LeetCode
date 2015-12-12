@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Text;
 
 namespace LeetCode
@@ -10,27 +9,22 @@ namespace LeetCode
         {
             var result = new List<string>();
 
-            int start = 0, len = 0, space = 0;
+            int start = 0, len = 0, space = 0, tempSpace, i, j;
             var builder = new StringBuilder();
-            for (int i = 0; i < words.Length; i++)
+            for (i = 0; i < words.Length; i++)
             {
                 if (len + words[i].Length > maxWidth)
                 {
                     space = maxWidth - len + (i - start);
                     builder.Clear();
-                    for (int j = start; j < i; j++)
+                    for (j = start; j < i; j++)
                     {
                         builder.Append(words[j]);
 
-                        if (j != i - 1)
-                        {
-                            var tempSpace = space / (i - start - 1) + ((j - start < (space % (i - start - 1))) ? 1 : 0);
-                            builder.Append(new string(' ', Math.Min(maxWidth - builder.Length, tempSpace)));
-                        }
-                        else
-                        {
-                            builder.Append(new string(' ', maxWidth - builder.Length));
-                        }
+                        tempSpace = j != i - 1
+                            ? space / (i - start - 1) + ((j - start < (space % (i - start - 1))) ? 1 : 0)
+                            : maxWidth - builder.Length;
+                        builder.Append(new string(' ', tempSpace));
                     }
                     result.Add(builder.ToString());
 
@@ -42,17 +36,13 @@ namespace LeetCode
             }
 
             builder.Clear();
-            for (int j = start; j < words.Length; j++)
+            for (j = start; j < words.Length; j++)
             {
                 builder.Append(words[j]);
-                if (j != words.Length - 1)
-                {
-                    builder.Append(' ');
-                }
-                else
-                {
-                    builder.Append(new string(' ', maxWidth - builder.Length));
-                }
+                tempSpace = j != words.Length - 1
+                    ? 1
+                    : maxWidth - builder.Length;
+                builder.Append(new string(' ', tempSpace));
             }
             result.Add(builder.ToString());
 
