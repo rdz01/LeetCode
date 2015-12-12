@@ -82,3 +82,4 @@ The solutions for LeetCode problems. Try to solve them with all languages.
 |65|[Valid Number](./Problems/065-ValidNumber.md)| C C++ [C#](./CSharp/LeetCode/065-ValidNumber.cs)(144ms) Java JavaScript Python Ruby | O(N) | O(1) | |
 |66|[Plus One](./Problems/066-PlusOne.md)| C C++ [C#](./CSharp/LeetCode/066-PlusOne.cs)(440ms) Java JavaScript Python Ruby | O(N) | O(N) | |
 |67|[Add Binary](./Problems/067-AddBinary.md)| C C++ C# Java JavaScript Python Ruby | | | |
+|68|[Text Justification](./Problems/068-TextJustification.md)| C C++ C# Java JavaScript Python Ruby | | | |
