@@ -13,7 +13,7 @@ _006_ZigZagConversion::~_006_ZigZagConversion()
 
 string _006_ZigZagConversion::convert(string s, int numRows)
 {
-	if (s.size() <= 1 || numRows <= 1) { return s; }
+	if (numRows <= 1 || s.size() <= numRows) { return s; }
 
 	string result;
 	for (int i = 0; i < numRows; i++)
