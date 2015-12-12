@@ -19,8 +19,9 @@ namespace LeetCode
                 bVal = bLength >= 0 ? b[bLength] - '0' : 0;
 
                 val = aVal + bVal + carry;
-                carry = val / 2;
-                builder.Insert(0, val % 2);
+                builder.Insert(0, val & 1);
+
+                carry = val >> 1;
 
                 aLength--;
                 bLength--;
