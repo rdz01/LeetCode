@@ -113,6 +113,7 @@
     <Compile Include="065-ValidNumber-Test.cs" />
     <Compile Include="066-PlusOne-Test.cs" />
     <Compile Include="067-AddBinary-Test.cs" />
+    <Compile Include="068-TextJustification-Test.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="001-TwoSume-Test.cs" />
     <Compile Include="002-AddTwoNumbers-Test.cs" />

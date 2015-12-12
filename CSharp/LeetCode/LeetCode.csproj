@@ -108,6 +108,7 @@
     <Compile Include="065-ValidNumber.cs" />
     <Compile Include="066-PlusOne.cs" />
     <Compile Include="067-AddBinary.cs" />
+    <Compile Include="068-TextJustification.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
