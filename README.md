@@ -83,3 +83,4 @@ The solutions for LeetCode problems. Try to solve them with all languages.
 |66|[Plus One](./Problems/066-PlusOne.md)| C C++ [C#](./CSharp/LeetCode/066-PlusOne.cs)(440ms) Java JavaScript Python Ruby | O(N) | O(N) | |
 |67|[Add Binary](./Problems/067-AddBinary.md)| C C++ [C#](./CSharp/LeetCode/067-AddBinary.cs)(128ms) Java JavaScript Python Ruby | O(N) | O(N) | |
 |68|[Text Justification](./Problems/068-TextJustification.md)| C C++ [C#](./CSharp/LeetCode/068-TextJustification.cs)(448ms) Java JavaScript Python Ruby | O(N) | O(N) | |
+|69|[Sqrt(x)](./Problems/069-Sqrt(x).md)| C C++ C# Java JavaScript Python Ruby | | | |
