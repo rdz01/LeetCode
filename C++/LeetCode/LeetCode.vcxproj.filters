@@ -42,6 +42,9 @@
     <ClInclude Include="004-MedianOfTwoSortedArrays.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="006-ZigZagConversion.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -63,6 +66,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="004-MedianOfTwoSortedArrays.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="006-ZigZagConversion.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
