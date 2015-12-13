@@ -4,21 +4,16 @@
     {
         public int MySqrt(int x)
         {
-            if (x < 2) { return x; }
+            if (x < 1) { return x; }
 
-            long value;
-            int start = 0, mid, end = x / 2;
-            while (end >= start)
+            double last = 0.0, result = 1.0;
+            while (last != result)
             {
-                mid = start + (end - start) / 2;
-                value = mid * (long)mid;
-
-                if (value < x) { start = mid + 1; }
-                else if (value > x) { end = mid - 1; }
-                else { return mid; }
+                last = result;
+                result = (result + x / result) / 2;
             }
 
-            return end;
+            return (int)last;
         }
     }
 }
