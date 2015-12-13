@@ -10,7 +10,7 @@ Each time you can either climb 1 or 2 steps. In how many distinct ways can you c
 ```C++
 class Solution {
 public:
-    int mySqrt(int x) {
+    int climbStairs(int n) {
 
     }
 };
@@ -19,7 +19,7 @@ public:
 ### Java
 ```Java
 public class Solution {
-    public int mySqrt(int x) {
+    public int climbStairs(int n) {
 
     }
 }
@@ -28,16 +28,16 @@ public class Solution {
 ### Python
 ```Python
 class Solution(object):
-    def mySqrt(self, x):
+    def climbStairs(self, n):
         """
-        :type x: int
+        :type n: int
         :rtype: int
         """
 ```
 
 ### C
 ```C
-int mySqrt(int x) {
+int climbStairs(int n) {
 
 }
 ```
@@ -45,7 +45,7 @@ int mySqrt(int x) {
 ### C# 
 ```C#
 public class Solution {
-    public int MySqrt(int x) {
+    public int ClimbStairs(int n) {
 
     }
 }
