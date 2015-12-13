@@ -3,12 +3,6 @@
 
 namespace LeetCode
 {
-	struct ListNode {
-		int val;
-		ListNode *next;
-		ListNode(int x) : val(x), next(NULL) {}
-	};
-
 	class LEETCODE_API _002_AddTwoNumbers
 	{
 	public:
