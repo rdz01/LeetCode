@@ -1,0 +1,15 @@
+#pragma once
+#include "common.h"
+#include <string>
+
+using namespace std;
+
+class LEETCODE_API _008_StringToInteger
+{
+public:
+	_008_StringToInteger();
+	~_008_StringToInteger();
+
+	int myAtoi(string str);
+};
+

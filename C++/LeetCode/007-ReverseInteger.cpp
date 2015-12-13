@@ -11,7 +11,6 @@ _007_ReverseInteger::~_007_ReverseInteger()
 {
 }
 
-
 #define INT_MAX     2147483647 
 #define INT_MIN     (-INT_MAX - 1)	//	http://stackoverflow.com/questions/14695118/2147483648-0-returns-true-in-c
 

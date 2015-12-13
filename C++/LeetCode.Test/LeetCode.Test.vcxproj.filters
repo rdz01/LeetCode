@@ -47,5 +47,8 @@
     <ClCompile Include="007-ReverseInteger-Test.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="008-StringToInteger(atoi)-Test.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

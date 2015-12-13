@@ -48,6 +48,9 @@
     <ClInclude Include="007-ReverseInteger.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="008-StringToInteger(atoi).h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -75,6 +78,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="007-ReverseInteger.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="008-StringToInteger(atoi).cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
