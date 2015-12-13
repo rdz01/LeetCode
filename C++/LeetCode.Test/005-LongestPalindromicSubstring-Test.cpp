@@ -3,6 +3,7 @@
 #include "..\LeetCode\005-LongestPalindromicSubstring.h"
 
 using namespace Microsoft::VisualStudio::CppUnitTestFramework;
+using namespace LeetCode;
 
 namespace LeetCodeTest
 {

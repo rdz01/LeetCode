@@ -3,6 +3,7 @@
 #include "..\LeetCode\001-TwoSum.h"
 
 using namespace Microsoft::VisualStudio::CppUnitTestFramework;
+using namespace LeetCode;
 
 namespace LeetCodeTest
 {

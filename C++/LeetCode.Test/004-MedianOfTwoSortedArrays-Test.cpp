@@ -3,6 +3,7 @@
 #include "..\LeetCode\004-MedianOfTwoSortedArrays.h"
 
 using namespace Microsoft::VisualStudio::CppUnitTestFramework;
+using namespace LeetCode;
 
 namespace LeetCodeTest
 {

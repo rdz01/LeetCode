@@ -4,12 +4,14 @@
 
 using namespace std;
 
-class LEETCODE_API _008_StringToInteger
+namespace LeetCode
 {
-public:
-	_008_StringToInteger();
-	~_008_StringToInteger();
+	class LEETCODE_API _008_StringToInteger
+	{
+	public:
+		_008_StringToInteger();
+		~_008_StringToInteger();
 
-	int myAtoi(string str);
-};
-
+		int myAtoi(string str);
+	};
+}

@@ -3,6 +3,7 @@
 #include "..\LeetCode\003-LongestSubstringWithoutRepeatingCharacters.h"
 
 using namespace Microsoft::VisualStudio::CppUnitTestFramework;
+using namespace LeetCode;
 
 namespace LeetCodeTest
 {

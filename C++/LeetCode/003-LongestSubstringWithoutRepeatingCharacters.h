@@ -4,12 +4,14 @@
 
 using namespace std;
 
-class LEETCODE_API _003_LongestSubstringWithoutRepeatingCharacters
+namespace LeetCode
 {
-public:
-	_003_LongestSubstringWithoutRepeatingCharacters();
-	~_003_LongestSubstringWithoutRepeatingCharacters();
+	class LEETCODE_API _003_LongestSubstringWithoutRepeatingCharacters
+	{
+	public:
+		_003_LongestSubstringWithoutRepeatingCharacters();
+		~_003_LongestSubstringWithoutRepeatingCharacters();
 
-	int lengthOfLongestSubstring(string s);
-};
-
+		int lengthOfLongestSubstring(string s);
+	};
+}

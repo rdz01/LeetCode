@@ -3,6 +3,7 @@
 #include "..\LeetCode\002-AddTwoNumbers.h"
 
 using namespace Microsoft::VisualStudio::CppUnitTestFramework;
+using namespace LeetCode;
 
 namespace LeetCodeTest
 {

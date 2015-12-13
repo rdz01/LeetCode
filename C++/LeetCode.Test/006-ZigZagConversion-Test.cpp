@@ -3,6 +3,7 @@
 #include "..\LeetCode\006-ZigZagConversion.h"
 
 using namespace Microsoft::VisualStudio::CppUnitTestFramework;
+using namespace LeetCode;
 
 namespace LeetCodeTest
 {

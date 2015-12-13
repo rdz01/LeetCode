@@ -3,6 +3,7 @@
 #include "..\LeetCode\\007-ReverseInteger.h"
 
 using namespace Microsoft::VisualStudio::CppUnitTestFramework;
+using namespace LeetCode;
 
 namespace LeetCodeTest 
 {

@@ -4,12 +4,14 @@
 
 using namespace std;
 
-class LEETCODE_API _004_MedianOfTwoSortedArrays
+namespace LeetCode
 {
-public:
-	_004_MedianOfTwoSortedArrays();
-	~_004_MedianOfTwoSortedArrays();
+	class LEETCODE_API _004_MedianOfTwoSortedArrays
+	{
+	public:
+		_004_MedianOfTwoSortedArrays();
+		~_004_MedianOfTwoSortedArrays();
 
-	double findMedianSortedArrays(vector<int> & nums1, vector<int> & nums2);
-};
-
+		double findMedianSortedArrays(vector<int> & nums1, vector<int> & nums2);
+	};
+}

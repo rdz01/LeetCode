@@ -1,57 +1,59 @@
 #include "stdafx.h"
 #include "008-StringToInteger(atoi).h"
 
-
-_008_StringToInteger::_008_StringToInteger()
+namespace LeetCode
 {
-}
+	_008_StringToInteger::_008_StringToInteger()
+	{
+	}
 
 
-_008_StringToInteger::~_008_StringToInteger()
-{
-}
+	_008_StringToInteger::~_008_StringToInteger()
+	{
+	}
 
 #define INT_MAX     2147483647 
 #define INT_MIN     (-INT_MAX - 1)	//	http://stackoverflow.com/questions/14695118/2147483648-0-returns-true-in-c
 
-int _008_StringToInteger::myAtoi(string str)
-{
-	if (str.empty()) { return 0; }
-
-	bool nagative = false;
-	int index = 0;
-
-	while (index < str.size())
+	int _008_StringToInteger::myAtoi(string str)
 	{
-		if (!isspace(str[index])) break;
-		else index++;
-	}
+		if (str.empty()) { return 0; }
 
-	if (str[index] == '-') 
-	{
-		nagative = true;
-		index++;
-	}
-	else if (str[index]=='+') 
-	{
-		index++;
-	}
+		bool nagative = false;
+		int index = 0;
 
-	int result = 0, digit;
-	auto POSITIVE_OVERFLOW_HEAD = INT_MAX / 10;
-	auto POSITIVE_OVERFLOW_TAIL = INT_MAX % 10;
-	while (index < str.size() && isdigit(str[index]))
-	{
-		digit = str[index] - '0';
-		if (result > POSITIVE_OVERFLOW_HEAD ||
-			(result == POSITIVE_OVERFLOW_HEAD && digit > POSITIVE_OVERFLOW_TAIL)) 
+		while (index < str.size())
 		{
-			return nagative ? INT_MIN : INT_MAX;
+			if (!isspace(str[index])) break;
+			else index++;
 		}
 
-		result = result * 10 + digit;
-		index++;
-	}
+		if (str[index] == '-')
+		{
+			nagative = true;
+			index++;
+		}
+		else if (str[index] == '+')
+		{
+			index++;
+		}
 
-	return nagative ? -result : result;
+		int result = 0, digit;
+		auto POSITIVE_OVERFLOW_HEAD = INT_MAX / 10;
+		auto POSITIVE_OVERFLOW_TAIL = INT_MAX % 10;
+		while (index < str.size() && isdigit(str[index]))
+		{
+			digit = str[index] - '0';
+			if (result > POSITIVE_OVERFLOW_HEAD ||
+				(result == POSITIVE_OVERFLOW_HEAD && digit > POSITIVE_OVERFLOW_TAIL))
+			{
+				return nagative ? INT_MIN : INT_MAX;
+			}
+
+			result = result * 10 + digit;
+			index++;
+		}
+
+		return nagative ? -result : result;
+	}
 }
