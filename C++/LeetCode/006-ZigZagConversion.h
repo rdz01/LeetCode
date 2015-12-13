@@ -6,12 +6,12 @@ using namespace std;
 
 namespace LeetCode
 {
-	class LEETCODE_API _006_ZigZagConversion
-	{
-	public:
-		_006_ZigZagConversion();
-		~_006_ZigZagConversion();
+    class LEETCODE_API _006_ZigZagConversion
+    {
+    public:
+        _006_ZigZagConversion();
+        ~_006_ZigZagConversion();
 
-		string convert(string s, int numRows);
-	};
+        string convert(string s, int numRows);
+    };
 }

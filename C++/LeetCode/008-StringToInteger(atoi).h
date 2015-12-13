@@ -9,7 +9,7 @@ namespace LeetCode
 {
 	class LEETCODE_API _008_StringToInteger
 	{
-	public:
+    public:
 		_008_StringToInteger();
 		~_008_StringToInteger();
 

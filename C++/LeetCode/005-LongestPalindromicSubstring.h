@@ -6,12 +6,12 @@ using namespace std;
 
 namespace LeetCode
 {
-	class LEETCODE_API _005_LongestPalindromicSubstring
-	{
-	public:
-		_005_LongestPalindromicSubstring();
-		~_005_LongestPalindromicSubstring();
+    class LEETCODE_API _005_LongestPalindromicSubstring
+    {
+    public:
+        _005_LongestPalindromicSubstring();
+        ~_005_LongestPalindromicSubstring();
 
-		string longestPalindrome(string s);
-	};
+        string longestPalindrome(string s);
+    };
 }
