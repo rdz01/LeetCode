@@ -45,6 +45,9 @@
     <ClInclude Include="006-ZigZagConversion.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="007-ReverseInteger.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -69,6 +72,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="006-ZigZagConversion.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="007-ReverseInteger.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

@@ -150,6 +150,7 @@
     <ClInclude Include="004-MedianOfTwoSortedArrays.h" />
     <ClInclude Include="005-LongestPalindromicSubstring.h" />
     <ClInclude Include="006-ZigZagConversion.h" />
+    <ClInclude Include="007-ReverseInteger.h" />
     <ClInclude Include="common.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
@@ -161,6 +162,7 @@
     <ClCompile Include="004-MedianOfTwoSortedArrays.cpp" />
     <ClCompile Include="005-LongestPalindromicSubstring.cpp" />
     <ClCompile Include="006-ZigZagConversion.cpp" />
+    <ClCompile Include="007-ReverseInteger.cpp" />
     <ClCompile Include="dllmain.cpp">
       <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</CompileAsManaged>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">

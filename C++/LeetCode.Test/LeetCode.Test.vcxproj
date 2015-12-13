@@ -163,6 +163,7 @@
     <ClCompile Include="004-MedianOfTwoSortedArrays-Test.cpp" />
     <ClCompile Include="005-LongestPalindromicSubstring-Test.cpp" />
     <ClCompile Include="006-ZigZagConversion-Test.cpp" />
+    <ClCompile Include="007-ReverseInteger-Test.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
