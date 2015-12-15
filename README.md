@@ -89,3 +89,4 @@ The solutions for LeetCode problems. Try to solve them with all languages.
 |72|[Edit Distance](./Problems/072-EditDistance.md)| C C++ C# Java JavaScript Python Ruby | | | |
 |73|[Set Matrix Zeroes](./Problems/073-SetMatrixZeroes.md)| C C++ C# Java JavaScript Python Ruby | | | |
 |74|[Search a 2D Matrix](./Problems/074-SearchA2DMatrix.md)| C C++ C# Java JavaScript Python Ruby | | | |
+|75|[Sort Colors](./Problems/075-SortColors.md)| C C++ C# Java JavaScript Python Ruby | | | |
