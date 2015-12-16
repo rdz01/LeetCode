@@ -85,7 +85,7 @@ The solutions for LeetCode problems. Try to solve them with all languages.
 |68|[Text Justification](./Problems/068-TextJustification.md)| C C++ [C#](./CSharp/LeetCode/068-TextJustification.cs)(448ms) Java JavaScript Python Ruby | O(N) | O(N) | |
 |69|[Sqrt(x)](./Problems/069-Sqrt(x).md)| C C++ [C#](./CSharp/LeetCode/069-Sqrt(x).cs)(60ms) Java JavaScript Python Ruby | O(LogN) | O(1) | Use [Newton–Raphson Method](https://en.wikipedia.org/wiki/Newton%27s_method) to [computing square root](https://en.wikipedia.org/wiki/Methods_of_computing_square_roots) |
 |70|[Climbing Stairs](./Problems/070-ClimbingStairs.md)| C C++ [C#](./CSharp/LeetCode/070-ClimbingStairs.cs)(48ms) Java JavaScript Python Ruby | O(N) | O(1) | |
-|71|[Simplify Path](./Problems/071-SimplifyPath.md)| C C++ [C#](./CSharp/LeetCode/071-SimplifyPath.cs)(136ms) Java JavaScript Python Ruby | O(N) | O(N) | |
+|71|[Simplify Path](./Problems/071-SimplifyPath.md)| C C++ [C#](./CSharp/LeetCode/071-SimplifyPath.cs)(132ms) Java JavaScript Python Ruby | O(N) | O(N) | |
 |72|[Edit Distance](./Problems/072-EditDistance.md)| C C++ C# Java JavaScript Python Ruby | | | |
 |73|[Set Matrix Zeroes](./Problems/073-SetMatrixZeroes.md)| C C++ C# Java JavaScript Python Ruby | | | |
 |74|[Search a 2D Matrix](./Problems/074-SearchA2DMatrix.md)| C C++ C# Java JavaScript Python Ruby | | | |

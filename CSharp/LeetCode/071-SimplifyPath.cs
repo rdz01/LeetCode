@@ -1,5 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
+using System.Text;
 
 namespace LeetCode
 {
@@ -10,19 +10,22 @@ namespace LeetCode
             if (string.IsNullOrEmpty(path)) { return "/"; }
 
             var folders = path.Split(new char[] { '/' }, StringSplitOptions.RemoveEmptyEntries);
-            var pathList = new List<string>();
-            foreach (var folder in folders)
+            var folder = string.Empty;
+            var builder = new StringBuilder();
+            var ignore = 0;
+            for (int i = folders.Length - 1; i >= 0; i--)
             {
+                folder = folders[i];
+
                 if (folder.Equals(".")) { continue; }
-                else if (folder.Equals(".."))
-                    if (pathList.Count > 0) { pathList.RemoveAt(pathList.Count - 1); } else { continue; }
-                else { pathList.Add(folder); }
+                if (folder.Equals("..")) { ignore++; continue; }
+                if (ignore > 0) { ignore--; continue; }
+
+                builder.Insert(0, folder);
+                builder.Insert(0, "/");
             }
 
-            var result = "/";
-            if (pathList.Count > 0) { result += string.Join("/", pathList); }
-
-            return result;
+            return builder.Length > 0 ? builder.ToString() : "/";
         }
     }
 }
