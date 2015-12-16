@@ -117,6 +117,7 @@
     <Compile Include="069-Sqrt%28x%29-Test.cs" />
     <Compile Include="070-ClimbingStairs-Test.cs" />
     <Compile Include="071-SimplifyPath-Test.cs" />
+    <Compile Include="072-EditDistance-Test.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="001-TwoSume-Test.cs" />
     <Compile Include="002-AddTwoNumbers-Test.cs" />
