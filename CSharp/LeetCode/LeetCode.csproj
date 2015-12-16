@@ -111,6 +111,7 @@
     <Compile Include="068-TextJustification.cs" />
     <Compile Include="069-Sqrt%28x%29.cs" />
     <Compile Include="070-ClimbingStairs.cs" />
+    <Compile Include="071-SimplifyPath.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
