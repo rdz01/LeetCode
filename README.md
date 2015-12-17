@@ -87,6 +87,6 @@ The solutions for LeetCode problems. Try to solve them with all languages.
 |70|[Climbing Stairs](./Problems/070-ClimbingStairs.md)| C C++ [C#](./CSharp/LeetCode/070-ClimbingStairs.cs)(48ms) Java JavaScript Python Ruby | O(N) | O(1) | |
 |71|[Simplify Path](./Problems/071-SimplifyPath.md)| C C++ [C#](./CSharp/LeetCode/071-SimplifyPath.cs)(132ms) Java JavaScript Python Ruby | O(N) | O(N) | |
 |72|[Edit Distance](./Problems/072-EditDistance.md)| C C++ [C#](./CSharp/LeetCode/072-EditDistance.cs)(144ms) Java JavaScript Python Ruby | O(N*M) | O(Min(N,M)) | |
-|73|[Set Matrix Zeroes](./Problems/073-SetMatrixZeroes.md)| C C++ [C#](./CSharp/LeetCode/073-SetMatrixZeroes.cs)(184ms) Java JavaScript Python Ruby | O(N*M) | O(N+M) | |
+|73|[Set Matrix Zeroes](./Problems/073-SetMatrixZeroes.md)| C C++ [C#](./CSharp/LeetCode/073-SetMatrixZeroes.cs)(184ms) Java JavaScript Python Ruby | O(N*M) | O(N+M) | When use constant space, solution will slower |
 |74|[Search a 2D Matrix](./Problems/074-SearchA2DMatrix.md)| C C++ C# Java JavaScript Python Ruby | | | |
 |75|[Sort Colors](./Problems/075-SortColors.md)| C C++ C# Java JavaScript Python Ruby | | | |
