@@ -115,6 +115,7 @@
     <Compile Include="072-EditDistance.cs" />
     <Compile Include="073-SetMatrixZeroes.cs" />
     <Compile Include="074-SearchA2DMatrix.cs" />
+    <Compile Include="075-SortColors.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
