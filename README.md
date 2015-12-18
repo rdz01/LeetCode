@@ -90,3 +90,4 @@ The solutions for LeetCode problems. Try to solve them with all languages.
 |73|[Set Matrix Zeroes](./Problems/073-SetMatrixZeroes.md)| C C++ [C#](./CSharp/LeetCode/073-SetMatrixZeroes.cs)(184ms) Java JavaScript Python Ruby | O(N*M) | O(N+M) | When use constant space, solution will slower |
 |74|[Search a 2D Matrix](./Problems/074-SearchA2DMatrix.md)| C C++ C# Java JavaScript Python Ruby | | | |
 |75|[Sort Colors](./Problems/075-SortColors.md)| C C++ C# Java JavaScript Python Ruby | | | |
+|76|[Minimum Window Substring](./Problems/076-MinimumWindowSubstring.md)| C C++ C# Java JavaScript Python Ruby | | | |
