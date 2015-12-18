@@ -24,5 +24,18 @@
                 }
             }
         }
+
+        public void SortColors_2(int[] nums)
+        {
+            var counts = new int[3] { 0, 0, 0 };
+            int i, j;
+            for (i = 0; i < nums.Length; i++)
+                counts[nums[i]]++;
+
+            int index = 0;
+            for (i = 0; i < 3; i++)
+                for (j = 0; j < counts[i]; j++)
+                    nums[index++] = i;
+        }
     }
 }
