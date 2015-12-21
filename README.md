@@ -93,3 +93,4 @@ The solutions for LeetCode problems. Try to solve them with all languages.
 |76|[Minimum Window Substring](./Problems/076-MinimumWindowSubstring.md)| C C++ C# Java JavaScript Python Ruby | | | |
 |77|[Combinations](./Problems/077-Combinations.md)| C C++ C# Java JavaScript Python Ruby | | | |
 |78|[Subsets](./Problems/078-Subsets.md)| C C++ C# Java JavaScript Python Ruby | | | |
+|79|[Word Search](./Problems/079-WordSearch.md)| C C++ C# Java JavaScript Python Ruby | | | |
