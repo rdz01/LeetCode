@@ -95,3 +95,4 @@ The solutions for LeetCode problems. Try to solve them with all languages.
 |78|[Subsets](./Problems/078-Subsets.md)| C C++ C# Java JavaScript Python Ruby | | | |
 |79|[Word Search](./Problems/079-WordSearch.md)| C C++ C# Java JavaScript Python Ruby | | | |
 |80|[Remove Duplicates from Sorted Array II](./Problems/080-RemoveDuplicatesFromSortedArray2.md)| C C++ C# Java JavaScript Python Ruby | | | |
+|81|[Search in Rotated Sorted Array II](./Problems/081-SearchInRotatedSortedArray2.md)| C C++ C# Java JavaScript Python Ruby | | | |
