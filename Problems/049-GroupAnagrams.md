@@ -8,15 +8,11 @@ For example,
 
 > Return:
 > 
-> ```
+> ```C
 > [
-> 
 >   ["ate", "eat","tea"],
-> 
 >   ["nat","tan"],
-> 
 >   ["bat"]
-> 
 > ]
 > ```
 

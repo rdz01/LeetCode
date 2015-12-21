@@ -16,15 +16,13 @@ For example,
 > 
 > Return the formatted lines as:
 > 
+> ```C
 > [
-> 
 >    "This    is    an",
->    
 >    "example  of text",
->    
 >    "justification.  "
->    
 > ]
+> ```
 
 **Note:** Each word is guaranteed not to exceed *L* in length.
 
