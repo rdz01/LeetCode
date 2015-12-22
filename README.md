@@ -90,7 +90,7 @@ The solutions for LeetCode problems. Try to solve them with all languages.
 |73|[Set Matrix Zeroes](./Problems/073-SetMatrixZeroes.md)| C C++ [C#](./CSharp/LeetCode/073-SetMatrixZeroes.cs)(184ms) Java JavaScript Python Ruby | O(N*M) | O(N+M) | When use constant space, solution will slower |
 |74|[Search a 2D Matrix](./Problems/074-SearchA2DMatrix.md)| C C++ [C#](./CSharp/LeetCode/074-SearchA2DMatrix.cs)(164ms) Java JavaScript Python Ruby | O(Log(N+M)) | O(1) | |
 |75|[Sort Colors](./Problems/075-SortColors.md)| C C++ [C#](./CSharp/LeetCode/075-SortColors.cs)(480ms) Java JavaScript Python Ruby | O(N) | O(1) | |
-|76|[Minimum Window Substring](./Problems/076-MinimumWindowSubstring.md)| C C++ [C#](./CSharp/LeetCode/076-MinimumWindowSubstring.cs)(144ms) Java JavaScript Python Ruby | | | |
+|76|[Minimum Window Substring](./Problems/076-MinimumWindowSubstring.md)| C C++ [C#](./CSharp/LeetCode/076-MinimumWindowSubstring.cs)(144ms) Java JavaScript Python Ruby | O(N+M) | O(1) | |
 |77|[Combinations](./Problems/077-Combinations.md)| C C++ C# Java JavaScript Python Ruby | | | |
 |78|[Subsets](./Problems/078-Subsets.md)| C C++ C# Java JavaScript Python Ruby | | | |
 |79|[Word Search](./Problems/079-WordSearch.md)| C C++ C# Java JavaScript Python Ruby | | | |
