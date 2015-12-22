@@ -116,6 +116,7 @@
     <Compile Include="073-SetMatrixZeroes.cs" />
     <Compile Include="074-SearchA2DMatrix.cs" />
     <Compile Include="075-SortColors.cs" />
+    <Compile Include="076-MinimumWindowSubstring.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
