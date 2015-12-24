@@ -14,13 +14,13 @@ namespace LeetCode.Test
 
             Assert.AreEqual(8, result.Count);
             AssertList(new int[] { }, result[0]);
-            AssertList(new int[] { 1, 2, 3 }, result[1]);
-            AssertList(new int[] { 1 }, result[2]);
-            AssertList(new int[] { 2 }, result[3]);
+            AssertList(new int[] { 1 }, result[1]);
+            AssertList(new int[] { 2 }, result[2]);
+            AssertList(new int[] { 1, 2 }, result[3]);
             AssertList(new int[] { 3 }, result[4]);
-            AssertList(new int[] { 1, 2 }, result[5]);
-            AssertList(new int[] { 1, 3 }, result[6]);
-            AssertList(new int[] { 2, 3 }, result[7]);
+            AssertList(new int[] { 1, 3 }, result[5]);
+            AssertList(new int[] { 2, 3 }, result[6]);
+            AssertList(new int[] { 1, 2, 3 }, result[7]);
         }
 
         [TestMethod]
@@ -31,13 +31,13 @@ namespace LeetCode.Test
 
             Assert.AreEqual(8, result.Count);
             AssertList(new int[] { }, result[0]);
-            AssertList(new int[] { 1, 2, 3 }, result[1]);
-            AssertList(new int[] { 1 }, result[2]);
-            AssertList(new int[] { 2 }, result[3]);
+            AssertList(new int[] { 1 }, result[1]);
+            AssertList(new int[] { 2 }, result[2]);
+            AssertList(new int[] { 1, 2 }, result[3]);
             AssertList(new int[] { 3 }, result[4]);
-            AssertList(new int[] { 1, 2 }, result[5]);
-            AssertList(new int[] { 1, 3 }, result[6]);
-            AssertList(new int[] { 2, 3 }, result[7]);
+            AssertList(new int[] { 1, 3 }, result[5]);
+            AssertList(new int[] { 2, 3 }, result[6]);
+            AssertList(new int[] { 1, 2, 3 }, result[7]);
         }
 
         [TestMethod]
