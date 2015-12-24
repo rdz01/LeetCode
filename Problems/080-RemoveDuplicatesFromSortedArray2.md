@@ -1,6 +1,6 @@
 # Remove Duplicates from Sorted Array II
 
-Follow up for "[Remove Duplicates](./Problems/026-RemoveDuplicatesFromSortedArray.md)":
+Follow up for "[Remove Duplicates](./026-RemoveDuplicatesFromSortedArray.md)":
 * What if duplicates are allowed at most *twice*?
 
 For example,
