@@ -1,6 +1,6 @@
 # Search in Rotated Sorted Array II
 
-Follow up for "[Search in Rotated Sorted Array](./Problems/033-SearchInRotatedSortedArray.md)":
+Follow up for "[Search in Rotated Sorted Array](./033-SearchInRotatedSortedArray.md)":
 
 What if *duplicates* are allowed?
 
