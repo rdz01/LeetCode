@@ -120,6 +120,7 @@
     <Compile Include="077-Combinations.cs" />
     <Compile Include="078-Subsets.cs" />
     <Compile Include="079-WordSearch.cs" />
+    <Compile Include="080-RemoveDuplicatesFromSortedArray2.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
