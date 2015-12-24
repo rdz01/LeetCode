@@ -9,21 +9,21 @@ namespace LeetCode
             if (n <= 0 || k <= 0 || k > n) { return null; }
 
             var results = new List<IList<int>>();
-            IList<int> result;
-            var select = new bool[n];
-            int i, j, count = 0;
-            bool hasNext;
 
+            int i, j, count = 0;
+            var select = new bool[n];
             for (i = 0; i < k; i++) { select[i] = true; }
 
+            bool hasNext;
             while (true)
             {
-                result = new List<int>();
+                var result = new List<int>();
                 for (i = 0; i < n; i++)
                     if (select[i]) { result.Add(i + 1); }
                 results.Add(result);
 
                 hasNext = false;
+                count = 0;
                 for (i = 0; i < n - 1; i++)
                 {
                     if (select[i] && !select[i + 1])
