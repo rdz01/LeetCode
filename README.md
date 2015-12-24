@@ -96,3 +96,4 @@ The solutions for LeetCode problems. Try to solve them with all languages.
 |79|[Word Search](./Problems/079-WordSearch.md)| C C++ [C#](./CSharp/LeetCode/079-WordSearch.cs)(164ms) Java JavaScript Python Ruby | O((N*M)<sup>2</sup>) | O(N*M) | |
 |80|[Remove Duplicates from Sorted Array II](./Problems/080-RemoveDuplicatesFromSortedArray2.md)| C C++ [C#](./CSharp/LeetCode/080-RemoveDuplicatesFromSortedArray2.cs)(480ms) Java JavaScript Python Ruby | O(N) | O(1) | |
 |81|[Search in Rotated Sorted Array II](./Problems/081-SearchInRotatedSortedArray2.md)| C C++ C# Java JavaScript Python Ruby | | | |
+|82|[Remove Duplicates from Sorted List II](./Problems/082-RemoveDuplicatesFromSortedList2.md)| C C++ C# Java JavaScript Python Ruby | | | |
