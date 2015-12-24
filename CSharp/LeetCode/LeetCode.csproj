@@ -118,6 +118,7 @@
     <Compile Include="075-SortColors.cs" />
     <Compile Include="076-MinimumWindowSubstring.cs" />
     <Compile Include="077-Combinations.cs" />
+    <Compile Include="078-Subsets.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -123,6 +123,7 @@
     <Compile Include="075-SortColors-Test.cs" />
     <Compile Include="076-MinimumWindowSubstring-Test.cs" />
     <Compile Include="077-Combinations-Test.cs" />
+    <Compile Include="078-Subsets-Test.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="001-TwoSume-Test.cs" />
     <Compile Include="002-AddTwoNumbers-Test.cs" />
