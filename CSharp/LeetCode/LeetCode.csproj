@@ -122,6 +122,7 @@
     <Compile Include="079-WordSearch.cs" />
     <Compile Include="080-RemoveDuplicatesFromSortedArray2.cs" />
     <Compile Include="081-SearchInRotatedSortedArray2.cs" />
+    <Compile Include="082-RemoveDuplicatesFromSortedList2.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
