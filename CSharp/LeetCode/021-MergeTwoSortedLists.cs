@@ -25,13 +25,5 @@
             current.next = l1 == null ? l2 : l1;
             return head.next;
         }
-
-
-        public class ListNode
-        {
-            public int val;
-            public ListNode next;
-            public ListNode(int x) { val = x; }
-        }
     }
 }

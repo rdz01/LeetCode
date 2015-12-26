@@ -1,5 +1,4 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using ListNode = LeetCode._002_AddTwoNumbers.ListNode;
 
 namespace LeetCode.Test
 {

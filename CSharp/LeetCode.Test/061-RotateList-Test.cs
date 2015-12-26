@@ -1,5 +1,4 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using ListNode = LeetCode._061_RotateList.ListNode;
 
 namespace LeetCode.Test
 {

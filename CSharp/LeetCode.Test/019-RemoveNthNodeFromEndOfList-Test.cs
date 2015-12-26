@@ -1,5 +1,4 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using ListNode = LeetCode._019_RemoveNthNodeFromEndOfList.ListNode;
 
 namespace LeetCode.Test
 {

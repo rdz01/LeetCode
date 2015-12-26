@@ -1,5 +1,4 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using ListNode = LeetCode._025_ReverseNodesInKGroup.ListNode;
 
 namespace LeetCode.Test
 {

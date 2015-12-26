@@ -1,5 +1,4 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using ListNode = LeetCode._021_MergeTwoSortedLists.ListNode;
 
 namespace LeetCode.Test
 {

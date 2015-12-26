@@ -1,5 +1,4 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using ListNode = LeetCode._082_RemoveDuplicatesFromSortedList2.ListNode;
 
 namespace LeetCode.Test
 {

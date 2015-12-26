@@ -1,5 +1,4 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using ListNode = LeetCode._024_SwapNodesInPairs.ListNode;
 
 namespace LeetCode.Test
 {
