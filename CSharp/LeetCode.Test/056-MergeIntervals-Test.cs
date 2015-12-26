@@ -11,10 +11,10 @@ namespace LeetCode.Test
         {
             var input = new[]
             {
-                new _056_MergeIntervals.Interval(1, 3),
-                new _056_MergeIntervals.Interval(2, 6),
-                new _056_MergeIntervals.Interval(8, 10),
-                new _056_MergeIntervals.Interval(15, 18),
+                new Interval(1, 3),
+                new Interval(2, 6),
+                new Interval(8, 10),
+                new Interval(15, 18),
             };
 
             var solution = new _056_MergeIntervals();
@@ -34,8 +34,8 @@ namespace LeetCode.Test
         {
             var input = new[]
             {
-                new _056_MergeIntervals.Interval(1, 3),
-                new _056_MergeIntervals.Interval(0, 2)
+                new Interval(1, 3),
+                new Interval(0, 2)
             };
 
             var solution = new _056_MergeIntervals();
@@ -49,7 +49,7 @@ namespace LeetCode.Test
         [TestMethod]
         public void MergeTest_Empty()
         {
-            var input = new List<_056_MergeIntervals.Interval>();
+            var input = new List<Interval>();
 
             var solution = new _056_MergeIntervals();
             var result = solution.Merge(input);
