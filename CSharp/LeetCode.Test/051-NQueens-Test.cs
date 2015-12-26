@@ -48,7 +48,7 @@ namespace LeetCode.Test
             var solution = new _051_NQueens();
             var result = solution.SolveNQueens(4);
 
-            AssertQueens(new List<IList<string>>()
+            AssertHelper.AssertList(new List<IList<string>>()
             {
                 new List<string>
                 {

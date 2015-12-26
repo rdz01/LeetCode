@@ -1,5 +1,4 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using System.Collections.Generic;
 
 namespace LeetCode.Test
 {
@@ -12,7 +11,7 @@ namespace LeetCode.Test
             var solution = new _030_SubstringWithConcatenationOfAllWords();
             var result = solution.FindSubstring("barfoothefoobarman", new string[] { "foo", "bar" });
 
-            AssertList(new List<int>() { 0, 9 }, result);
+            AssertHelper.AssertList(new int[] { 0, 9 }, result);
         }
 
         [TestMethod]
@@ -21,7 +20,7 @@ namespace LeetCode.Test
             var solution = new _030_SubstringWithConcatenationOfAllWords();
             var result = solution.FindSubstring("barfoothefoobarman", new string[] { "foo", "bar", "yeh" });
 
-            AssertList(new List<int>(), result);
+            AssertHelper.AssertList(new int[] { }, result);
         }
 
         [TestMethod]
@@ -30,7 +29,7 @@ namespace LeetCode.Test
             var solution = new _030_SubstringWithConcatenationOfAllWords();
             var result = solution.FindSubstring("barfoothefoobarman", new string[] { });
 
-            AssertList(new List<int>(), result);
+            AssertHelper.AssertList(new int[] { }, result);
         }
 
         [TestMethod]
@@ -39,7 +38,7 @@ namespace LeetCode.Test
             var solution = new _030_SubstringWithConcatenationOfAllWords();
             var result = solution.FindSubstring("aaaaa", new string[] { "a" });
 
-            AssertList(new List<int>() { 0, 1, 2, 3, 4 }, result);
+            AssertHelper.AssertList(new int[] { 0, 1, 2, 3, 4 }, result);
         }
 
         [TestMethod]
@@ -48,7 +47,7 @@ namespace LeetCode.Test
             var solution = new _030_SubstringWithConcatenationOfAllWords();
             var result = solution.FindSubstring("barfoo", new string[] { "foo", "bar", "the" });
 
-            AssertList(new List<int>(), result);
+            AssertHelper.AssertList(new int[] { }, result);
         }
 
         [TestMethod]
@@ -57,20 +56,7 @@ namespace LeetCode.Test
             var solution = new _030_SubstringWithConcatenationOfAllWords();
             var result = solution.FindSubstring("wordgoodgoodgoodbestword", new string[] { "word", "good", "best", "good" });
 
-            AssertList(new List<int>() { 8 }, result);
-        }
-
-
-        private void AssertList(IList<int> expected, IList<int> actual)
-        {
-            Assert.IsNotNull(expected);
-            Assert.IsNotNull(actual);
-            Assert.AreEqual(expected.Count, actual.Count);
-
-            for (int i = 0; i < expected.Count; i++)
-            {
-                Assert.AreEqual(expected[i], actual[i]);
-            }
+            AssertHelper.AssertList(new int[] { 8 }, result);
         }
     }
 }

@@ -15,9 +15,12 @@ namespace LeetCode.Test
             var result = solution.FourSum(input, 0);
 
             Assert.AreEqual(3, result.Count);
-            AssertList(new List<int> { -2, -1, 1, 2 }, result[0]);
-            AssertList(new List<int> { -2, 0, 0, 2 }, result[1]);
-            AssertList(new List<int> { -1, 0, 0, 1 }, result[2]);
+            AssertHelper.AssertList(new List<IList<int>>
+            {
+                new List<int> { -2, -1, 1, 2 },
+                new List<int> { -2, 0, 0, 2 },
+                new List<int> { -1, 0, 0, 1 }
+            }, result);
         }
 
         [TestMethod]
@@ -29,7 +32,10 @@ namespace LeetCode.Test
             var result = solution.FourSum(input, 0);
 
             Assert.AreEqual(1, result.Count);
-            AssertList(new List<int> { 0, 0, 0, 0 }, result[0]);
+            AssertHelper.AssertList(new List<IList<int>>
+            {
+                new List<int> { 0, 0, 0, 0 }
+            }, result);
         }
 
         [TestMethod]
@@ -69,7 +75,10 @@ namespace LeetCode.Test
             var solution = new _018_4Sum();
             var result = solution.FourSum(input, 0);
             Assert.AreEqual(1, result.Count);
-            AssertList(new List<int> { 0, 0, 0, 0 }, result[0]);
+            AssertHelper.AssertList(new List<IList<int>>
+            {
+                new List<int> { 0, 0, 0, 0 }
+            }, result);
 
             result = solution.FourSum(input, 1);
             Assert.AreEqual(0, result.Count);
@@ -83,25 +92,20 @@ namespace LeetCode.Test
             var solution = new _018_4Sum();
             var result = solution.FourSum(input, 0);
             Assert.AreEqual(3, result.Count);
-            AssertList(new List<int> { -1, -1, 1, 1 }, result[0]);
-            AssertList(new List<int> { -1, 0, 0, 1 }, result[1]);
-            AssertList(new List<int> { 0, 0, 0, 0 }, result[2]);
+            AssertHelper.AssertList(new List<IList<int>>
+            {
+                new List<int> { -1, -1, 1, 1 },
+                new List<int> { -1, 0, 0, 1 },
+                new List<int> { 0, 0, 0, 0 }
+            }, result);
 
             result = solution.FourSum(input, 1);
             Assert.AreEqual(2, result.Count);
-            AssertList(new List<int> { -1, 0, 1, 1 }, result[0]);
-            AssertList(new List<int> { 0, 0, 0, 1 }, result[1]);
-        }
-
-
-        private void AssertList(IList<int> expected, IList<int> actual)
-        {
-            Assert.AreEqual(expected.Count, actual.Count);
-
-            for (int i = 0; i < expected.Count; i++)
+            AssertHelper.AssertList(new List<IList<int>>
             {
-                Assert.AreEqual(expected[i], actual[i]);
-            }
+                new List<int> { -1, 0, 1, 1 },
+                new List<int> { 0, 0, 0, 1 }
+            }, result);
         }
     }
 }

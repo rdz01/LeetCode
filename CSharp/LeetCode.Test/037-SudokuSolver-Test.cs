@@ -23,7 +23,7 @@ namespace LeetCode.Test
             var solution = new _037_SudokuSolver();
             solution.SolveSudoku(input);
 
-            AssertSudoku(new char[9, 9]
+            AssertHelper.AssertArray(new char[9, 9]
             {
                 { '5','3','4','6','7','8','9','1','2'},
                 { '6','7','2','1','9','5','3','4','8'},
@@ -55,7 +55,7 @@ namespace LeetCode.Test
             var solution = new _037_SudokuSolver();
             solution.SolveSudoku(input);
 
-            AssertSudoku(new char[9, 9]
+            AssertHelper.AssertArray(new char[9, 9]
             {
                 { '5','3','.','.','7','.','.','.','.'},
                 { '6','.','.','1','9','5','.','.','.'},
@@ -87,7 +87,7 @@ namespace LeetCode.Test
             var solution = new _037_SudokuSolver();
             solution.SolveSudoku(input);
 
-            AssertSudoku(new char[9, 9]
+            AssertHelper.AssertArray(new char[9, 9]
             {
                 { '5','3','.','.','7','.','.','.','.'},
                 { '6','.','.','1','9','5','.','.','.'},
@@ -119,7 +119,7 @@ namespace LeetCode.Test
             var solution = new _037_SudokuSolver();
             solution.SolveSudoku(input);
 
-            AssertSudoku(new char[9, 9]
+            AssertHelper.AssertArray(new char[9, 9]
             {
                 { '5','3','.','.','7','.','.','.','.'},
                 { '6','.','.','1','9','5','.','.','.'},
@@ -131,18 +131,6 @@ namespace LeetCode.Test
                 { '.','.','.','4','1','9','.','.','5'},
                 { '.','.','.','.','8','.','.','7','9'}
             }, input);
-        }
-
-
-        private void AssertSudoku(char[,] expected, char[,] actual)
-        {
-            for (int i = 0; i < 9; i++)
-            {
-                for (int j = 0; j < 9; j++)
-                {
-                    Assert.AreEqual(expected[i, j], actual[i, j]);
-                }
-            }
         }
     }
 }

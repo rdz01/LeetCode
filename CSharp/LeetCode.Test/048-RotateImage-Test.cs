@@ -19,7 +19,7 @@ namespace LeetCode.Test
             var solution = new _048_RotateImage();
             solution.Rotate(input);
 
-            AssertArray(
+            AssertHelper.AssertArray(
                 new int[5, 5] {
                     { 1, 1, 1, 1, 1 },
                     { 2, 2, 2, 2, 2 },
@@ -44,7 +44,7 @@ namespace LeetCode.Test
             var solution = new _048_RotateImage();
             solution.Rotate(input);
 
-            AssertArray(
+            AssertHelper.AssertArray(
                 new int[6, 6] {
                     { 1, 1, 1, 1, 1, 1 },
                     { 2, 2, 2, 2, 2, 2 },
@@ -63,7 +63,7 @@ namespace LeetCode.Test
             var solution = new _048_RotateImage();
             solution.Rotate(input);
 
-            AssertArray(new int[0, 0] { }, input);
+            AssertHelper.AssertArray(new int[0, 0] { }, input);
         }
 
         [TestMethod]
@@ -74,21 +74,7 @@ namespace LeetCode.Test
             var solution = new _048_RotateImage();
             solution.Rotate(input);
 
-            AssertArray(new int[1, 1] { { 1 } }, input);
-        }
-
-
-        private void AssertArray(int[,] expected, int[,] actual)
-        {
-            var temp = expected.GetLength(1);
-
-            for (int i = 0; i < temp; i++)
-            {
-                for (int j = 0; j < temp; j++)
-                {
-                    Assert.AreEqual(expected[i, j], actual[i, j]);
-                }
-            }
+            AssertHelper.AssertArray(new int[1, 1] { { 1 } }, input);
         }
     }
 }

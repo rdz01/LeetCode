@@ -14,7 +14,7 @@ namespace LeetCode.Test
             var result = solution.RemoveDuplicates(input);
 
             Assert.AreEqual(5, result);
-            AssertArray(new int[] { 1, 1, 2, 2, 3 }, input);
+            AssertHelper.AssertArray(new int[] { 1, 1, 2, 2, 3 }, input, true);
         }
 
         [TestMethod]
@@ -26,7 +26,7 @@ namespace LeetCode.Test
             var result = solution.RemoveDuplicates(input);
 
             Assert.AreEqual(5, result);
-            AssertArray(new int[] { 1, 1, 2, 2, 3 }, input);
+            AssertHelper.AssertArray(new int[] { 1, 1, 2, 2, 3 }, input, true);
         }
 
         [TestMethod]
@@ -47,7 +47,7 @@ namespace LeetCode.Test
             var result = solution.RemoveDuplicates(input);
 
             Assert.AreEqual(1, result);
-            AssertArray(new int[] { 1 }, input);
+            AssertHelper.AssertArray(new int[] { 1 }, input);
         }
 
         [TestMethod]
@@ -59,15 +59,7 @@ namespace LeetCode.Test
             var result = solution.RemoveDuplicates(input);
 
             Assert.AreEqual(2, result);
-            AssertArray(new int[] { 1, 1 }, input);
-        }
-
-        private void AssertArray(int[] expected, int[] actual)
-        {
-            for (int i = 0; i < expected.Length; i++)
-            {
-                Assert.AreEqual(expected[i], actual[i]);
-            }
+            AssertHelper.AssertArray(new int[] { 1, 1 }, input);
         }
     }
 }

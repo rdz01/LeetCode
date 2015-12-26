@@ -12,22 +12,22 @@ namespace LeetCode.Test
             var solution = new _031_NextPermutation();
 
             solution.NextPermutation(input);
-            AssertArray(new int[] { 1, 2, 4, 3 }, input);
+            AssertHelper.AssertArray(new int[] { 1, 2, 4, 3 }, input);
 
             solution.NextPermutation(input);
-            AssertArray(new int[] { 1, 3, 2, 4 }, input);
+            AssertHelper.AssertArray(new int[] { 1, 3, 2, 4 }, input);
 
             solution.NextPermutation(input);
-            AssertArray(new int[] { 1, 3, 4, 2 }, input);
+            AssertHelper.AssertArray(new int[] { 1, 3, 4, 2 }, input);
 
             solution.NextPermutation(input);
-            AssertArray(new int[] { 1, 4, 2, 3 }, input);
+            AssertHelper.AssertArray(new int[] { 1, 4, 2, 3 }, input);
 
             solution.NextPermutation(input);
-            AssertArray(new int[] { 1, 4, 3, 2 }, input);
+            AssertHelper.AssertArray(new int[] { 1, 4, 3, 2 }, input);
 
             solution.NextPermutation(input);
-            AssertArray(new int[] { 2, 1, 3, 4 }, input);
+            AssertHelper.AssertArray(new int[] { 2, 1, 3, 4 }, input);
         }
 
         [TestMethod]
@@ -37,7 +37,7 @@ namespace LeetCode.Test
             var solution = new _031_NextPermutation();
 
             solution.NextPermutation(input);
-            AssertArray(new int[] { 1, 2, 3, 4 }, input);
+            AssertHelper.AssertArray(new int[] { 1, 2, 3, 4 }, input);
         }
 
         [TestMethod]
@@ -47,7 +47,7 @@ namespace LeetCode.Test
             var solution = new _031_NextPermutation();
 
             solution.NextPermutation(input);
-            AssertArray(new int[] { }, input);
+            AssertHelper.AssertArray(new int[] { }, input);
         }
 
         [TestMethod]
@@ -57,16 +57,7 @@ namespace LeetCode.Test
             var solution = new _031_NextPermutation();
 
             solution.NextPermutation(input);
-            AssertArray(new int[] { 1 }, input);
-        }
-
-
-        private void AssertArray(int[] expected, int[] actual)
-        {
-            for (int i = 0; i < expected.Length; i++)
-            {
-                Assert.AreEqual(expected[i], actual[i]);
-            }
+            AssertHelper.AssertArray(new int[] { 1 }, input);
         }
     }
 }

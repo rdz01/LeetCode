@@ -135,6 +135,8 @@
     <Compile Include="005-LongestPalindromicSubstring-Test.cs" />
     <Compile Include="004-MedianOfTwoSortedArrays-Test.cs" />
     <Compile Include="019-RemoveNthNodeFromEndOfList-Test.cs" />
+    <Compile Include="AssertHelper.cs" />
+    <Compile Include="TestHelper.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\LeetCode\LeetCode.csproj">

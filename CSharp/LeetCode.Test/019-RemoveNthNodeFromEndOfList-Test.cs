@@ -8,12 +8,12 @@ namespace LeetCode.Test
         [TestMethod]
         public void RemoveNthFromEndTest()
         {
-            var input = GenerateList(new int[] { 1, 2, 3, 4, 5 });
+            var input = TestHelper.GenerateList(new int[] { 1, 2, 3, 4, 5 });
 
             var solution = new _019_RemoveNthNodeFromEndOfList();
             var result = solution.RemoveNthFromEnd(input, 2);
 
-            AssertList(result, new int[] { 1, 2, 3, 5 });
+            AssertHelper.AssertLinkList(new int[] { 1, 2, 3, 5 }, result);
         }
 
         [TestMethod]
@@ -28,7 +28,7 @@ namespace LeetCode.Test
         [TestMethod]
         public void RemoveNthFromEndTest_NEqualZero()
         {
-            var input = GenerateList(new int[] { 1, 2, 3, 4, 5 });
+            var input = TestHelper.GenerateList(new int[] { 1, 2, 3, 4, 5 });
 
             var solution = new _019_RemoveNthNodeFromEndOfList();
             var result = solution.RemoveNthFromEnd(input, 0);
@@ -39,7 +39,7 @@ namespace LeetCode.Test
         [TestMethod]
         public void RemoveNthFromEndTest_NLessThanZero()
         {
-            var input = GenerateList(new int[] { 1, 2, 3, 4, 5 });
+            var input = TestHelper.GenerateList(new int[] { 1, 2, 3, 4, 5 });
 
             var solution = new _019_RemoveNthNodeFromEndOfList();
             var result = solution.RemoveNthFromEnd(input, -1);
@@ -50,69 +50,34 @@ namespace LeetCode.Test
         [TestMethod]
         public void RemoveNthFromEndTest_LargerThanList()
         {
-            var input = GenerateList(new int[] { 1, 2, 3, 4, 5 });
+            var input = TestHelper.GenerateList(new int[] { 1, 2, 3, 4, 5 });
 
             var solution = new _019_RemoveNthNodeFromEndOfList();
             var result = solution.RemoveNthFromEnd(input, 6);
 
-            AssertList(result, new int[] { 1, 2, 3, 4, 5 });
+            AssertHelper.AssertLinkList(new int[] { 1, 2, 3, 4, 5 }, result);
         }
 
         [TestMethod]
         public void RemoveNthFromEndTest_FirstOne()
         {
-            var input = GenerateList(new int[] { 1, 2, 3, 4, 5 });
+            var input = TestHelper.GenerateList(new int[] { 1, 2, 3, 4, 5 });
 
             var solution = new _019_RemoveNthNodeFromEndOfList();
             var result = solution.RemoveNthFromEnd(input, 5);
 
-            AssertList(result, new int[] { 2, 3, 4, 5 });
+            AssertHelper.AssertLinkList(new int[] { 2, 3, 4, 5 }, result);
         }
 
         [TestMethod]
         public void RemoveNthFromEndTest_LastOne()
         {
-            var input = GenerateList(new int[] { 1, 2, 3, 4, 5 });
+            var input = TestHelper.GenerateList(new int[] { 1, 2, 3, 4, 5 });
 
             var solution = new _019_RemoveNthNodeFromEndOfList();
             var result = solution.RemoveNthFromEnd(input, 1);
 
-            AssertList(result, new int[] { 1, 2, 3, 4 });
-        }
-
-
-        private ListNode GenerateList(int[] nums)
-        {
-            if (nums == null || nums.Length == 0) { return null; }
-
-            var i = 0;
-            var first = new ListNode(nums[i]);
-            var current = first;
-
-            while (++i < nums.Length)
-            {
-                current.next = new ListNode(nums[i]);
-                current = current.next;
-            }
-
-            return first;
-        }
-
-        private void AssertList(ListNode first, int[] nums)
-        {
-            Assert.IsNotNull(first);
-            Assert.IsNotNull(nums);
-            Assert.IsTrue(nums.Length > 0);
-
-            var current = first;
-            for (int i = 0; i < nums.Length; i++)
-            {
-                Assert.IsNotNull(current);
-                Assert.AreEqual(nums[i], current.val);
-                current = current.next;
-            }
-
-            Assert.IsNull(current);
+            AssertHelper.AssertLinkList(new int[] { 1, 2, 3, 4 }, result);
         }
     }
 }

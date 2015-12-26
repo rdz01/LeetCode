@@ -15,8 +15,11 @@ namespace LeetCode.Test
             var result = solution.ThreeSum(input);
 
             Assert.AreEqual(2, result.Count);
-            AssertList(new List<int> { -1, -1, 2 }, result[0]);
-            AssertList(new List<int> { -1, 0, 1 }, result[1]);
+            AssertHelper.AssertList(new List<IList<int>>
+            {
+                new List<int> { -1, -1, 2 },
+                new List<int> { -1, 0, 1 }
+            }, result);
         }
 
         [TestMethod]
@@ -75,7 +78,10 @@ namespace LeetCode.Test
             var result = solution.ThreeSum(input);
 
             Assert.AreEqual(1, result.Count);
-            AssertList(new List<int> { 0, 0, 0 }, result[0]);
+            AssertHelper.AssertList(new List<IList<int>>
+            {
+                new List<int> { 0, 0, 0 }
+            }, result);
         }
 
         [TestMethod]
@@ -98,17 +104,6 @@ namespace LeetCode.Test
             var result = solution.ThreeSum(input);
 
             Assert.AreEqual(118, result.Count);
-        }
-
-
-        private void AssertList(IList<int> expected, IList<int> actual)
-        {
-            Assert.AreEqual(expected.Count, actual.Count);
-
-            for (int i = 0; i < expected.Count; i++)
-            {
-                Assert.AreEqual(expected[i], actual[i]);
-            }
         }
     }
 }

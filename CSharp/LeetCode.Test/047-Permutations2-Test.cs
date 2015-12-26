@@ -15,7 +15,7 @@ namespace LeetCode.Test
             var result = solution.PermuteUnique(input);
 
             Assert.AreEqual(3, result.Count);
-            AssertList(new List<IList<int>>()
+            AssertHelper.AssertList(new List<IList<int>>()
             {
                 new List<int> { 1, 1, 2 },
                 new List<int> { 2, 1, 1 },
@@ -87,21 +87,6 @@ namespace LeetCode.Test
             var result = solution.PermuteUnique(input);
 
             Assert.AreEqual(1, result.Count);
-        }
-
-
-        void AssertList(IList<IList<int>> expected, IList<IList<int>> actual)
-        {
-            Assert.AreEqual(expected.Count, actual.Count);
-
-            for (int i = 0; i < expected.Count; i++)
-            {
-                Assert.AreEqual(expected[i].Count, actual[i].Count);
-                for (int j = 0; j < expected[i].Count; j++)
-                {
-                    Assert.AreEqual(expected[i][j], actual[i][j]);
-                }
-            }
         }
     }
 }

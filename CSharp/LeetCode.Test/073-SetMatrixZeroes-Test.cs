@@ -18,7 +18,7 @@ namespace LeetCode.Test
             var solution = new _073_SetMatrixZeroes();
             solution.SetZeroes(input);
 
-            AssertMatrix(new int[,]
+            AssertHelper.AssertMatrix(new int[,]
             {
                 { 1, 2, 3 },
                 { 4, 5, 6 },
@@ -39,7 +39,7 @@ namespace LeetCode.Test
             var solution = new _073_SetMatrixZeroes();
             solution.SetZeroes(input);
 
-            AssertMatrix(new int[,]
+            AssertHelper.AssertMatrix(new int[,]
             {
                 { 1, 0, 3 },
                 { 0, 0, 0 },
@@ -60,7 +60,7 @@ namespace LeetCode.Test
             var solution = new _073_SetMatrixZeroes();
             solution.SetZeroes(input);
 
-            AssertMatrix(new int[,]
+            AssertHelper.AssertMatrix(new int[,]
             {
                 { 0, 0, 0 },
                 { 4, 0, 6 },
@@ -81,7 +81,7 @@ namespace LeetCode.Test
             var solution = new _073_SetMatrixZeroes();
             solution.SetZeroes(input);
 
-            AssertMatrix(new int[,]
+            AssertHelper.AssertMatrix(new int[,]
             {
                 { 0, 2, 3 },
                 { 0, 0, 0 },
@@ -102,7 +102,7 @@ namespace LeetCode.Test
             var solution = new _073_SetMatrixZeroes();
             solution.SetZeroes(input);
 
-            AssertMatrix(new int[,]
+            AssertHelper.AssertMatrix(new int[,]
             {
                 { 0, 0, 0 },
                 { 0, 5, 6 },
@@ -124,7 +124,7 @@ namespace LeetCode.Test
             var solution = new _073_SetMatrixZeroes();
             solution.SetZeroes(input);
 
-            AssertMatrix(new int[,]
+            AssertHelper.AssertMatrix(new int[,]
             {
                 { 1, 0, 0, 4 },
                 { 0, 0, 0, 0 },
@@ -147,7 +147,7 @@ namespace LeetCode.Test
             var solution = new _073_SetMatrixZeroes();
             solution.SetZeroes_2(input);
 
-            AssertMatrix(new int[,]
+            AssertHelper.AssertMatrix(new int[,]
             {
                 { 1, 2, 3 },
                 { 4, 5, 6 },
@@ -168,7 +168,7 @@ namespace LeetCode.Test
             var solution = new _073_SetMatrixZeroes();
             solution.SetZeroes_2(input);
 
-            AssertMatrix(new int[,]
+            AssertHelper.AssertMatrix(new int[,]
             {
                 { 1, 0, 3 },
                 { 0, 0, 0 },
@@ -189,7 +189,7 @@ namespace LeetCode.Test
             var solution = new _073_SetMatrixZeroes();
             solution.SetZeroes_2(input);
 
-            AssertMatrix(new int[,]
+            AssertHelper.AssertMatrix(new int[,]
             {
                 { 0, 0, 0 },
                 { 4, 0, 6 },
@@ -210,7 +210,7 @@ namespace LeetCode.Test
             var solution = new _073_SetMatrixZeroes();
             solution.SetZeroes_2(input);
 
-            AssertMatrix(new int[,]
+            AssertHelper.AssertMatrix(new int[,]
             {
                 { 0, 2, 3 },
                 { 0, 0, 0 },
@@ -231,7 +231,7 @@ namespace LeetCode.Test
             var solution = new _073_SetMatrixZeroes();
             solution.SetZeroes_2(input);
 
-            AssertMatrix(new int[,]
+            AssertHelper.AssertMatrix(new int[,]
             {
                 { 0, 0, 0 },
                 { 0, 5, 6 },
@@ -253,29 +253,13 @@ namespace LeetCode.Test
             var solution = new _073_SetMatrixZeroes();
             solution.SetZeroes_2(input);
 
-            AssertMatrix(new int[,]
+            AssertHelper.AssertMatrix(new int[,]
             {
                 { 1, 0, 0, 4 },
                 { 0, 0, 0, 0 },
                 { 0, 0, 0, 0 },
                 { 10, 0, 0, 13 }
             }, input);
-        }
-
-
-        void AssertMatrix(int[,] expected, int[,] actual)
-        {
-            Assert.AreEqual(expected.Length, actual.Length);
-            Assert.AreEqual(expected.GetLength(0), actual.GetLength(0));
-            Assert.AreEqual(expected.GetLength(1), actual.GetLength(1));
-
-            for (int i = 0; i < expected.GetLength(0); i++)
-            {
-                for (int j = 0; j < expected.GetLength(1); j++)
-                {
-                    Assert.AreEqual(expected[i, j], actual[i, j]);
-                }
-            }
         }
     }
 }

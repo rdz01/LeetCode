@@ -14,7 +14,7 @@ namespace LeetCode.Test
             var solution = new _049_GroupAnagrams();
             var result = solution.GroupAnagrams(input);
 
-            AssertList(
+            AssertHelper.AssertList(
                 new List<IList<string>>()
                 {
                     new List<string> () { "ate", "eat", "tea" },
@@ -32,20 +32,6 @@ namespace LeetCode.Test
             var result = solution.GroupAnagrams(input);
 
             Assert.AreEqual(0, result.Count);
-        }
-
-        void AssertList(IList<IList<string>> expected, IList<IList<string>> actual)
-        {
-            Assert.AreEqual(expected.Count, actual.Count);
-
-            for (int i = 0; i < expected.Count; i++)
-            {
-                Assert.AreEqual(expected[i].Count, actual[i].Count);
-                for (int j = 0; j < expected[i].Count; j++)
-                {
-                    Assert.AreEqual(expected[i][j], actual[i][j]);
-                }
-            }
         }
     }
 }

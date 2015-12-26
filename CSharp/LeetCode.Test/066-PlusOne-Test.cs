@@ -13,7 +13,7 @@ namespace LeetCode.Test
             var solution = new _066_PlusOne();
             var result = solution.PlusOne(input);
 
-            AssertArray(new int[] { 1, 2, 4 }, result);
+            AssertHelper.AssertArray(new int[] { 1, 2, 4 }, result);
         }
 
         [TestMethod]
@@ -24,7 +24,7 @@ namespace LeetCode.Test
             var solution = new _066_PlusOne();
             var result = solution.PlusOne(input);
 
-            AssertArray(new int[] { 1 }, result);
+            AssertHelper.AssertArray(new int[] { 1 }, result);
         }
 
         [TestMethod]
@@ -35,17 +35,7 @@ namespace LeetCode.Test
             var solution = new _066_PlusOne();
             var result = solution.PlusOne(input);
 
-            AssertArray(new int[] { 1, 0, 0, 0 }, result);
-        }
-
-
-        void AssertArray(int[] expected, int[] actual)
-        {
-            Assert.AreEqual(expected.Length, actual.Length);
-            for (int i = 0; i < expected.Length; i++)
-            {
-                Assert.AreEqual(expected[i], actual[i]);
-            }
+            AssertHelper.AssertArray(new int[] { 1, 0, 0, 0 }, result);
         }
     }
 }

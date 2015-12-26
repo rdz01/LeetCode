@@ -1,5 +1,4 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using System.Collections.Generic;
 
 namespace LeetCode.Test
 {
@@ -19,7 +18,7 @@ namespace LeetCode.Test
             var solution = new _054_SpiralMatrix();
             var result = solution.SpiralOrder(input);
 
-            AssertArray(new List<int>() { 1, 2, 3, 6, 9, 8, 7, 4, 5 }, result);
+            AssertHelper.AssertList(new int[] { 1, 2, 3, 6, 9, 8, 7, 4, 5 }, result);
         }
 
         [TestMethod]
@@ -36,7 +35,7 @@ namespace LeetCode.Test
             var solution = new _054_SpiralMatrix();
             var result = solution.SpiralOrder(input);
 
-            AssertArray(new List<int>() { 1, 2, 3, 4, 8, 12, 16, 15, 14, 13, 9, 5, 6, 7, 11, 10 }, result);
+            AssertHelper.AssertList(new int[] { 1, 2, 3, 4, 8, 12, 16, 15, 14, 13, 9, 5, 6, 7, 11, 10 }, result);
         }
 
         [TestMethod]
@@ -53,7 +52,7 @@ namespace LeetCode.Test
             var solution = new _054_SpiralMatrix();
             var result = solution.SpiralOrder(input);
 
-            AssertArray(new List<int>() { 1, 2, 3, 6, 9, 12, 11, 10, 7, 4, 5, 8 }, result);
+            AssertHelper.AssertList(new int[] { 1, 2, 3, 6, 9, 12, 11, 10, 7, 4, 5, 8 }, result);
         }
 
         [TestMethod]
@@ -69,7 +68,7 @@ namespace LeetCode.Test
             var solution = new _054_SpiralMatrix();
             var result = solution.SpiralOrder(input);
 
-            AssertArray(new List<int>() { 1, 2, 3, 4, 8, 12, 11, 10, 9, 5, 6, 7 }, result);
+            AssertHelper.AssertList(new int[] { 1, 2, 3, 4, 8, 12, 11, 10, 9, 5, 6, 7 }, result);
         }
 
         [TestMethod]
@@ -83,7 +82,7 @@ namespace LeetCode.Test
             var solution = new _054_SpiralMatrix();
             var result = solution.SpiralOrder(input);
 
-            AssertArray(new List<int>() { 1 }, result);
+            AssertHelper.AssertList(new int[] { 1 }, result);
         }
 
         [TestMethod]
@@ -97,7 +96,7 @@ namespace LeetCode.Test
             var solution = new _054_SpiralMatrix();
             var result = solution.SpiralOrder(input);
 
-            AssertArray(new List<int>() { 1, 2, 3, 4, 5, 6 }, result);
+            AssertHelper.AssertList(new int[] { 1, 2, 3, 4, 5, 6 }, result);
         }
 
         [TestMethod]
@@ -116,7 +115,7 @@ namespace LeetCode.Test
             var solution = new _054_SpiralMatrix();
             var result = solution.SpiralOrder(input);
 
-            AssertArray(new List<int>() { 1, 2, 3, 4, 5, 6 }, result);
+            AssertHelper.AssertList(new int[] { 1, 2, 3, 4, 5, 6 }, result);
         }
 
         [TestMethod]
@@ -131,7 +130,7 @@ namespace LeetCode.Test
             var solution = new _054_SpiralMatrix();
             var result = solution.SpiralOrder(input);
 
-            AssertArray(new List<int>() { 1, 2, 3, 4, 5, 6, 16, 15, 14, 13, 12, 11 }, result);
+            AssertHelper.AssertList(new int[] { 1, 2, 3, 4, 5, 6, 16, 15, 14, 13, 12, 11 }, result);
         }
 
         [TestMethod]
@@ -150,18 +149,7 @@ namespace LeetCode.Test
             var solution = new _054_SpiralMatrix();
             var result = solution.SpiralOrder(input);
 
-            AssertArray(new List<int>() { 1, 11, 12, 13, 14, 15, 16, 6, 5, 4, 3, 2 }, result);
-        }
-
-
-        void AssertArray(IList<int> expected, IList<int> actual)
-        {
-            Assert.AreEqual(expected.Count, actual.Count);
-
-            for (int i = 0; i < expected.Count; i++)
-            {
-                Assert.AreEqual(expected[i], actual[i]);
-            }
+            AssertHelper.AssertList(new int[] { 1, 11, 12, 13, 14, 15, 16, 6, 5, 4, 3, 2 }, result);
         }
     }
 }

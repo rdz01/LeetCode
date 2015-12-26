@@ -1,5 +1,4 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using System.Collections.Generic;
 
 namespace LeetCode.Test
 {
@@ -14,7 +13,7 @@ namespace LeetCode.Test
             var solution = new _068_TextJustification();
             var result = solution.FullJustify(input, 16);
 
-            AssertStrings(new string[] {
+            AssertHelper.AssertList(new string[] {
                 "This    is    an",
                 "example  of text",
                 "justification.  "
@@ -29,7 +28,7 @@ namespace LeetCode.Test
             var solution = new _068_TextJustification();
             var result = solution.FullJustify(input, 16);
 
-            AssertStrings(new string[] {
+            AssertHelper.AssertList(new string[] {
                 "justification.  "
             }, result);
         }
@@ -42,7 +41,7 @@ namespace LeetCode.Test
             var solution = new _068_TextJustification();
             var result = solution.FullJustify(input, 7);
 
-            AssertStrings(new string[] {
+            AssertHelper.AssertList(new string[] {
                 "This is",
                 "an     ",
                 "example",
@@ -58,23 +57,12 @@ namespace LeetCode.Test
             var solution = new _068_TextJustification();
             var result = solution.FullJustify(input, 6);
 
-            AssertStrings(new string[] {
+            AssertHelper.AssertList(new string[] {
                 "This  ",
                 "is  an",
                 "of    ",
                 "text  "
             }, result);
-        }
-
-
-        void AssertStrings(IList<string> expected, IList<string> actual)
-        {
-            Assert.AreEqual(expected.Count, actual.Count);
-
-            for (int i = 0; i < expected.Count; i++)
-            {
-                Assert.AreEqual(expected[i], actual[i]);
-            }
         }
     }
 }

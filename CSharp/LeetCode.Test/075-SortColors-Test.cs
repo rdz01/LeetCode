@@ -13,7 +13,7 @@ namespace LeetCode.Test
             var solution = new _075_SortColors();
             solution.SortColors(input);
 
-            AssertArray(new int[] { 0, 0, 0, 1, 1, 1, 2, 2, 2 }, input);
+            AssertHelper.AssertArray(new int[] { 0, 0, 0, 1, 1, 1, 2, 2, 2 }, input);
         }
 
         [TestMethod]
@@ -24,7 +24,7 @@ namespace LeetCode.Test
             var solution = new _075_SortColors();
             solution.SortColors(input);
 
-            AssertArray(new int[] { 0, 0, 1 }, input);
+            AssertHelper.AssertArray(new int[] { 0, 0, 1 }, input);
         }
 
         [TestMethod]
@@ -35,7 +35,7 @@ namespace LeetCode.Test
             var solution = new _075_SortColors();
             solution.SortColors(input);
 
-            AssertArray(new int[] { 0 }, input);
+            AssertHelper.AssertArray(new int[] { 0 }, input);
         }
 
         [TestMethod]
@@ -46,7 +46,7 @@ namespace LeetCode.Test
             var solution = new _075_SortColors();
             solution.SortColors(input);
 
-            AssertArray(new int[] { 1 }, input);
+            AssertHelper.AssertArray(new int[] { 1 }, input);
         }
 
         [TestMethod]
@@ -57,7 +57,7 @@ namespace LeetCode.Test
             var solution = new _075_SortColors();
             solution.SortColors(input);
 
-            AssertArray(new int[] { 2 }, input);
+            AssertHelper.AssertArray(new int[] { 2 }, input);
         }
 
         [TestMethod]
@@ -68,7 +68,7 @@ namespace LeetCode.Test
             var solution = new _075_SortColors();
             solution.SortColors(input);
 
-            AssertArray(new int[] { 0, 0, 0 }, input);
+            AssertHelper.AssertArray(new int[] { 0, 0, 0 }, input);
         }
 
         [TestMethod]
@@ -79,7 +79,7 @@ namespace LeetCode.Test
             var solution = new _075_SortColors();
             solution.SortColors(input);
 
-            AssertArray(new int[] { 1, 1, 1 }, input);
+            AssertHelper.AssertArray(new int[] { 1, 1, 1 }, input);
         }
 
         [TestMethod]
@@ -90,7 +90,7 @@ namespace LeetCode.Test
             var solution = new _075_SortColors();
             solution.SortColors(input);
 
-            AssertArray(new int[] { 2, 2, 2 }, input);
+            AssertHelper.AssertArray(new int[] { 2, 2, 2 }, input);
         }
 
         [TestMethod]
@@ -101,7 +101,7 @@ namespace LeetCode.Test
             var solution = new _075_SortColors();
             solution.SortColors_2(input);
 
-            AssertArray(new int[] { 0, 0, 0, 1, 1, 1, 2, 2, 2 }, input);
+            AssertHelper.AssertArray(new int[] { 0, 0, 0, 1, 1, 1, 2, 2, 2 }, input);
         }
 
         [TestMethod]
@@ -112,7 +112,7 @@ namespace LeetCode.Test
             var solution = new _075_SortColors();
             solution.SortColors_2(input);
 
-            AssertArray(new int[] { 0, 0, 1 }, input);
+            AssertHelper.AssertArray(new int[] { 0, 0, 1 }, input);
         }
 
         [TestMethod]
@@ -123,7 +123,7 @@ namespace LeetCode.Test
             var solution = new _075_SortColors();
             solution.SortColors_2(input);
 
-            AssertArray(new int[] { 0 }, input);
+            AssertHelper.AssertArray(new int[] { 0 }, input);
         }
 
         [TestMethod]
@@ -134,7 +134,7 @@ namespace LeetCode.Test
             var solution = new _075_SortColors();
             solution.SortColors_2(input);
 
-            AssertArray(new int[] { 1 }, input);
+            AssertHelper.AssertArray(new int[] { 1 }, input);
         }
 
         [TestMethod]
@@ -145,7 +145,7 @@ namespace LeetCode.Test
             var solution = new _075_SortColors();
             solution.SortColors_2(input);
 
-            AssertArray(new int[] { 2 }, input);
+            AssertHelper.AssertArray(new int[] { 2 }, input);
         }
 
         [TestMethod]
@@ -156,7 +156,7 @@ namespace LeetCode.Test
             var solution = new _075_SortColors();
             solution.SortColors_2(input);
 
-            AssertArray(new int[] { 0, 0, 0 }, input);
+            AssertHelper.AssertArray(new int[] { 0, 0, 0 }, input);
         }
 
         [TestMethod]
@@ -167,7 +167,7 @@ namespace LeetCode.Test
             var solution = new _075_SortColors();
             solution.SortColors_2(input);
 
-            AssertArray(new int[] { 1, 1, 1 }, input);
+            AssertHelper.AssertArray(new int[] { 1, 1, 1 }, input);
         }
 
         [TestMethod]
@@ -178,17 +178,7 @@ namespace LeetCode.Test
             var solution = new _075_SortColors();
             solution.SortColors_2(input);
 
-            AssertArray(new int[] { 2, 2, 2 }, input);
-        }
-
-
-        void AssertArray(int[] expected, int[] actual)
-        {
-            Assert.AreEqual(expected.Length, actual.Length);
-            for (int i = 0; i < expected.Length; i++)
-            {
-                Assert.AreEqual(expected[i], actual[i]);
-            }
+            AssertHelper.AssertArray(new int[] { 2, 2, 2 }, input);
         }
     }
 }
