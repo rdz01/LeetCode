@@ -56,6 +56,7 @@
     <Compile Include="007-ReverseInteger-Test.cs" />
     <Compile Include="008-StringToInteger-Test.cs" />
     <Compile Include="009-PalindromeNumber-Test.cs" />
+    <Compile Include="081-SearchInRotatedSortedArray2-Test.cs" />
     <Compile Include="044-WildcardMatching-Test.cs" />
     <Compile Include="010-RegularExpressionMatching-Test.cs" />
     <Compile Include="011_ContainerWithMostWater-Test.cs" />
