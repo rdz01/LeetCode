@@ -128,6 +128,7 @@
     <Compile Include="079-WordSearch-Test.cs" />
     <Compile Include="080-RemoveDuplicatesFromSortedArray2-Test.cs" />
     <Compile Include="082-RemoveDuplicatesFromSortedList2-Test.cs" />
+    <Compile Include="083-RemoveDuplicatesFromSortedList-Test.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="001-TwoSume-Test.cs" />
     <Compile Include="002-AddTwoNumbers-Test.cs" />
