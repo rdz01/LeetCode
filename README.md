@@ -98,3 +98,4 @@ The solutions for LeetCode problems. Try to solve them with all languages.
 |81|[Search in Rotated Sorted Array II](./Problems/081-SearchInRotatedSortedArray2.md)| C C++ [C#](./CSharp/LeetCode/081-SearchInRotatedSortedArray2.cs)(156ms) Java JavaScript Python Ruby | O(N) | O(1) | |
 |82|[Remove Duplicates from Sorted List II](./Problems/082-RemoveDuplicatesFromSortedList2.md)| C C++ [C#](./CSharp/LeetCode/082-RemoveDuplicatesFromSortedList2.cs)(168ms) Java JavaScript Python Ruby | O(N) | O(1) | |
 |83|[Remove Duplicates from Sorted List](./Problems/083-RemoveDuplicatesFromSortedList.md)| C C++ [C#](./CSharp/LeetCode/083-RemoveDuplicatesFromSortedList.cs)(168ms) Java JavaScript Python Ruby | O(N) | O(1) | |
+|84|[Largest Rectangle in Histogram](./Problems/084-LargestRectangleInHistogram.md)| C C++ C# Java JavaScript Python Ruby | | | |
