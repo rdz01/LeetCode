@@ -100,3 +100,4 @@ The solutions for LeetCode problems. Try to solve them with all languages.
 |83|[Remove Duplicates from Sorted List](./Problems/083-RemoveDuplicatesFromSortedList.md)| C C++ [C#](./CSharp/LeetCode/083-RemoveDuplicatesFromSortedList.cs)(168ms) Java JavaScript Python Ruby | O(N) | O(1) | |
 |84|[Largest Rectangle in Histogram](./Problems/084-LargestRectangleInHistogram.md)| C C++ [C#](./CSharp/LeetCode/084-LargestRectangleInHistogram.cs)(176ms) Java JavaScript Python Ruby | O(N) | O(N) | |
 |85|[Maximal Rectangle](./Problems/085-MaximalRectangle.md)| C C++ C# Java JavaScript Python Ruby | | | |
+|85|[Partition List](./Problems/086-PartitionList.md)| C C++ C# Java JavaScript Python Ruby | | | |
