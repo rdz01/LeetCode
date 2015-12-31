@@ -103,3 +103,4 @@ The solutions for LeetCode problems. Try to solve them with all languages.
 |86|[Partition List](./Problems/086-PartitionList.md)| C C++ C# Java JavaScript Python Ruby | | | |
 |87|[Partition List](./Problems/087-ScrambleString.md)| C C++ C# Java JavaScript Python Ruby | | | |
 |88|[Merge Sorted Array](./Problems/088-MergeSortedArray.md)| C C++ C# Java JavaScript Python Ruby | | | |
+|89|[Gray Code](./Problems/089-GrayCode.md)| C C++ C# Java JavaScript Python Ruby | | | |
