@@ -126,6 +126,7 @@
     <Compile Include="083-RemoveDuplicatesFromSortedList.cs" />
     <Compile Include="084-LargestRectangleInHistogram.cs" />
     <Compile Include="085-MaximalRectangle.cs" />
+    <Compile Include="086-PartitionList.cs" />
     <Compile Include="Interval.cs" />
     <Compile Include="ListNode.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

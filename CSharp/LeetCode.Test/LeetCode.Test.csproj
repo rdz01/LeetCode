@@ -131,6 +131,7 @@
     <Compile Include="083-RemoveDuplicatesFromSortedList-Test.cs" />
     <Compile Include="084-LargestRectangleInHistogram-Test.cs" />
     <Compile Include="085-MaximalRectangle-Test.cs" />
+    <Compile Include="086-PartitionList-Test.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="001-TwoSume-Test.cs" />
     <Compile Include="002-AddTwoNumbers-Test.cs" />
